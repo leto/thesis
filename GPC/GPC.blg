@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99c (Web2C 7.2)
+The top-level auxiliary file: GPC.aux
+The style file: siam.bst
+Reallocated wiz_functions (elt_size=4) to 3000 items from 0.
+Database file #1: GPC.bib
+You've used 2 entries,
+            2030 wiz_defined-function locations,
+            510 strings with 3971 characters,
+and the built_in function-call counts, 619 in all, are:
+= -- 57
+> -- 14
+< -- 0
++ -- 6
+- -- 4
+* -- 41
+:= -- 98
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 34
+empty$ -- 56
+format.name$ -- 4
+if$ -- 136
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 3
+newline$ -- 9
+num.names$ -- 4
+pop$ -- 10
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 26
+stack$ -- 0
+substring$ -- 46
+swap$ -- 14
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 0
+while$ -- 6
+width$ -- 3
+write$ -- 20
