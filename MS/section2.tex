@@ -1,1 +1,33 @@
-\section{Solitary waves: local bifurcation}
+\section{Solitary waves; local bifurcations}
+
+Solitary waves of \eqref{eq:MS} of the form 
+$u(x,t) = \phi\left(x - c t\right) = \phi\left(z\right)$
+ satisfy the fourth-order travelling wave ODE
+\begin{equation} \label{eq:ode} \phi_{zzzz} - q \phi_{zz} + p \phi = \mathcal{N}[\phi]
+\end{equation}
+
+where the notation $\mathcal{N[\phi]}$ means that the operator $\mathcal{N}$ operates on $\phi$ and all of it's derivatives, and 
+\begin{equation}
+\mathcal{N}\left[\phi\right] = -\Delta_1 \phi_z^2 - b \Delta_1 \phi \phi_{zz}
+\end{equation}
+
+where 
+\begin{subequations}
+\begin{eqnarray}
+\Delta_1 &=& \frac{\mu}{ \delta\left( \beta c^2 - \gamma\right) } \\
+p &=& 0 
+\end{eqnarray}
+\end{subequations}
+
+The linearized system corresponding to \eqref{eq:ode}
+\begin{equation}
+ \label{eq:ode} \phi_{zzzz} - q \phi_{zz} + p \phi = 0
+\end{equation}
+has a fixed point $\phi = \phi_z = \phi_{zz} = \phi_{zzz} = 0 $.
+
+Solutions $\phi = k e^{\lambda x}$ satisfy the characteristic equation
+$\lambda^4 - q \lambda^2 + p = 0 $. Since $p=0$ for the MS PDE we have only two
+possible regions of eigenvalues. On $C_0$ the eigenvalues have the structure
+$\lambda_{1-4} = 0,0,\pm \lambda$, ($\lambda \in \mathbb{R}$) while on $C_1$ we
+have $\lambda_{1-4} = 0,0,\pm i \omega $, ($\omega \in \mathbb{R} $) .
+

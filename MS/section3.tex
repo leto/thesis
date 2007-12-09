@@ -1,36 +1,8 @@
 \section{Calculations}
 
-Micro-Structure PDE (MS PDE) \cite{Roy1}
-\begin{equation}\label{eq:MS}
-v_{tt} - b v_{xx} - \frac{\mu}{2} \left( v^2 \right)_{xx} - \delta \left( \beta v_{tt} - \gamma v_{xx}\right)_{xx} = 0 
-\end{equation}
+We now proceed to calculate the normal forms of \eqref{eq:MS}
 
-We now proceed to calculate the normal forms of the MS PDE.
-
-If we let $z= x - c t$  in \eqref{eq:MS} then the travelling wave 
-ODE of the MS PDE is
-\begin{equation} \label{eq:ode}
-\phi_{zzzz} - q \phi_{zz} + p \phi = \mathcal{N}[\phi]
-\end{equation}
-
-where the notation $\mathcal{N[\phi]}$ means that the operator $\mathcal{N}$ operates on $\phi$ and all of it's derivatives, and 
-\begin{equation}
-\mathcal{N}\left[\phi\right] = -\Delta_1 \phi_z^2 - b \Delta_1 \phi \phi_{zz}
-\end{equation}
-
-where 
-\begin{subequations}
-\begin{eqnarray}
-\Delta_1 &=& \frac{\mu}{ \delta\left( \beta c^2 - \gamma\right) } \\
-p &=& 0 
-\end{eqnarray}
-\end{subequations}
-
-We emphasize that $p=0$ because this corresponds to a 1-D subspace of the $(p,q)$ parameter space in \cite{Roy1}. We denote $C_0$ as the positive $q$ axis and $C_1$ the negative $q$-axis. 
-
-Solutions $\phi = k e^{\lambda x}$ satisfy the characteristic equation $\lambda^4 - q \lambda^2 + p = 0 $. Since $p=0$ for the MS PDE we have only two possible regions of eigenvalues. On $C_0$ the eigenvalues have the structure 
-$\lambda_{1-4} = 0,0,\pm \lambda$, ($\lambda \in \mathbb{R}$) while on $C_1$ we have 
-$\lambda_{1-4} = 0,0,\pm i \omega $, ($\omega \in \mathbb{R} $) .
+We denote $C_0$ as the positive $q$ axis and $C_1$ the negative $q$-axis. 
 
 
 
