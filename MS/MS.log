@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  8 DEC 2007 20:14
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  9 DEC 2007 11:23
 **MS.tex
 (MS.tex
 LaTeX2e <2003/12/01>
@@ -188,50 +188,7 @@ Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
 \symugrf@m=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 (Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
-) (MS.aux
-
-LaTeX Warning: Label `eq:ode' multiply defined.
-
-
-LaTeX Warning: Label `eq:aq' multiply defined.
-
-
-LaTeX Warning: Label `eq:bq' multiply defined.
-
-
-LaTeX Warning: Label `eq:cq' multiply defined.
-
-
-LaTeX Warning: Label `eq:psiexp' multiply defined.
-
-
-LaTeX Warning: Label `eq:cstar' multiply defined.
-
-
-LaTeX Warning: Label `eq:AC' multiply defined.
-
-
-LaTeX Warning: Label `eq:one' multiply defined.
-
-
-LaTeX Warning: Label `eq:two' multiply defined.
-
-
-LaTeX Warning: Label `eq:three' multiply defined.
-
-
-LaTeX Warning: Label `eq:four' multiply defined.
-
-
-LaTeX Warning: Label `eq:normalA' multiply defined.
-
-
-LaTeX Warning: Label `eq:normalB' multiply defined.
-
-
-LaTeX Warning: Label `eq:normalC' multiply defined.
-
-)
+) (MS.aux)
 \openout1 = `MS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -251,7 +208,8 @@ LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Try loading font information for U+msa on input line 20.
- (/usr/local/share/texmf/tex/latex/amsfonts/umsa.fd
+
+(/usr/local/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 20.
@@ -264,18 +222,14 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 20.
 (/usr/local/share/texmf/tex/latex/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) (abstract.tex) (section1.tex)
-(section2.tex [1] [2]) (section3.tex) (section4.tex [3]) (MS.bbl) [4] (MS.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+(section2.tex [1]) (section3.tex) (section4.tex [2]) (MS.bbl) [3] (MS.aux) ) 
 Here is how much of TeX's memory you used:
- 2356 strings out of 10928
- 25307 string characters out of 73129
- 80280 words of memory out of 263001
- 5093 multiletter control sequences out of 10000+0
+ 2357 strings out of 10928
+ 25318 string characters out of 73129
+ 79280 words of memory out of 263001
+ 5094 multiletter control sequences out of 10000+0
  11655 words of font info for 48 fonts, out of 200000 for 1000
  175 hyphenation exceptions out of 1000
  34i,7n,43p,300b,259s stack positions out of 300i,100n,500p,30000b,4000s
 
-Output written on MS.dvi (4 pages, 19884 bytes).
+Output written on MS.dvi (3 pages, 13800 bytes).
