@@ -1,21 +1,44 @@
-\section{Calculations}
+\section{Normal form near $C_0$: solitary-wave solutions}
 
-We now proceed to calculate the normal forms of \eqref{eq:MS}
+Using \eqref{eq:linode}, the curve $C_0$, corresponding to $\lambda = 0,0,\pm \tilde{ \lambda } $, is given by
+\begin{equation}
+C_0: { p=0, q > 0 }
+\end{equation}
 
+Using \eqref{eq:deltadef} this implies
+\begin{equation}
+\frac{c^2 - b }{\delta\left(\beta c^2 - \gamma\right)}  > 0 
+\end{equation}  
 
-We now use the theory of Iooss and Adelmeyer \cite{IA} to write the Microstructure PDE in reversible form:
-Let $Y=\left<y_1,y_2,y_3,y_4\right>^T$ where $\left<y_1,y_2,y_3,y_4\right>^T = \left<\phi_z,\phi_{zz}, \phi_{zzz}, \phi_{zzzz} \right>^T $
+%We now use the theory of Iooss and Adelmeyer \cite{IA} to write 
+%\eqref{eq:MS} in reversible form:
 
-We may now write \eqref{eq:ode} as a reversible first-order system 
+Denoting $\phi$ by $y_1$, \eqref{eq:ode} may be written as the system
+\begin{subequations}\label{eq:system}
+\begin{eqnarray}
+\frac{d y_1 }{d z} &=& y_2 \\
+\frac{d y_2 }{d z} &=& y_3 \\
+\frac{d y_3 }{d z} &=& y_4 \\
+\frac{d y_4 }{d z} &=& q y_3 - p y_1 - \left(\Delta_1 y_2^2 + b \Delta_1 y_1 y_3 \right)^T
+\end{eqnarray}
+\end{subequations}
+
+We wish to rewrite this as a first order reversible system in order to invoke the relevant theory \cite{IA}. 
+To that end, defining  $Y=\left<y_1,y_2,y_3,y_4\right>^T$ \eqref{eq:system} may be written 
+
+%where $\left<y_1,y_2,y_3,y_4\right>^T = \left<\phi,\phi_z,\phi_{zz}, \phi_{zzz} \right>^T $
+
+%We may now write \eqref{eq:ode} as a reversible first-order system 
 %\begin{subequations}
 %\begin{eqnarray}
 %\frac{ dY }{ dz } &=& \left( L_0 + L_1 \right) Y - F_2(Y,Y) \\
 % &=& L_{pq} Y - F_2(Y,Y) 
 %\end{eqnarray}
 %\end{subequations}
-\begin{equation}\frac{ dY }{ dz } = L_{pq} Y - F_2(Y,Y) \end{equation}
+\begin{equation}\label{eq:bilinear}
+\frac{ dY }{ dz } = L_{pq} Y - F_2(Y,Y) \end{equation}
 
-where $F_2(Y,Y) = \left<0,0,0,-\mathcal{N}(Y)\right>^T $ and 
+where % $F_2(Y,Y) = \left<0,0,0,-\mathcal{N}(Y)\right>^T $ and 
 \begin{equation}
 L_{pq} = \left( 
 \begin{array}{cccc}
@@ -24,8 +47,8 @@ q/3&0&1&0\\
 0&q/3&0&1\\
 q^2 - p &0&q/3&0 \end{array} \right) \end{equation}
 
-Since $p=0$ for the Microstructure PDE, we have 
-\begin{equation} 
+Since $p=0$ for \eqref{eq:MS}, we have 
+\begin{equation} \label{eq:bilinear2}
  \frac{ dY }{ dz } = L_{0q} Y - F_2(Y,Y) 
 \end{equation}
 where 
@@ -33,6 +56,58 @@ where
 F_2(Y,Y) = \left<0,0,0,\Delta_1 y_2^2 + b \Delta_1 y_1 y_3 \right>^T
 \end{equation}
 
+Next we calculate the normal form of \eqref{eq:bilinear2} near $C_0$. The procedure is
+closely modeled on \cite{IA} and many intermediate steps may be found there. 
 
+\subsection{ Near $C_0$ }
+Near $C_0$ the dynamics reduce to a 2-D Center Manifold
+\begin{equation} Y = A \zeta_0 + B \zeta_1 + \Psi(\epsilon,A,B)
+\end{equation}
+
+with 
+\begin{subequations}
+\begin{eqnarray}\label{eq:c0nf}
+\frac{dA}{dz} &=& B \\
+\frac{dB}{dz} &=& b \epsilon A + \tilde{c} A^2
+\end{eqnarray}
+\end{subequations}
+The linear eigenvalue of \eqref{eq:c0nf} satisfies 
+\begin{equation}\label{eq:lineig}
+\lambda^2 = b \epsilon 
+\end{equation}
+The characteristic equation of the linear part of 
+\eqref{eq:bilinear2} is 
+\begin{equation}
+\lambda^4 - q \lambda^2 - \epsilon =  0 
+\end{equation}
+Hence, the eigenvalues near zero ( the center-manifold ) satisfy $\lambda^4 << \lambda^2$ and hence 
+\begin{equation}\label{eq:lindominant}
+\lambda^2 \sim -\frac{\epsilon}{q}
+\end{equation}
+Matching \eqref{eq:lineig} and \eqref{eq:lindominant} we find
+\begin{equation}
+b = - \frac{1}{q}
+\end{equation}
+
+The eigenvectors of \eqref{eq:c0nf}
+$\zeta_0 = \left<1,0,-q/3,0\right>^T, \zeta_1 = \left<0,1,0,-2 q/3\right>^T $ , $\epsilon$ determines the distance from $C_0$ .
+To determine $\tilde{c}$ we calculate $\frac{dY}{dz}$ in two ways and match the 
+$\mathcal{O}(A^2)$ terms. Expanding $\Psi(\epsilon,A,B)$ in series 
+
+\begin{equation}
+\Psi(\epsilon,A,B) = \epsilon A \Psi_{10}^1 + \epsilon B \Psi_{01}^1 + A^2 \Psi_{20}^0 + A B \Psi_{11}^0 + B^2 \Psi_{02}^0 + \cdots
+\end{equation}
+
+we find \begin{equation} \tilde{c} \zeta_1 = L_{0q} \Psi_{20}^0 - F_2(\zeta_0,\zeta_0) \end{equation}
+
+We find that $F_2(\zeta_0,\zeta_0) = \left<0,0,0,-\frac{ b \Delta_1 }{3} q \right>^T$ which implies $\tilde{c} = - \frac{b \Delta_1}{3} $.
+
+Therefore, the normal form for \eqref{eq:MS} near $C_0$ is
+\begin{subequations}
+\begin{eqnarray}
+\frac{dA}{dz} &=& B \\
+\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - \frac{ b \Delta_1}{3}  A^2
+\end{eqnarray}
+\end{subequations}
 
 

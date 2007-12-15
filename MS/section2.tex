@@ -14,57 +14,39 @@ where the notation $\mathcal{N[\phi]}$ means that the operator $\mathcal{N}$ ope
 where 
 \begin{subequations}
 \begin{eqnarray}
-\Delta_1 &=& \frac{\mu}{ \delta\left( \beta c^2 - \gamma\right) } \\
-p &=& 0 
+\Delta_1 &=& \frac{\mu}{ \delta\left( \beta c^2 - \gamma\right) }\label{eq:deltadef} \\
+p &=& \label{eq:pdef}0 
 \end{eqnarray}
 \end{subequations}
+Equation \eqref{eq:ode} is invariant under the transformation $ z \mapsto -z $ and is thus a reversible system. In this section we shall
+use the theory of reversible systems to characterize the homoclinic orbits to the fixed point of \eqref{eq:ode}, which correspond to pulses
+or solitary waves of the Micro-Structure PDE in various regions of the $(p,q)$ plane.
 
 The linearized system corresponding to \eqref{eq:ode}
 \begin{equation}
  \label{eq:linode} \phi_{zzzz} - q \phi_{zz} + p \phi = 0
 \end{equation}
-has a fixed point $\phi = \phi_z = \phi_{zz} = \phi_{zzz} = 0 $.
+has a fixed point \begin{equation}\label{eq:fp} \phi = \phi_z = \phi_{zz} = \phi_{zzz} = 0 \end{equation}
 
 Solutions $\phi = k e^{\lambda x}$ satisfy the characteristic equation
 $\lambda^4 - q \lambda^2 + p = 0 $ from which one may deduce that the structure
 of the eigenvalues is distinct in two regions of $\left(p,q\right)$-space.
 Since $p=0$ we have only two possible regions of eigenvalues.  We denote $C_0$
-as the positive $q$ axis and $C_1$ the negative $q$-axis.  On $C_0$ the
-eigenvalues have the structure $\lambda_{1-4} = 0,0,\pm \lambda$, ($\lambda \in
-\mathbb{R}$) while on $C_1$ we have $\lambda_{1-4} = 0,0,\pm i \omega $,
-($\omega \in \mathbb{R} $) .
+as the positive $q$ axis and $C_1$ the negative $q$-axis. First we shall 
+consider the bounding curves $C_0$ and $C_1$ and their neighborhoods, then we shall discusss the possible
+occurence and multiplicities of homoclinic orbits to \eqref{eq:fp}, corresponding
+to pulse solitary waves of \eqref{eq:MS}, in each region:
 
+\begin{description}
+\item[Near $C_0$] 
+The eigenvalues have the structure $\lambda_{1-4} = 0,0,\pm \lambda$, ($\lambda \in \mathbb{R}$) and the fixed point
+\eqref{eq:fp} is a saddle-focus.
+\item[Near $C_1$] 
+Here the eigenvalues have the structure $\lambda_{1-4} = 0,0,\pm i \omega $, ($\omega \in \mathbb{R} $) . We will show by analysis of a
+four-dimensional normal form in Section 4 that there exists a $sech^2$ homoclinic orbit near $C_1$.
+\end{description}
 
-\subsection{ Near $C_0$ }
-Near $C_0$ the dynamics reduce to a 2-D Center Manifold
-\begin{equation} Y = A \zeta_0 + B \zeta_1 + \Psi(\epsilon,A,B)
-\end{equation}
+Having outlined the possible families of orbits homoclinic to the fixed point \eqref{eq:fp} of \eqref{eq:linode},
+corresponding to pulse solitary waves of \eqref{eq:MS}, we now derive normal forms near the transition curves $C_0$ and $C_1$
+to confirm the existence of regular or delocalized solitary waves in the corresponding regions of $\left(p,q\right)$ parameter space.
 
-with 
-\begin{subequations}
-\begin{eqnarray}
-\frac{dA}{dz} &=& B \\
-\frac{dB}{dz} &=& b \epsilon A + \tilde{c} A^2
-\end{eqnarray}
-\end{subequations}
-and the eigenvectors are 
-$\zeta_0 = \left<1,0,-q/3,0\right>^T, \zeta_1 = \left<0,1,0,-2 q/3\right>^T $ , $\epsilon$ determines the distance from $C_0$ .
-A simple dominant balance argument on the linearized equation yields $b=-\frac{1}{q}$.
-To determine $\tilde{c}$ we calculate $\frac{dY}{dz}$ in two ways and match the 
-$\mathcal{O}(A^2)$ terms. Expanding $\Psi(\epsilon,A,B)$ in series 
-
-\begin{equation}
-\Psi(\epsilon,A,B) = \epsilon A \Psi_{10}^1 + \epsilon B \Psi_{01}^1 + A^2 \Psi_{20}^0 + A B \Psi_{11}^0 + B^2 \Psi_{02}^0 + \cdots
-\end{equation}
-
-we find \begin{equation} \tilde{c} \zeta_1 = L_{0q} \Psi_{20}^0 - F_2(\zeta_0,\zeta_0) \end{equation}
-
-We find that $F_2(\zeta_0,\zeta_0) = \left<0,0,0,-\frac{ b \Delta_1 }{3} q \right>^T$ which implies $\tilde{c} = - \frac{b \Delta_1}{3} $.
-
-Therefore, the normal form for \eqref{eq:MS} near $C_0$ is
-\begin{subequations}
-\begin{eqnarray}
-\frac{dA}{dz} &=& B \\
-\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - \frac{ b \Delta_1}{3}  A^2
-\end{eqnarray}
-\end{subequations}

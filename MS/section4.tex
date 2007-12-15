@@ -1,5 +1,5 @@
 \section{Normal form near $C_1$: possible solitary-wave solutions}
-Near $C_1$ the dynamics reduce to a 4-D Center Manifold
+Near $C_1$ the dynamics reduce to a 4-D Center Manifold \cite{IA}
 \begin{equation} Y = A \zeta_0 + B \zeta_0 + C \zeta_+ + \bar{C} \zeta_- + \Psi(\epsilon,A,B,C,\bar{C})
 \end{equation}
 
@@ -12,11 +12,19 @@ with
 \end{eqnarray}
 \end{subequations}
 
-where  $\zeta_\pm = \left< 1, \lambda_\pm, 2 q / 3, \frac{\lambda_\pm}{3} q\right>^T$ where 
+where  
+\begin{subequations}
+\begin{eqnarray}
+\zeta_\pm	    &=& \left< 1, \lambda_\pm, 2 q / 3, \frac{\lambda_\pm}{3} q\right>^T \\
+\bar{\nu}	    &=& -\frac{\epsilon}{q} \\
+b_*		    &=& -\frac{b \Delta1}{3} \\
+\lambda_\pm	    &=& \pm i \sqrt{-q} 
+\end{eqnarray}
+\end{subequations}
 
-$\bar{\nu} = -\frac{\epsilon}{q}$, $b_* = -\frac{b \Delta1}{3}$  and $\lambda_\pm = \pm i \sqrt{-q} $. Comparing to the linearized equations gives $d_0 = \sqrt{-q} $.
+ Comparing to the linearized equations gives $d_0 = \sqrt{-q} $.
 
-If we do a dominant balance argument after the change of variable $\tilde{\epsilon} = \sqrt{-3 \mu}$ on the characteristic equation as $\lambda \rightarrow 0 $ then we find $d_1 = \frac{ \sqrt{-3 \mu} }{18 \mu^2 } $. Using $\mu=q/3$ we find $d_1 = \frac{\sqrt{-q}}{2 q^2} $ 
+If we do a dominant balance argument after the change of variable $\tilde{\epsilon} = \sqrt{-3 \alpha}$ on the characteristic equation as $\lambda \rightarrow 0 $ then we find $d_1 = \frac{ \sqrt{-3 \alpha} }{18 \alpha^2 } $. Using $\alpha=q/3$ we find $d_1 = \frac{\sqrt{-q}}{2 q^2} $ 
 
 To determine $b_*,c_*$ and $d_2$ we expand 
 \begin{equation}\label{eq:psiexp}
@@ -37,7 +45,7 @@ Now we use \eqref{eq:aq}, \eqref{eq:bq}, \eqref{eq:cq} in  \eqref{eq:psiexp} whe
 where we have used the fact that $F_2$ is a symmetric bilinear form. Equation \eqref{eq:cstar} is decoupled and yields 
 $ c_* = 2 \Delta_1 \left(\frac{1}{q} + \frac{2 b}{3} \right)$ The only coefficient left to determine is $d_2$ which we shall compute now. 
 
-Put $\Psi_{1010}^0 = \left<x_1,x_2,x_3,x_4\right>^T$  into \eqref{eq:AC} implies 
+Using $\Psi_{1010}^0 = \left<x_1,x_2,x_3,x_4\right>^T$ in \eqref{eq:AC} implies 
 
 \begin{subequations}
 \begin{eqnarray}
@@ -50,7 +58,7 @@ i d_2 + i d_0 x_1 &=& x_2 \label{eq:one} \\
 
 Using \eqref{eq:one} in \eqref{eq:two} , \eqref{eq:two} in \eqref{eq:four} and using these in \eqref{eq:three} yields $ d_2 = \frac{ b \Delta_1 }{ 3 \sqrt{-q} } $.
 
-Therefore the normal form for the MS PDE near $C_1$ is 
+Therefore the normal form for \eqref{eq:MS} near $C_1$ is 
 
 \begin{subequations}
 \begin{eqnarray}
