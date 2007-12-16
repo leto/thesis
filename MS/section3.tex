@@ -52,7 +52,7 @@ Since $p=0$ for \eqref{eq:MS}, we have
  \frac{ dY }{ dz } = L_{0q} Y - F_2(Y,Y) 
 \end{equation}
 where 
-\begin{equation}
+\begin{equation}\label{eq:nonlinear}
 F_2(Y,Y) = \left<0,0,0,\Delta_1 y_2^2 + b \Delta_1 y_1 y_3 \right>^T
 \end{equation}
 
@@ -76,7 +76,13 @@ Here,
 \epsilon = \left( \frac{q^2}{9} - p\right) - \left(\frac{q}{3}\right)^2 = - p 
 \end{equation}
 measures the perturbation around $C_0$, and
-$\zeta_0 = \left<1,0,-q/3,0\right>^T, \zeta_1 = \left<0,1,0,-2 q/3\right>^T $
+
+\begin{subequations}
+\begin{eqnarray}\label{eq:lineareigs}
+\zeta_0 &=& \left<1,0,-q/3,0\right>^T\\
+\zeta_1 &=& \left<0,1,0,-2 q/3\right>^T 
+\end{eqnarray}
+\end{subequations}
 
 The linear eigenvalue of \eqref{eq:c0nf} satisfies 
 \begin{equation}\label{eq:lineig}
@@ -112,12 +118,31 @@ In the first way of computing $dY/dz$, we take
 the $z$ derivative of \eqref{eq:c0cm} ( using \eqref{eq:c0nf} and \eqref{eq:psiexp} ). 
 The coefficient of $A^2$ in the resulting expression is $\tilde{c} \zeta_1 $. In the second way of computing $dY/dz$, use \eqref{eq:c0cm} and \eqref{eq:psiexp} in \eqref{eq:bilinear}. The coefficient of $A^2$ in the resulting expression is 
 $ L_{0,q} \Psi_{20}^0 - F_2\left(\zeta_0,\zeta_0\right)$.  Hence
-\begin{equation} \tilde{c} \zeta_1 = L_{0q} \Psi_{20}^0 - F_2(\zeta_0,\zeta_0) \end{equation}
+\begin{equation}\label{eq:A2coef}
+ \tilde{c} \zeta_1 = L_{0q} \Psi_{20}^0 - F_2(\zeta_0,\zeta_0) \end{equation}
 
+Using \eqref{eq:lineareigs} and \eqref{eq:nonlinear} and denoting $\Psi_{20}^0 = \left<x_1,x_2,x_3,x_4\right>$ in \eqref{eq:A2coef} yields the equations
+
+FIX
+\begin{subequations}
+\begin{eqnarray}
+0 &=& x_2 \\
+c &=& \frac{q}{3} x_1 + x_3 \label{eq:A2coefb}\\
+0 &=& \frac{q}{3} x_2 + x_4 \implies x_4 = 0 
+\end{eqnarray}
+\end{subequations}
+and
+\begin{equation}
+-\frac{2q}{3} \tilde{c} = \frac{q}{3}\left(\frac{q}{3} x_1 + x_3 \right) + \frac{2q}{3} = \frac{q}{3} \tilde{c} + \frac{b \Delta_1 }{3} 
+\end{equation}
+using \eqref{eq:A2coefb}.
+Hence we obtain 
+\begin{equation}
+\tilde{c} = - \frac{b \Delta_1}{3} 
+\end{equation}
+ 
+%we find that $f_2(\zeta_0,\zeta_0) = \left<0,0,0,-\frac{ b \delta_1 }{3} q \right>^t$ which implies $\tilde{c} = - \frac{b \delta_1}{3} $.
 DETAIL
-
-We find that $F_2(\zeta_0,\zeta_0) = \left<0,0,0,-\frac{ b \Delta_1 }{3} q \right>^T$ which implies $\tilde{c} = - \frac{b \Delta_1}{3} $.
-
 Therefore, the normal form for \eqref{eq:MS} near $C_0$ is
 \begin{subequations}
 \begin{eqnarray}
