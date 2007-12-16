@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  14 DEC 2007 20:48
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  16 DEC 2007 09:59
 **MS.tex
 (MS.tex
 LaTeX2e <2003/12/01>
@@ -188,7 +188,11 @@ Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
 \symugrf@m=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 (Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
-) (MS.aux)
+) (MS.aux
+
+LaTeX Warning: Label `eq:psiexp' multiply defined.
+
+)
 \openout1 = `MS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -208,8 +212,7 @@ LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Try loading font information for U+msa on input line 20.
-
-(/usr/local/share/texmf/tex/latex/amsfonts/umsa.fd
+ (/usr/local/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 20.
@@ -222,15 +225,19 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 20.
 (/usr/local/share/texmf/tex/latex/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) (abstract.tex) (section1.tex)
-(section2.tex [1]) (section3.tex [2]) (section4.tex [3]) (acknowledge.tex)
-(MS.bbl [4]) [5] (MS.aux) ) 
+(section2.tex [1]) (section3.tex [2]) (section4.tex [3] [4]) (acknowledge.tex)
+(MS.bbl) [5] (MS.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2368 strings out of 10928
- 25447 string characters out of 73129
- 79280 words of memory out of 263001
- 5103 multiletter control sequences out of 10000+0
+ 2369 strings out of 10928
+ 25456 string characters out of 73129
+ 80280 words of memory out of 263001
+ 5104 multiletter control sequences out of 10000+0
  11655 words of font info for 48 fonts, out of 200000 for 1000
  175 hyphenation exceptions out of 1000
- 34i,7n,43p,312b,396s stack positions out of 300i,100n,500p,30000b,4000s
+ 34i,7n,43p,312b,259s stack positions out of 300i,100n,500p,30000b,4000s
 
-Output written on MS.dvi (5 pages, 18236 bytes).
+Output written on MS.dvi (5 pages, 19800 bytes).
