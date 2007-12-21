@@ -19,7 +19,7 @@ Denoting $\phi$ by $y_1$, \eqref{eq:ode} may be written as the system
 \frac{d y_1 }{d z} &=& y_2 \\
 \frac{d y_2 }{d z} &=& y_3 \\
 \frac{d y_3 }{d z} &=& y_4 \\
-\frac{d y_4 }{d z} &=& q y_3 - p y_1 - \left(\Delta_1 y_2^2 + b \Delta_1 y_1 y_3 \right)^T
+\frac{d y_4 }{d z} &=& q y_3 - p y_1 - \left(\Delta_1 y_2^2 + b \Delta_1 y_1 y_3 \right)
 \end{eqnarray}
 \end{subequations}
 
@@ -93,7 +93,7 @@ The characteristic equation of the linear part of
 \begin{equation}
 \lambda^4 - q \lambda^2 - \epsilon =  0 
 \end{equation}
-Hence, the eigenvalues near zero ( the Center Manifold ) satisfy $\lambda^4 << \lambda^2$ and hence 
+Hence, the eigenvalues near zero ( the Center Manifold ) satisfy $\lambda^4 \ll \lambda^2$ and hence 
 \begin{equation}\label{eq:lindominant}
 \lambda^2 \sim -\frac{\epsilon}{q}
 \end{equation}
@@ -123,26 +123,25 @@ $ L_{0,q} \Psi_{20}^0 - F_2\left(\zeta_0,\zeta_0\right)$.  Hence
 
 Using \eqref{eq:lineareigs} and \eqref{eq:nonlinear} and denoting $\Psi_{20}^0 = \left<x_1,x_2,x_3,x_4\right>$ in \eqref{eq:A2coef} yields the equations
 
-FIX
 \begin{subequations}
 \begin{eqnarray}
 0 &=& x_2 \\
 c &=& \frac{q}{3} x_1 + x_3 \label{eq:A2coefb}\\
-0 &=& \frac{q}{3} x_2 + x_4 \implies x_4 = 0 
+0 &=& \frac{q}{3} x_2 + x_4 \implies x_4 = 0
+\textrm{ using \eqref{eq:A2coefb} }
 \end{eqnarray}
 \end{subequations}
 and
 \begin{equation}
 -\frac{2q}{3} \tilde{c} = \frac{q}{3}\left(\frac{q}{3} x_1 + x_3 \right) + \frac{2q}{3} = \frac{q}{3} \tilde{c} + \frac{b \Delta_1 }{3} 
+\textrm{ using \eqref{eq:A2coefb} }
 \end{equation}
-using \eqref{eq:A2coefb}.
 Hence we obtain 
 \begin{equation}
 \tilde{c} = - \frac{b \Delta_1}{3} 
 \end{equation}
  
 %we find that $f_2(\zeta_0,\zeta_0) = \left<0,0,0,-\frac{ b \delta_1 }{3} q \right>^t$ which implies $\tilde{c} = - \frac{b \delta_1}{3} $.
-DETAIL
 Therefore, the normal form for \eqref{eq:MS} near $C_0$ is
 \begin{subequations}
 \begin{eqnarray}
