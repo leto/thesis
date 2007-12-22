@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  22 DEC 2007 15:25
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  22 DEC 2007 15:44
 **MS.tex
 (MS.tex
 LaTeX2e <2003/12/01>
@@ -226,7 +226,7 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 20.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) (abstract.tex) (section1.tex)
 (section2.tex [1]) (section3.tex [2] [3]) (section4.tex [4]) (acknowledge.tex)
-(MS.bbl [5]) [6] (MS.aux)
+(MS.bbl) [5] (MS.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -234,10 +234,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2378 strings out of 10928
  25557 string characters out of 73129
- 79280 words of memory out of 263001
+ 78280 words of memory out of 263001
  5113 multiletter control sequences out of 10000+0
  11655 words of font info for 48 fonts, out of 200000 for 1000
  175 hyphenation exceptions out of 1000
- 34i,10n,43p,312b,259s stack positions out of 300i,100n,500p,30000b,4000s
+ 34i,10n,43p,312b,252s stack positions out of 300i,100n,500p,30000b,4000s
 
-Output written on MS.dvi (6 pages, 23620 bytes).
+Output written on MS.dvi (5 pages, 23524 bytes).
