@@ -5,7 +5,7 @@ C_1 : { p = 0, q < 0 }
 \end{equation}
 Which implies
 \begin{equation}
-q < \frac{c^2 - b}{ \delta\left(\beta c^2 - \gamma \right)}
+\frac{c^2 - b}{ \delta\left(\beta c^2 - \gamma \right)} < 0
 \end{equation}
 
 In order to investigate the possibility of $ \textrm{sech}^2 $  homoclinic orbit in the neighborhood of $C_1$ and delocalized solitary
@@ -30,18 +30,29 @@ complex eigenvectors co-spanning the Center Manifold are
 \zeta_\pm	 = \left< 1, \lambda_\pm, 2 q / 3, \frac{\lambda_\pm}{3} q\right>^T 
 \end{equation}
 
-HERE
-where  
-\begin{subequations}
-\begin{eqnarray}
-\bar{\nu}	    &=& -\frac{\epsilon}{q} \\
-b_*		    &=& -\frac{b \Delta1}{3} \\
-\lambda_\pm	    &=& \pm i \sqrt{-q} 
-\end{eqnarray}
-\end{subequations}
+Using \eqref{eq:bq} and \eqref{eq:c0nf}
+\begin{equation}
+\bar{\nu} = b \epsilon = -\frac{\epsilon}{q} 
+\end{equation}
+
+Also from the characteristic equation \eqref{eq:adf}, the two non-zero 
+(imaginary) roots are 
+\begin{equation}
+\lambda^2 = \frac{ q + \sqrt{q^2 + 4 \epsilon } }{2} \approx q \textrm{ for } \epsilon \textrm{ small }
+\end{equation}
+
+Hence
+\begin{equation}
+\lambda = \pm i \sqrt{-q}, q < 0
+\end{equation}
+
+Matching this to the linear part of \eqref{eq:cq} ( which corresponds to the imaginary eigenvalues), $\lambda = i d_0 = i \sqrt{-q}$ or 
+\begin{equation}
+d_0 = \sqrt{-q}
+\end{equation}
+
 HERE
 
- Comparing to the linearized equations gives $d_0 = \sqrt{-q} $.
 
 If we do a dominant balance argument after the change of variable $\tilde{\epsilon} = \sqrt{-3 \alpha}$ on the characteristic equation as $\lambda \rightarrow 0 $ then we find $d_1 = \frac{ \sqrt{-3 \alpha} }{18 \alpha^2 } $. Using $\alpha=q/3$ we find $d_1 = \frac{\sqrt{-q}}{2 q^2} $ 
 
