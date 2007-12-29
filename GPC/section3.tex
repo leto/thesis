@@ -1,30 +1,57 @@
 \section{Calculations}
 
-Generalized Pochammer-Chree PDE (GPC 1/2 PDE) \cite{Roy1}
-\begin{equation}\label{eq:GPC1}
-\left( u -  u_{xx}\right)_{tt} - \left( a_1 u + a_2 u^2 + a_3 u^3\right)_{xx} = 0 
+Using \eqref{eq:linode}, the curve $C_0$, corresponding to $\lambda = 0,0,\pm \tilde{ \lambda } $, is given by
+\begin{equation}
+C_0: { p=0, q > 0 }
 \end{equation}
 
-\begin{equation}\label{eq:GPC2}
-\left( u -  u_{xx}\right)_{tt} - \left( a_1 u + a_3 u^3 + a_5 u^5\right)_{xx} = 0 
+Using \eqref{eq:qdef} implies
+\begin{equation}
+stuff > 0
 \end{equation}
 
-We now proceed to calculate the normal forms of the GPC PDE's.
-
-If we let $z= x - c t$  in \eqref{eq:GPC1},\eqref{eq:GPC2} then the travelling wave 
-ODE of the GPC PDE's is
-\begin{equation} \label{eq:ode}
-\phi_{zzzz} - q \phi_{zz} + p \phi = \mathcal{N}_{1,2}[\phi]
-\end{equation}
-
-where the notation $\mathcal{N[\phi]}$ means that the operator $\mathcal{N}$ operates on $\phi$ and all of it's derivatives, and where
-\begin{subequations}
+Denoting $\phi$ by $y_1$, \eqref{eq:ode} may be written as the system
+\begin{subequations}\label{eq:system}
 \begin{eqnarray}
-\mathcal{N}_1\left[\phi\right] &=& -\frac{1}{c^2}\left[ 3 a_3 \left( 2 \phi \phi_z^2 +  \phi^2 \phi_{zz}\right) + 2 a_2 \left( \phi_z \phi_{zz}  + \phi_z^2\right)  \right]\\
-\mathcal{N}_2\left[\phi\right] &=& -\frac{1}{c^2}\left[ 3 a_3 \left( 2\phi \phi_z^2 + \phi^2 \phi_{zz}\right)+ 5 a_5 \left(4 \phi^3\phi_z^2 +  \phi^4 \phi_{zz}\right) \right]
+\frac{d y_1 }{d z} &=& y_2 \\
+\frac{d y_2 }{d z} &=& y_3 \\
+\frac{d y_3 }{d z} &=& y_4 \\
+\frac{d y_4 }{d z} &=& q y_3 - p y_1 - \left(\Delta_1 y_2^2 + b \Delta_1 y_1 y_3 \right)
 \end{eqnarray}
 \end{subequations}
-for the GPC 1 and GPC 2 PDE's, respectively.
+
+We wish to rewrite this as a first order reversible system in order to invoke the relevant theory \cite{IA}. 
+To that end, defining  $Y=\left<y_1,y_2,y_3,y_4\right>^T$ \eqref{eq:system} may be written 
+
+\begin{equation}\label{eq:bilinear}
+\frac{ dY }{ dz } = L_{pq} Y - F_2(Y,Y)
+\end{equation}
+
+where 
+\begin{equation}
+L_{pq} = \left( 
+\begin{array}{cccc}
+0&1&0&0\\
+q/3&0&1&0\\
+0&q/3&0&1\\
+q^2 - p &0&q/3&0 \end{array} \right)
+ \end{equation}
+
+Since $p=0$ for \eqref{eq:GPC}, we have 
+\begin{equation} \label{eq:bilinear2}
+ \frac{ dY }{ dz } = L_{0q} Y - F_2(Y,Y) 
+\end{equation}
+where 
+\begin{equation}\label{eq:nonlinear}
+F_2(Y,Y) = \left<0,0,0,XXX\right>^T
+\end{equation}
+
+Next we calculate the normal form of \eqref{eq:bilinear2} near $C_0$. The procedure is
+closely modeled on \cite{IA} and many intermediate steps may be found there. 
+
+
+\subsection{ Near $C_0$ }
+HERE
 
 Here we have
 \begin{subequations}
