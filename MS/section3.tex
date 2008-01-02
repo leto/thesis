@@ -10,10 +10,6 @@ Using \eqref{eq:qdef} implies
  \frac{c^2 - b}{\delta\left(\beta c^2 - \gamma\right)} > 0
 \end{equation}
 
-
-%We now use the theory of Iooss and Adelmeyer \cite{IA} to write 
-%\eqref{eq:MS} in reversible form:
-
 Denoting $\phi$ by $y_1$, \eqref{eq:ode} may be written as the system
 \begin{subequations}\label{eq:system}
 \begin{eqnarray}
@@ -27,19 +23,10 @@ Denoting $\phi$ by $y_1$, \eqref{eq:ode} may be written as the system
 We wish to rewrite this as a first order reversible system in order to invoke the relevant theory \cite{IA}. 
 To that end, defining  $Y=\left<y_1,y_2,y_3,y_4\right>^T$ \eqref{eq:system} may be written 
 
-%where $\left<y_1,y_2,y_3,y_4\right>^T = \left<\phi,\phi_z,\phi_{zz}, \phi_{zzz} \right>^T $
-
-%We may now write \eqref{eq:ode} as a reversible first-order system 
-%\begin{subequations}
-%\begin{eqnarray}
-%\frac{ dY }{ dz } &=& \left( L_0 + L_1 \right) Y - F_2(Y,Y) \\
-% &=& L_{pq} Y - F_2(Y,Y) 
-%\end{eqnarray}
-%\end{subequations}
 \begin{equation}\label{eq:bilinear}
 \frac{ dY }{ dz } = L_{pq} Y - F_2(Y,Y) \end{equation}
 
-where % $F_2(Y,Y) = \left<0,0,0,-\mathcal{N}(Y)\right>^T $ and 
+where 
 \begin{equation}
 L_{pq} = \left( 
 \begin{array}{cccc}
@@ -127,7 +114,7 @@ Using \eqref{eq:lineareigs} and \eqref{eq:nonlinear} and denoting $\Psi_{20}^0 =
 \begin{subequations}
 \begin{eqnarray}
 0 &=& x_2 \\
-c &=& \frac{q}{3} x_1 + x_3 \label{eq:A2coefb}\\
+\tilde{c} &=& \frac{q}{3} x_1 + x_3 \label{eq:A2coefb}\\
 0 &=& \frac{q}{3} x_2 + x_4 \implies x_4 = 0
 \textrm{ using \eqref{eq:A2coefb} }
 \end{eqnarray}
