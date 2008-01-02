@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  1 JAN 2008 23:18
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  2 JAN 2008 01:30
 **GPC.tex
 (GPC.tex
 LaTeX2e <2003/12/01>
@@ -192,6 +192,27 @@ LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 
 LaTeX Warning: Label `eq:psiexp' multiply defined.
 
+
+LaTeX Warning: Label `eq:one' multiply defined.
+
+
+LaTeX Warning: Label `eq:two' multiply defined.
+
+
+LaTeX Warning: Label `eq:three' multiply defined.
+
+
+LaTeX Warning: Label `eq:four' multiply defined.
+
+
+LaTeX Warning: Label `eq:normalA' multiply defined.
+
+
+LaTeX Warning: Label `eq:normalB' multiply defined.
+
+
+LaTeX Warning: Label `eq:normalC' multiply defined.
+
 )
 \openout1 = `GPC.aux'.
 
@@ -225,14 +246,8 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 19.
 (/usr/local/share/texmf/tex/latex/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) (abstract.tex) (section1.tex)
-(section2.tex [1]) (section3.tex [2] [3]) (section4.tex [4]
-
-LaTeX Warning: Reference `eq:four' on page 5 undefined on input line 105.
-
-) (acknowledge.tex) (GPC.bbl [5]) [6] (GPC.aux)
-
-LaTeX Warning: There were undefined references.
-
+(section2.tex [1]) (section3.tex [2] [3]) (section4.tex [4] [5])
+(acknowledge.tex) (GPC.bbl) [6] (GPC.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -240,10 +255,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2379 strings out of 10928
  25569 string characters out of 73129
- 79280 words of memory out of 263001
+ 81280 words of memory out of 263001
  5114 multiletter control sequences out of 10000+0
  11655 words of font info for 48 fonts, out of 200000 for 1000
  175 hyphenation exceptions out of 1000
- 34i,10n,43p,305b,396s stack positions out of 300i,100n,500p,30000b,4000s
+ 34i,10n,43p,305b,259s stack positions out of 300i,100n,500p,30000b,4000s
 
-Output written on GPC.dvi (6 pages, 25272 bytes).
+Output written on GPC.dvi (6 pages, 28144 bytes).

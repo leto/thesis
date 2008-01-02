@@ -84,7 +84,7 @@ serarate expressions for $dY/dz$ yields the following equations:
 \mathcal{O}(A^2): &		b_* \zeta_1 &= L_{0q} \Psi_{2000}^0 - G_{1,2}(\zeta_0,\zeta_0) \\
 \mathcal{O}(\left|C\right|^2):&	c_* \zeta_1 &= L_{0q} \Psi_{0011}^0 -2 G_{1,2}(\zeta_+,\zeta_-) \label{eq:cstar} \\
 \mathcal{O}(\epsilon C): &-\frac{i}{q} \left(d_1 \zeta_+ +  d_0 \Psi_{0010}^1\right) &= L_{0q} \Psi_{0010}^1 - G_{1,2}(\Psi_{0010}^1,\Psi_{0010}^1) \\
-\mathcal{O}(A C): 	&i d_2 \zeta_+ + i d_0 \Psi_{1010}^0 &= L_{0q} \Psi_{1010}^0 - 2 G_{1,2}(\zeta_0,\zeta_+) \\ \label{eq:AC}
+\mathcal{O}(A C): 	&i d_2 \zeta_+ + i d_0 \Psi_{1010}^0 &= L_{0q} \Psi_{1010}^0 - 2 G_{1,2}(\zeta_0,\zeta_+)  \label{eq:AC}
 \end{eqnarray}
 \end{subequations}
 where we have used the fact that $G_{1,2}$ is a symmetric bilinear form. Equation \eqref{eq:cstar} is decoupled and yields 
@@ -92,24 +92,43 @@ $ c_* = \frac{8}{c^2}\left( 2 a_3 - a_2 \right)$ for \eqref{eq:GPC1} and
 $ c_* = \frac{1}{c^2}\left( 16 a_3 + \frac{140}{3} a_5 \right)$ for \eqref{eq:GPC2}. The only coefficient left to determine is $d_2$ which we shall compute now. 
 
 Using $\Psi_{1010}^0 = \left<x_1,x_2,x_3,x_4\right>^T$ in \eqref{eq:AC} implies 
-HERE
 \begin{subequations}
 \begin{eqnarray}
 i d_2 + i d_0 x_1 &=& x_2 \label{eq:one} \\
 - d_0 d_2 + i d_0 x_2 &=& \frac{q}{3} x_1 + x_3 \label{eq:two} \\
 \frac{2 i q}{3} d_2 + i d_0 x_3 &=& \frac{q}{3} x_2 + x_4  \label{eq:three} \\
-- \frac{q}{3} d_0 d_2 + i d_0 x_4 &=& \frac{q}{3}\left(\frac{q}{3} x_1 + x_3 \right) - XXX
+- \frac{q}{3} d_0 d_2 + i d_0 x_4 &=& \frac{q}{3}\left(\frac{q}{3} x_1 + x_3 \right) - \frac{ 2 q}{c^2}\left(\frac{7}{2} a_3 - \frac{i}{3} d_0 a_2\right) \label{eq:four}
 \end{eqnarray}
 \end{subequations}
+for \eqref{eq:GPC1} and
+\begin{subequations}
+\begin{eqnarray}
+i d_2 + i d_0 x_1 &=& x_2 \label{eq:one} \\
+- d_0 d_2 + i d_0 x_2 &=& \frac{q}{3} x_1 + x_3 \label{eq:two} \\
+\frac{2 i q}{3} d_2 + i d_0 x_3 &=& \frac{q}{3} x_2 + x_4  \label{eq:three} \\
+- \frac{q}{3} d_0 d_2 + i d_0 x_4 &=& \frac{q}{3}\left(\frac{q}{3} x_1 + x_3 \right) - \frac{2 q}{c^2}\left( \frac{7}{2} a_3 + \frac{32}{3} a_5\right) \label{eq:four}
+\end{eqnarray}
+\end{subequations}
+for \eqref{eq:GPC2}
 
-Using \eqref{eq:one} in \eqref{eq:two} , \eqref{eq:two} in \eqref{eq:four} and using these in \eqref{eq:three} yields $ d_2 = \frac{ b \Delta_1 }{ 3 \sqrt{-q} } $.
+Using \eqref{eq:one} in \eqref{eq:two} , \eqref{eq:two} in \eqref{eq:four} and using these in \eqref{eq:three} yields 
+$ d_2 = \frac{1}{c^2}\left( \frac{7}{2 \sqrt{-q} } a_3 - \frac{i}{3} a_2 \right)$ for \eqref{eq:GPC1} and 
+$ d_2 = \frac{1}{\sqrt{-q} c^2}\left( \frac{7}{2 } a_3 + \frac{32}{3} a_5 \right)$  for \eqref{eq:GPC2}. 
 
 Therefore the normal form for \eqref{eq:GPC} near $C_1$ is 
-
 \begin{subequations}
 \begin{eqnarray}
 \frac{dA}{dz} &=& B \\ \label{eq:normalA}
-\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - \frac{b \Delta_1 }{3} A^2 + 2 \Delta_1 \left(\frac{1}{q} + \frac{2 b }{3} \right) \left|C\right|^2 \\ \label{eq:normalB}
-\frac{dC}{dz} &=& i \sqrt{-q} C - i \frac{\sqrt{-q} }{q^3} C\epsilon + i \frac{b \Delta_1}{3 \sqrt{-q}} A C \label{eq:normalC}
+\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - b_* A^2 + \frac{1}{c^2}\left( \frac{7}{2 \sqrt{-q} } a_3 - \frac{i}{3} a_2 \right)  \left|C\right|^2 \\ \label{eq:normalB}
+\frac{dC}{dz} &=& i \sqrt{-q} C - i \frac{\sqrt{-q} }{q^3} C\epsilon + i \frac{1}{c^2}\left( \frac{7}{2 \sqrt{-q} } a_3 - \frac{i}{3} a_2 \right)A C \label{eq:normalC}
 \end{eqnarray}
 \end{subequations}
+for \eqref{eq:GPC1} and
+\begin{subequations}
+\begin{eqnarray}
+\frac{dA}{dz} &=& B \\ \label{eq:normalA}
+\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - b_* A^2 + \frac{1}{c^2}\left( 16 a_3 + \frac{140}{3} a_5 \right)  \left|C\right|^2 \\ \label{eq:normalB}
+\frac{dC}{dz} &=& i \sqrt{-q} C - i \frac{\sqrt{-q} }{q^3} C\epsilon + i \frac{1}{\sqrt{-q} c^2}\left( \frac{7}{2 } a_3 + \frac{32}{3} a_5 \right)A C \label{eq:normalC}
+\end{eqnarray}
+\end{subequations}
+for \eqref{eq:GPC2}
