@@ -1,4 +1,4 @@
-\section{Calculations}
+\section{Normal form near $C_0$: solitary-wave solutions}
 
 Using \eqref{eq:linode}, the curve $C_0$, corresponding to $\lambda = 0,0,\pm \tilde{ \lambda } $, is given by
 \begin{equation}
@@ -7,16 +7,24 @@ C_0: { p=0, q > 0 }
 
 Using \eqref{eq:qdef} implies
 \begin{equation}
-stuff > 0
+a_1 < c^2 
 \end{equation}
 
-Denoting $\phi$ by $y_1$, \eqref{eq:ode} may be written as the system
+Denoting $\phi$ by $y_1$, \eqref{eq:ode} may be written as the two systems
 \begin{subequations}\label{eq:system}
 \begin{eqnarray}
 \frac{d y_1 }{d z} &=& y_2 \\
 \frac{d y_2 }{d z} &=& y_3 \\
 \frac{d y_3 }{d z} &=& y_4 \\
-\frac{d y_4 }{d z} &=& q y_3 - p y_1 - \left(\Delta_1 y_2^2 + b \Delta_1 y_1 y_3 \right)
+\frac{d y_4 }{d z} &=& q y_3 - p y_1 - N_{1,2}(Y)
+\end{eqnarray}
+\end{subequations}
+
+where
+\begin{subequations}
+\begin{eqnarray}
+\mathcal{N}_1\left(Y\right) &=& - \frac{1}{c^2}\left[  3 a_3 \left( 2 y_1 y_2^2 + y_1^2 y_3 \right) + 2 a_2\left( y_3 y_2 + y_2^2\right) \right] \\
+\mathcal{N}_2\left(Y\right) &=& - \frac{1}{c^2}\left[ 3 a_3 \left( 2 y_1 y_2^2 + y_1^2 y_3\right) + 5 a_5 \left( 4 y_1^3 y_2^2 + y_1^4 y_3 \right) \right]
 \end{eqnarray}
 \end{subequations}
 
@@ -24,7 +32,7 @@ We wish to rewrite this as a first order reversible system in order to invoke th
 To that end, defining  $Y=\left<y_1,y_2,y_3,y_4\right>^T$ \eqref{eq:system} may be written 
 
 \begin{equation}\label{eq:bilinear}
-\frac{ dY }{ dz } = L_{pq} Y - F_2(Y,Y)
+\frac{ dY }{ dz } = L_{pq} Y - G_{1,2}(Y,Y)
 \end{equation}
 
 where 
@@ -39,11 +47,11 @@ q^2 - p &0&q/3&0 \end{array} \right)
 
 Since $p=0$ for \eqref{eq:GPC}, we have 
 \begin{equation} \label{eq:bilinear2}
- \frac{ dY }{ dz } = L_{0q} Y - F_2(Y,Y) 
+ \frac{ dY }{ dz } = L_{0q} Y - G_{1,2}(Y,Y) 
 \end{equation}
 where 
 \begin{equation}\label{eq:nonlinear}
-F_2(Y,Y) = \left<0,0,0,XXX\right>^T
+G_{1,2}(Y,Y) = \left<0,0,0,-\mathcal{N}_{1,2}\left(Y\right)\right>^T
 \end{equation}
 
 Next we calculate the normal form of \eqref{eq:bilinear2} near $C_0$. The procedure is
@@ -51,163 +59,93 @@ closely modeled on \cite{IA} and many intermediate steps may be found there.
 
 
 \subsection{ Near $C_0$ }
-HERE
 
-Here we have
-\begin{subequations}
-\begin{eqnarray}
-q &=& 1 - \frac{a_1}{c^2} \\
-p &=& 0 
-\end{eqnarray}
-\end{subequations}
-
-We emphasize that $p=0$ because this corresponds to a 1-D subspace of the $(p,q)$ parameter space in \cite{Roy1}. We denote $C_0$ as the positive $q$ axis and $C_1$ the negative $q$-axis. 
-
-Solutions $\phi = k e^{\lambda x}$ satisfy the characteristic equation $\lambda^4 - q \lambda^2 + p = 0 $. Since $p=0$ for the GPC PDE's we have only two possible regions of eigenvalues. On $C_0$ the eigenvalues have the structure 
-$\lambda_{1-4} = 0,0,\pm \lambda$, ($\lambda \in \mathbb{R}$) while on $C_1$ we have 
-$\lambda_{1-4} = 0,0,\pm i \omega $, ($\omega \in \mathbb{R} $) .
-
-
-
-We now use the theory of Iooss and Adelmeyer \cite{IA} to write the GPC PDE's in reversible form:
-Let $Y=\left<y_1,y_2,y_3,y_4\right>^T$ where $\left<y_1,y_2,y_3,y_4\right>^T = \left<\phi_z,\phi_{zz}, \phi_{zzz}, \phi_{zzzz} \right>^T $
-
-We may now write \eqref{eq:ode} as a reversible first-order system 
-\begin{equation}\frac{ dY }{ dz } = L_{pq} Y - F_{1,2}(Y,Y) \end{equation}
- where
-\begin{equation}
-L_{pq} = \left( 
-\begin{array}{cccc}
-0&1&0&0\\
-q/3&0&1&0\\
-0&q/3&0&1\\
-q^2 - p &0&q/3&0 \end{array} \right) \end{equation}
-
-Since $p=0$ for the GPC PDE's, we have 
-\begin{equation} 
- \frac{ dY }{ dz } = L_{0q} Y - F_{1,2}(Y,Y) 
-\end{equation}
-where 
-\begin{equation}
-F_{1,2}(Y,Y) = \left<0,0,0,-\mathcal{N}_{1,2} \right>^T
-\end{equation}
-and
-\begin{subequations}
-\begin{eqnarray}
-F_1(Y,Y) &=& \left<0,0,0,\frac{1}{c^2}\left[ 3 a_3 \left( 2 y_1 y_2^2 + y_1^2 y_2\right)+ 2 a_2 \left( y_2 y_3  + y_2^2\right)  \right]\right>^T\\
-F_2(Y,Y) &=& \left<0,0,0,\frac{1}{c^2}\left[ 3 a_3 \left( 2 y_1 y_2^2 + y_1^2 y_2\right)+ 5 a_5 \left(4 y_1^3 y_2^2 +  y_1^4 y_3 \right) \right]\right>^T
-\end{eqnarray}
-\end{subequations}
-
-\subsection{ Near $C_0$ }
 Near $C_0$ the dynamics reduce to a 2-D Center Manifold
-\begin{equation} Y = A \zeta_0 + B \zeta_1 + \Psi(\epsilon,A,B)
+\begin{equation}\label{eq:c0cm}
+ Y = A \zeta_0 + B \zeta_1 + \Psi(\epsilon,A,B)
 \end{equation}
-
-with 
+and the corresponding normal form is
 \begin{subequations}
-\begin{eqnarray}
+\begin{eqnarray}\label{eq:c0nf}
 \frac{dA}{dz} &=& B \\
 \frac{dB}{dz} &=& b \epsilon A + \tilde{c} A^2
 \end{eqnarray}
 \end{subequations}
-
-
-and the eigenvectors are $\zeta_0 = \left<1,0,-q/3,0\right>^T, \zeta_1 = \left<0,1,0,-2 q/3\right>^T $ , $\epsilon$ determines the distance from $C_0$ .
-A simple dominant balance argument on the linearized equation yields $b=-\frac{1}{q}$.
-
-
-To determine $\tilde{c}$ we calculate $\frac{dY}{dz}$ in two ways and match the $\mathcal{O}(A^2)$ terms. Expanding $\Psi(\epsilon,A,B)$ in series 
-
+Here,
 \begin{equation}
+\epsilon = \left( \frac{q^2}{9} - p\right) - \left(\frac{q}{3}\right)^2 = - p 
+\end{equation}
+measures the perturbation around $C_0$, and
+
+\begin{subequations}
+\begin{eqnarray}\label{eq:lineareigs}
+\zeta_0 &=& \left<1,0,-q/3,0\right>^T\\
+\zeta_1 &=& \left<0,1,0,-2 q/3\right>^T 
+\end{eqnarray}
+\end{subequations}
+
+The linear eigenvalue of \eqref{eq:c0nf} satisfies 
+\begin{equation}\label{eq:lineig}
+\lambda^2 = b \epsilon 
+\end{equation}
+The characteristic equation of the linear part of 
+\eqref{eq:bilinear2} is 
+\begin{equation}\label{eq:charlinear}
+\lambda^4 - q \lambda^2 - \epsilon =  0 
+\end{equation}
+Hence, the eigenvalues near zero ( the Center Manifold ) satisfy $\lambda^4 \ll \lambda^2$ and hence 
+\begin{equation}\label{eq:lindominant}
+\lambda^2 \sim -\frac{\epsilon}{q}
+\end{equation}
+Matching \eqref{eq:lineig} and \eqref{eq:lindominant} 
+\begin{equation}
+b = - \frac{1}{q}
+\end{equation}
+and only the nonlinear coefficient $\tilde{c}$ remains to be determined in the normal form \eqref{eq:c0nf}.
+
+In order to determine $\tilde{c}$ (the coefficient of $A^2$ in \eqref{eq:c0nf} we calculate $\frac{dY}{dz}$ in two ways and match the 
+$\mathcal{O}(A^2)$ terms. 
+
+To this end, using the standard 'suspension' trick of treating the perturbation parameter $\epsilon$ as a variable, we expand the function
+$\Psi$ in \eqref{eq:c0cm} as 
+
+\begin{equation}\label{eq:psiexp}
 \Psi(\epsilon,A,B) = \epsilon A \Psi_{10}^1 + \epsilon B \Psi_{01}^1 + A^2 \Psi_{20}^0 + A B \Psi_{11}^0 + B^2 \Psi_{02}^0 + \cdots
 \end{equation}
+where the subscripts denote powers of $A$ and $B$, respectively, and the superscript denotes the power of $\epsilon$. 
 
-we find \begin{equation} \tilde{c} \zeta_1 = L_{0q} \Psi_{20}^0 - F_{1,2}(\zeta_0,\zeta_0) \end{equation}
+In the first way of computing $dY/dz$, we take
+the $z$ derivative of \eqref{eq:c0cm} ( using \eqref{eq:c0nf} and \eqref{eq:psiexp} ). 
+The coefficient of $A^2$ in the resulting expression is $\tilde{c} \zeta_1 $. In the second way of computing $dY/dz$, use \eqref{eq:c0cm} and \eqref{eq:psiexp} in \eqref{eq:bilinear}. The coefficient of $A^2$ in the resulting expression is 
+$ L_{0,q} \Psi_{20}^0 - F_2\left(\zeta_0,\zeta_0\right)$.  Hence
+\begin{equation}\label{eq:A2coef}
+ \tilde{c} \zeta_1 = L_{0q} \Psi_{20}^0 - F_2(\zeta_0,\zeta_0) \end{equation}
 
-We find that $F_1(\zeta_0,\zeta_0) = \left<0,0,0,-\frac{q }{c^2} a_3 \right>^T$  and $F_2(\zeta_0,\zeta_0) = \left<0,0,0,-\frac{ q }{c^2}\left( a_3 + \frac{5 a_5}{3}\right) \right>^T$
+Using \eqref{eq:lineareigs} and \eqref{eq:nonlinear} and denoting $\Psi_{20}^0 = \left<x_1,x_2,x_3,x_4\right>$ in \eqref{eq:A2coef} yields the equations
 
-which implies $\tilde{c} = - \frac{a_3}{c^2} $ for the GPC 1 and $\tilde{c} = -\frac{1}{c^2} \left(a_3 + \frac{5}{3} a_5 \right) $ for the GPC 2.
+\begin{subequations}
+\begin{eqnarray}
+0 &=& x_2 \\
+\tilde{c} &=& \frac{q}{3} x_1 + x_3 \label{eq:A2coefb}\\
+0 &=& \frac{q}{3} x_2 + x_4 \implies x_4 = 0
+\textrm{ using \eqref{eq:A2coefb} }
+\end{eqnarray}
+\end{subequations}
+and
+\begin{equation}
+-\frac{2q}{3} \tilde{c} = \frac{q}{3}\left(\frac{q}{3} x_1 + x_3 \right) + \frac{q}{3 c^2}\left( 3 a_3 + 5 a_5 \right) = \frac{q}{3}\tilde{c} + \frac{q}{3 c^2}\left( 3 a_3 + 5 a_5 \right) 
+\textrm{ using \eqref{eq:A2coefb} }
+\end{equation}
+Hence we obtain 
+\begin{equation}
+\tilde{c} = - \frac{1}{3 c^2} \left(3 a_3 + 5 a_5 \right)
+\end{equation}
 
-Therefore, the normal form for the GPC 1 PDE near $C_0$ is
-
+Therefore, the normal form for \eqref{eq:GPC} near $C_0$ is
 \begin{subequations}
 \begin{eqnarray}
 \frac{dA}{dz} &=& B \\
-\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - \frac{a_3}{c^2}  A^2
+\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - \frac{1}{3 c^2} \left(3 a_3 + 5 a_5 \right) A^2
 \end{eqnarray}
 \end{subequations}
- and the normal form for the GPC 2 PDE near $C_0$ is
-
-\begin{subequations}
-\begin{eqnarray}
-\frac{dA}{dz} &=& B \\
-\frac{dB}{dz} &=& -\frac{\epsilon}{q} A -\frac{1}{c^2} \left(a_3 + \frac{5}{3} a_5 \right)  A^2
-\end{eqnarray}
-\end{subequations}
-
-\subsection{ Near $C_1$ }
-Near $C_1$ the dynamics reduce to a 4-D Center Manifold
-\begin{equation} Y = A \zeta_0 + B \zeta_0 + C \zeta_+ + \bar{C} \zeta_- + \Psi(\epsilon,A,B,C,\bar{C})
-\end{equation}
-
-with 
-\begin{subequations}
-\begin{eqnarray}
-\frac{dA}{dz} &=& B \\ \label{eq:aq}
-\frac{dB}{dz} &=& \bar{\nu} A + b_* A^2 + c_* \left|C\right|^2 \\ \label{eq:bq}
-\frac{dC}{dz} &=& i d_0 C + i \bar{\nu} d_1 C + i d_2 A C \label{eq:cq}
-\end{eqnarray}
-\end{subequations}
-
-where  $\zeta_\pm = \left< 1, \lambda_\pm, 2 q / 3, \frac{\lambda_\pm}{3} q\right>^T$ where 
-
-$\bar{\nu} = -\frac{\epsilon}{q}$, $b_* = -\frac{b \Delta1}{3}$  and $\lambda_\pm = \pm i \sqrt{-q} $. Comparing to the linearized equations gives $d_0 = \sqrt{-q} $.
-
-DONE
-
-ACTUALLY DO THIS: If we do a dominant balance argument after the change of variable $\tilde{\epsilon} = \sqrt{-3 \mu}$ on the characteristic equation as $\lambda \rightarrow 0 $ then we find $d_1 = \frac{ \sqrt{-3 \mu} }{18 \mu^2 } $. Using $\mu=q/3$ we find $d_1 = \frac{\sqrt{-q}}{2 q^2} $ 
-
-To determine $b_*,c_*$ and $d_2$ we expand 
-\begin{equation}\label{eq:psiexp}
-\Psi(\epsilon,A,B,C,\bar{C}) = \epsilon A \Psi_{1000}^1 + \epsilon B \Psi_{0100}^1 + A^2 \Psi_{2000}^0 + A B \Psi_{1100}^0 + A C \Psi_{1010}^0 + \epsilon C \Psi_{0010}^1 + \cdots 
-\end{equation}
-
-Now we use \eqref{eq:aq}, \eqref{eq:bq}, \eqref{eq:cq} in  \eqref{eq:psiexp} when we calculate $\frac{dY}{dz}$. Matching coefficients yields
-
-
-\begin{subequations}
-\begin{eqnarray}
-\mathcal{O}(A^2): &		b_* \zeta_1 &= L_{0q} \Psi_{2000}^0 - F_2(\zeta_0,\zeta_0) \\
-\mathcal{O}(\left|C\right|^2):&	c_* \zeta_1 &= L_{0q} \Psi_{0011}^0 -2 F_2(\zeta_+,\zeta_-) \label{eq:cstar} \\
-\mathcal{O}(\epsilon C): &-\frac{i}{q} \left(d_1 \zeta_+ +  d_0 \Psi_{0010}^1\right) &= L_{0q} \Psi_{0010}^1 - F_2(\Psi_{0010}^1,\Psi_{0010}^1) \\
-\mathcal{O}(A C): 	&i d_2 \zeta_+ + i d_0 \Psi_{1010}^0 &= L_{0q} \Psi_{1010}^0 - 2 F_2(\zeta_0,\zeta_+) \\ \label{eq:AC}
-\end{eqnarray}
-\end{subequations}
-where we have used the fact that $F_2$ is a symmetric bilinear form. Equation \eqref{eq:cstar} is decoupled and yields 
-$ c_* = 2 \Delta_1 \left(\frac{1}{q} + \frac{2 b}{3} \right)$ The only coefficient left to determine is $d_2$ which we shall compute now. 
-
-Put $\Psi_{1010}^0 = \left<x_1,x_2,x_3,x_4\right>^T$  into \eqref{eq:AC} implies 
-
-\begin{subequations}
-\begin{eqnarray}
-i d_2 + i d_0 x_1 &=& x_2 \label{eq:one} \\
-- d_0 d_2 + i d_0 x_2 &=& \frac{q}{3} x_1 + x_3 \label{eq:two} \\
-\frac{2 i q}{3} d_2 + i d_0 x_3 &=& \frac{q}{3} x_2 + x_4  \label{eq:three} \\
-- \frac{q}{3} d_0 d_2 + i d_0 x_4 &=& \frac{q}{3}\left(\frac{q}{3} x_1 + x_3 \right) - \frac{ 2 b q \Delta_1} {3} \label{eq:four}
-\end{eqnarray}
-\end{subequations}
-
-Using \eqref{eq:one} in \eqref{eq:two} , \eqref{eq:two} in \eqref{eq:four} and using these in \eqref{eq:three} yields $ d_2 = \frac{ b \Delta_1 }{ 3 \sqrt{-q} } $.
-
-Therefore the normal form for the MS PDE near $C_1$ is 
-
-\begin{subequations}
-\begin{eqnarray}
-\frac{dA}{dz} &=& B \\ \label{eq:normalA}
-\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - \frac{b \Delta_1 }{3} A^2 + 2 \Delta_1 \left(\frac{1}{q} + \frac{2 b }{3} \right) \left|C\right|^2 \\ \label{eq:normalB}
-\frac{dC}{dz} &=& i \sqrt{-q} C - i \frac{\epsilon \sqrt{-q} }{q^3} C + i \frac{b \Delta_1}{3 \sqrt{-q}} A C \label{eq:normalC}
-\end{eqnarray}
-\end{subequations}
-
 
