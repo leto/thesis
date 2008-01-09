@@ -1,0 +1,69 @@
+\documentclass[letterpaper,12pt,fleqn]{UCF_report}
+\usepackage{amssymb} %% additional symbols and fonts
+\usepackage{amsmath}
+\usepackage{graphicx}  %% for including graphics
+\usepackage[hmargin={1in,1in},top=1.25in,bottom=1in]{geometry} %% Sets up margins
+\usepackage{subeqnarray} %% subsequations, numbered with letters, like (1.1a), (1.1b), etc
+\usepackage{subfig}  %% enables multiple figures in a table-like form with separate captions
+\usepackage{mathrsfs} %% additional scripted letters in math mode
+
+\usepackage[pdftex,colorlinks=true,linkcolor=black,citecolor=black,bookmarksnumbered=true,urlcolor=blue]{hyperref}  %% hyperlinks
+%% and bookmarks
+
+\include{definitions} %% if you have any user defined functions place them in the file "definitions.tex"
+
+\captionsetup[table]{position=top}  %% to make sure table captions are at the top
+\captionsetup[subtable]{position=top}
+\title{Solitary-wave~families~of Dispersive~Nonlinear~Partial~Differential~Equations}
+%% the space without \tilde (~) is the place where the line will be broken
+
+\author{Jonathan Leto}
+
+\prevdegreei{B.S. University of Central Florida, 2004}  %% first degree
+\prevdegreeii{}  %% second degree (optional)
+\prevdegreeiii{}   %% third degree (optional)
+
+\thesisname{thesis}  %% dissertation or thesis choose yours
+\degreename{Masters in Mathematical Science} %% choose yours or cange to: Master of Science/Arts
+\departmentsname{Department of Mathematics} %% mine is Mathematics
+\collegename{College of Science} %% mine is Science
+\termname{Spring} %% it is Summer, Fall or, most likely, Spring
+
+\advisername{S. Roy Choudhury}
+
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+
+\doublespacing  %% it makes double spaced lines, if you want singlespaced use "\singlespacing"
+
+\include{abstract}  %% abstract, dedication and acknowledgments goes to this file,  see "abstrac.tex"
+
+\pdfbookmark[0]{TABLE OF CONTENTS}{tableofcontents}  %% manually ads a bookmark
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\newpage
+
+\pagenumbering{arabic} %% just to set page numbering to regula arabic
+\setcounter{page}{1}  %% and start from page number 1 on the first page of the firs chapter
+
+\include{chapter_1}  %% your chapters are in separate file -- much easier to navigate through the text
+\include{chapter_2}  %% everytime u use include it starts at the top of the new page, so it's good for chapters
+\include{chapter_3}
+\include{chapter_4}
+\include{chapter_5}
+
+\appendix  %% just makes "Chapter" to be called "Appendix"
+
+\include{appendix_A}  
+\include{appendix_B}  %% you may have more than one appendix, use letters to distingush among them
+
+\bibliographystyle{plain} %% you can choose different bibliography style and the rest ia all automatic
+\bibliography{references} %% this is your database with literature
+
+\end{document}
