@@ -1,0 +1,41 @@
+\documentclass[letterpaper,12pt,fleqn]{article}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=2cm]{geometry}
+\usepackage{psfrag}
+\usepackage{pstricks}
+
+\author{Tomasz H. Wlodarczyk}
+\title{Keller Box Scheme -- grid}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{figure}[!h]
+\begin{center}
+  \psset{xunit=6cm}
+  \psset{yunit=4cm}
+\begin{pspicture}(0,0)(1.2,1.2)
+  \psgrid[gridwidth=.7pt,gridcolor=black,griddots=4,gridlabels=0,subgridcolor=black,subgriddiv=4,subgriddots=10](1,1)
+  \psline[linewidth=1pt](.25,.25)(.25,.75)(.75,.75)(.75,.25)(.25,.25)
+  \psline[linewidth=.7pt,arrowsize=5pt]{->}(0,0)(0,1.1)
+  \psline[linewidth=.7pt,arrowsize=5pt]{->}(0,0)(1.1,0)
+  \uput[0](.15,-.1){$j-1$}
+  \uput[0](.40,-.1){$j-\frac{1}{2}$}
+  \uput[0](.70,-.1){$j$}
+  \uput[0](-.24,.253){$n-1$}
+  \uput[0](-.24,.5){$n-\frac{1}{2}$}
+  \uput[0](-.12,.75){$n$}
+  \uput[0](1.05,-.1){$x$}
+  \uput[0](-.11,1.1){$t$}
+  \uput[0](.445,.5){$\times$}
+  \uput[0](.204,.244){$\bullet$}
+  \uput[0](.704,.744){$\bullet$}
+  \uput[0](.704,.244){$\bullet$}
+  \uput[0](.204,.744){$\bullet$}
+\end{pspicture}
+\end{center}
+\end{figure}
+
+\end{document}
