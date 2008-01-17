@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  16 JAN 2008 22:21
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  16 JAN 2008 22:41
 **GPC.tex
 (GPC.tex
 LaTeX2e <2003/12/01>
@@ -274,12 +274,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2381 strings out of 10928
- 25578 string characters out of 73129
+ 2384 strings out of 10928
+ 25595 string characters out of 73129
  80280 words of memory out of 263001
- 5116 multiletter control sequences out of 10000+0
+ 5119 multiletter control sequences out of 10000+0
  11655 words of font info for 48 fonts, out of 200000 for 1000
  175 hyphenation exceptions out of 1000
  34i,10n,43p,305b,269s stack positions out of 300i,100n,500p,30000b,4000s
 
-Output written on GPC.dvi (6 pages, 29264 bytes).
+Output written on GPC.dvi (6 pages, 30720 bytes).
