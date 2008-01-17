@@ -1,12 +1,22 @@
 \begin{thebibliography}{1}
 
+\bibitem{LCZ}
+{\sc {B. Li, Y. Chen and H. Zhang}}, {\em {Travelling Wave Solutions for
+  Generalized Pochammer-Chree Equations}}, Z. Naturforsch., 57a (2002),
+  pp.~874--882.
+
 \bibitem{IA}
 {\sc {Iooss G., Adelmeyer, M.}}, {\em {Topics in Bifurcation Theory and
   Applications}}, World Scientific, Singapore, 1998.
 
-\bibitem{Roy1}
-{\sc {S. Roy Choudhury}}, {\em {Solitary-wave families of the Ostrovsky
-  equation: An approach via reversible systems theory and normal forms }},
-  Elsevier,  (2007), pp.~1468--1479.
+\bibitem{Runz}
+{\sc {X. Runzhang}}, {\em Initial boundary value problem of two classes of
+  evolution equations}, in Fifth IMACS Conf. on Nonlinear Evolution Equations,
+  April 2007.
+
+\bibitem{WM}
+{\sc {Z. Weiguo and W. X. Ma}}, {\em {Explicit Solitary-Wave Solutions to
+  Generalized Pochammer-Chree Equations}}, Appl. Math and Mech., 20 (1999),
+  pp.~666--674.
 
 \end{thebibliography}

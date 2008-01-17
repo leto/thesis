@@ -3,44 +3,44 @@ The top-level auxiliary file: GPC.aux
 The style file: siam.bst
 Reallocated wiz_functions (elt_size=4) to 3000 items from 0.
 Database file #1: GPC.bib
-You've used 2 entries,
+You've used 4 entries,
             2030 wiz_defined-function locations,
-            510 strings with 3971 characters,
-and the built_in function-call counts, 619 in all, are:
-= -- 57
-> -- 14
+            526 strings with 4230 characters,
+and the built_in function-call counts, 1157 in all, are:
+= -- 105
+> -- 28
 < -- 0
-+ -- 6
-- -- 4
-* -- 41
-:= -- 98
-add.period$ -- 2
-call.type$ -- 2
-change.case$ -- 7
++ -- 12
+- -- 8
+* -- 78
+:= -- 181
+add.period$ -- 4
+call.type$ -- 4
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 34
-empty$ -- 56
-format.name$ -- 4
-if$ -- 136
+cite$ -- 4
+duplicate$ -- 66
+empty$ -- 109
+format.name$ -- 8
+if$ -- 255
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 3
-newline$ -- 9
-num.names$ -- 4
-pop$ -- 10
+int.to.str$ -- 4
+missing$ -- 5
+newline$ -- 15
+num.names$ -- 8
+pop$ -- 19
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 12
 quote$ -- 0
-skip$ -- 26
+skip$ -- 48
 stack$ -- 0
-substring$ -- 46
-swap$ -- 14
+substring$ -- 76
+swap$ -- 24
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 14
 warning$ -- 0
-while$ -- 6
-width$ -- 3
-write$ -- 20
+while$ -- 12
+width$ -- 5
+write$ -- 37
