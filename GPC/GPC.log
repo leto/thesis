@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  16 JAN 2008 22:41
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  18 JAN 2008 00:25
 **GPC.tex
 (GPC.tex
 LaTeX2e <2003/12/01>
@@ -246,40 +246,19 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 19.
 (/usr/local/share/texmf/tex/latex/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) (abstract.tex) (section1.tex)
-(section2.tex [1]
-
-LaTeX Warning: Reference `eq:GPC' on page 2 undefined on input line 42.
-
-
-LaTeX Warning: Reference `eq:GPC' on page 2 undefined on input line 54.
-
-) (section3.tex [2]
-
-LaTeX Warning: Reference `eq:GPC' on page 3 undefined on input line 48.
-
-[3]
-
-LaTeX Warning: Reference `eq:GPC' on page 4 undefined on input line 144.
-
-) (section4.tex [4] [5]
-
-LaTeX Warning: Reference `eq:GPC' on page 6 undefined on input line 118.
-
-) (acknowledge.tex) (GPC.bbl) [6] (GPC.aux)
-
-LaTeX Warning: There were undefined references.
-
+(section2.tex [1]) (section3.tex [2] [3]) (section4.tex [4] [5])
+(acknowledge.tex) (GPC.bbl [6]) [7] (GPC.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2384 strings out of 10928
- 25595 string characters out of 73129
- 80280 words of memory out of 263001
- 5119 multiletter control sequences out of 10000+0
+ 2385 strings out of 10928
+ 25613 string characters out of 73129
+ 81280 words of memory out of 263001
+ 5120 multiletter control sequences out of 10000+0
  11655 words of font info for 48 fonts, out of 200000 for 1000
  175 hyphenation exceptions out of 1000
- 34i,10n,43p,305b,269s stack positions out of 300i,100n,500p,30000b,4000s
+ 34i,10n,43p,305b,394s stack positions out of 300i,100n,500p,30000b,4000s
 
-Output written on GPC.dvi (6 pages, 30720 bytes).
+Output written on GPC.dvi (7 pages, 31636 bytes).
