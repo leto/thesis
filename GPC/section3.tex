@@ -29,7 +29,7 @@ where
 \end{subequations}
 
 We wish to rewrite this as a first order reversible system in order to invoke the relevant theory \cite{IA}. 
-To that end, defining  $Y=\left<y_1,y_2,y_3,y_4\right>^T$ \eqref{eq:system} may be written 
+To that end, defining  $Y=\left<y_1,y_2,y_3,y_4\right>^T$ equation \eqref{eq:system} may be written 
 
 \begin{equation}\label{eq:bilinear}
 \frac{ dY }{ dz } = L_{pq} Y - G_{1,2}(Y,Y)
@@ -161,8 +161,8 @@ for \eqref{eq:GPC1} and
 for \eqref{eq:GPC2}.
 
 The normal form \eqref{eq:c0nfgpc1} admits a homoclinic solution (near $C_0$) of the form 
-\begin{equation}
-A\left(z\right) = \ell  sech^2{k z}
+\begin{equation} \label{eq:soliton1}
+A\left(z\right) = \ell \space sech^2\left(k z\right)
 \end{equation}
 
 with 
@@ -175,26 +175,38 @@ k &=& \sqrt{\frac{-\epsilon}{4q}}  \\
 
 
 Similarly, the normal form \eqref{eq:c0nfgpc2} admits a homoclinic solution (near $C_0$) of the form 
-\begin{equation}\label{eq:soliton}
-A\left(z\right) = \ell  sech^2{k z}
+\begin{equation}\label{eq:soliton2}
+A\left(z\right) = \ell \space sech^2\left(k z\right)
 \end{equation}
 
 with 
 \begin{subequations} 
 \begin{eqnarray}
-k &=& \sqrt{\frac{-\epsilon}{4q}}  \\
+k &=& \sqrt{\frac{-\epsilon}{4q}} \label{eq:keq} \\
 \ell &=& \frac{ - 3 \epsilon c^2 }{2 q \left(3 a_3 + 5 a_5\right) } 
 \end{eqnarray}
 \end{subequations}
 
 Hence, since $\epsilon = - p $, and the curve $C_0$ corresponds to $p=0,q>0$, solitary waves of the 
-form \eqref{eq:soliton} exist in the vicinity of $C_0$ for 
+form \eqref{eq:soliton1} exist in the vicinity of $C_0$ for 
 
 \begin{equation}
 p > 0, q > 0 
 \end{equation}
-
-such that $k$ in \eqref{eq:soliton} is real. As mentioned in section 2, one may show the persistence
-of this homoclinic solution in the original travelling wave ODE \eqref{eq:asdf}. Thus, we have 
+which implies that $a_1 < c^2 $ (such that $k$ in \eqref{eq:keq} is real.)  As mentioned in section 2, one may show the persistence
+of this homoclinic solution in the original travelling wave ODE \eqref{eq:linode}. Thus, we have 
 demonstrated the existence of solitary waves of \eqref{eq:GPC2} for $p=0^+, q>0$. 
+
+Similarly, the curve $C_1$ corresponds to $p=0,q<0$, solitary waves of the form \eqref{eq:soliton1} exist
+in the vicinity of $C_1$ for 
+
+\begin{equation}
+p < 0, q < 0 
+\end{equation}
+
+which implies $ a_1 > c^2 $.
+
+Again, one may show the persistence
+of this homoclinic solution in the original travelling wave ODE \eqref{eq:linode}. Thus, we have 
+demonstrated the existence of solitary waves of \eqref{eq:GPC2} for $p=0^-, q<0$.
 
