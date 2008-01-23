@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  22 JAN 2008 23:09
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  23 JAN 2008 08:09
 **GPC.tex
 (GPC.tex
 LaTeX2e <2003/12/01>
@@ -204,15 +204,6 @@ LaTeX Warning: Label `eq:three' multiply defined.
 
 LaTeX Warning: Label `eq:four' multiply defined.
 
-
-LaTeX Warning: Label `eq:normalA' multiply defined.
-
-
-LaTeX Warning: Label `eq:normalB' multiply defined.
-
-
-LaTeX Warning: Label `eq:normalC' multiply defined.
-
 )
 \openout1 = `GPC.aux'.
 
@@ -246,19 +237,52 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 19.
 (/usr/local/share/texmf/tex/latex/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) (abstract.tex) (section1.tex)
-(section2.tex [1]) (section3.tex [2] [3] [4]) (section4.tex [5] [6])
-(acknowledge.tex) (GPC.bbl) [7] (GPC.aux)
+(section2.tex [1]) (section3.tex [2] [3] [4]) (section4.tex [5] [6]
+
+LaTeX Warning: Citation `blah' on page 7 undefined on input line 136.
+
+
+LaTeX Warning: Citation `blah' on page 7 undefined on input line 136.
+
+
+LaTeX Warning: Citation `blah' on page 7 undefined on input line 136.
+
+
+LaTeX Warning: Citation `blah' on page 7 undefined on input line 136.
+
+
+LaTeX Warning: Citation `asd' on page 7 undefined on input line 161.
+
+
+LaTeX Warning: Citation `adfad' on page 7 undefined on input line 161.
+
+
+LaTeX Warning: Citation `adf' on page 7 undefined on input line 163.
+
+
+LaTeX Warning: Citation `adsf' on page 7 undefined on input line 164.
+
+
+LaTeX Warning: Citation `adf' on page 7 undefined on input line 164.
+
+
+LaTeX Warning: Citation `adf' on page 7 undefined on input line 166.
+
+) (acknowledge.tex) (GPC.bbl [7]) [8] (GPC.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2388 strings out of 10928
- 25647 string characters out of 73129
+ 2398 strings out of 10928
+ 25766 string characters out of 73129
  80280 words of memory out of 263001
- 5123 multiletter control sequences out of 10000+0
+ 5133 multiletter control sequences out of 10000+0
  11655 words of font info for 48 fonts, out of 200000 for 1000
  175 hyphenation exceptions out of 1000
- 34i,10n,43p,305b,269s stack positions out of 300i,100n,500p,30000b,4000s
+ 34i,10n,43p,305b,394s stack positions out of 300i,100n,500p,30000b,4000s
 
-Output written on GPC.dvi (7 pages, 33452 bytes).
+Output written on GPC.dvi (8 pages, 37192 bytes).

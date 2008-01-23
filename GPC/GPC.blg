@@ -3,9 +3,14 @@ The top-level auxiliary file: GPC.aux
 The style file: siam.bst
 Reallocated wiz_functions (elt_size=4) to 3000 items from 0.
 Database file #1: GPC.bib
+Warning--I didn't find a database entry for "blah"
+Warning--I didn't find a database entry for "asd"
+Warning--I didn't find a database entry for "adfad"
+Warning--I didn't find a database entry for "adf"
+Warning--I didn't find a database entry for "adsf"
 You've used 7 entries,
             2030 wiz_defined-function locations,
-            550 strings with 4566 characters,
+            555 strings with 4585 characters,
 and the built_in function-call counts, 2152 in all, are:
 = -- 207
 > -- 49
@@ -44,3 +49,4 @@ warning$ -- 0
 while$ -- 24
 width$ -- 8
 write$ -- 64
+(There were 5 warnings)
