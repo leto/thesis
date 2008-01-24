@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  23 JAN 2008 23:05
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  23 JAN 2008 23:43
 **MS.tex
 (MS.tex
 LaTeX2e <2003/12/01>
@@ -224,101 +224,20 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 19.
 
 (/usr/local/share/texmf/tex/latex/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) (abstract.tex) (section1.tex
-
-LaTeX Warning: Citation `basd' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `basdf' on page 1 undefined on input line 12.
-
-
-LaTeX Warning: Citation `adsf' on page 1 undefined on input line 12.
-
-
-LaTeX Warning: Reference `blah' on page 1 undefined on input line 14.
-
-
-LaTeX Warning: Reference `eqbasd' on page 1 undefined on input line 14.
-
-
-LaTeX Warning: Citation `asdf' on page 1 undefined on input line 16.
-
-
-LaTeX Warning: Citation `asdf' on page 1 undefined on input line 16.
-
-
-LaTeX Warning: Citation `asdf' on page 1 undefined on input line 16.
-
-) (section2.tex [1]) (section3.tex [2] [3]
-
-LaTeX Warning: Reference `eq:keq' on page 4 undefined on input line 160.
-
-) (section4.tex [4] [5]
-
-LaTeX Warning: Citation `IK' on page 6 undefined on input line 116.
-
-
-LaTeX Warning: Citation `Lombardi1' on page 6 undefined on input line 116.
-
-
-LaTeX Warning: Citation `Lombardi2' on page 6 undefined on input line 116.
-
-
-LaTeX Warning: Reference `eq:GPC1' on page 6 undefined on input line 126.
-
-
-LaTeX Warning: Reference `eq:GPC2' on page 6 undefined on input line 126.
-
-
-LaTeX Warning: Reference `eq:GPC1' on page 6 undefined on input line 127.
-
-
-LaTeX Warning: Reference `eq:GPC1normalA' on page 6 undefined on input line 137
-.
-
-
-LaTeX Warning: Reference `eq:GPC2normalA' on page 6 undefined on input line 137
-.
-
-
-LaTeX Warning: Reference `eq:GPC1' on page 6 undefined on input line 137.
-
-
-LaTeX Warning: Reference `eq:GPC2' on page 6 undefined on input line 137.
-
-
-LaTeX Warning: Citation `Lombardi1' on page 6 undefined on input line 141.
-
-
-LaTeX Warning: Citation `Lombardi2' on page 6 undefined on input line 141.
-
-
-LaTeX Warning: Citation `IK' on page 6 undefined on input line 143.
-
-
-LaTeX Warning: Citation `Lombardi1' on page 6 undefined on input line 144.
-
-
-LaTeX Warning: Citation `Lombardi2' on page 6 undefined on input line 144.
-
-
-LaTeX Warning: Citation `CMYK' on page 6 undefined on input line 146.
-
-) (acknowledge.tex) (MS.bbl [6]) [7] (MS.aux)
-
-LaTeX Warning: There were undefined references.
-
+) (abstract.tex) (section1.tex)
+(section2.tex [1]) (section3.tex [2] [3]) (section4.tex [4] [5] [6])
+(acknowledge.tex) (MS.bbl) [7] (MS.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2394 strings out of 10928
- 25703 string characters out of 73129
- 78280 words of memory out of 263001
- 5129 multiletter control sequences out of 10000+0
+ 2389 strings out of 10928
+ 25638 string characters out of 73129
+ 79280 words of memory out of 263001
+ 5124 multiletter control sequences out of 10000+0
  11655 words of font info for 48 fonts, out of 200000 for 1000
  175 hyphenation exceptions out of 1000
  34i,10n,43p,304b,269s stack positions out of 300i,100n,500p,30000b,4000s
 
-Output written on MS.dvi (7 pages, 29840 bytes).
+Output written on MS.dvi (7 pages, 31412 bytes).

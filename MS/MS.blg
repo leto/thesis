@@ -3,53 +3,44 @@ The top-level auxiliary file: MS.aux
 The style file: siam.bst
 Reallocated wiz_functions (elt_size=4) to 3000 items from 0.
 Database file #1: MS.bib
-Warning--I didn't find a database entry for "basd"
-Warning--I didn't find a database entry for "basdf"
-Warning--I didn't find a database entry for "adsf"
-Warning--I didn't find a database entry for "asdf"
-Warning--I didn't find a database entry for "IK"
-Warning--I didn't find a database entry for "Lombardi1"
-Warning--I didn't find a database entry for "Lombardi2"
-Warning--I didn't find a database entry for "CMYK"
-You've used 1 entry,
+You've used 10 entries,
             2030 wiz_defined-function locations,
-            515 strings with 3876 characters,
-and the built_in function-call counts, 227 in all, are:
-= -- 15
-> -- 7
+            566 strings with 5024 characters,
+and the built_in function-call counts, 3154 in all, are:
+= -- 317
+> -- 64
 < -- 0
-+ -- 3
-- -- 2
-* -- 15
-:= -- 45
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 3
++ -- 28
+- -- 18
+* -- 211
+:= -- 459
+add.period$ -- 10
+call.type$ -- 10
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 13
-empty$ -- 24
-format.name$ -- 2
-if$ -- 44
+cite$ -- 10
+duplicate$ -- 176
+empty$ -- 273
+format.name$ -- 18
+if$ -- 719
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 2
-newline$ -- 6
-num.names$ -- 2
-pop$ -- 7
+int.to.str$ -- 10
+missing$ -- 11
+newline$ -- 33
+num.names$ -- 18
+pop$ -- 33
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 30
 quote$ -- 0
-skip$ -- 5
+skip$ -- 156
 stack$ -- 0
-substring$ -- 5
-swap$ -- 2
+substring$ -- 258
+swap$ -- 80
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2
+type$ -- 38
 warning$ -- 0
-while$ -- 2
-width$ -- 2
-write$ -- 11
-(There were 8 warnings)
+while$ -- 32
+width$ -- 12
+write$ -- 90
