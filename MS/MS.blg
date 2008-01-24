@@ -7,9 +7,13 @@ Warning--I didn't find a database entry for "basd"
 Warning--I didn't find a database entry for "basdf"
 Warning--I didn't find a database entry for "adsf"
 Warning--I didn't find a database entry for "asdf"
+Warning--I didn't find a database entry for "IK"
+Warning--I didn't find a database entry for "Lombardi1"
+Warning--I didn't find a database entry for "Lombardi2"
+Warning--I didn't find a database entry for "CMYK"
 You've used 1 entry,
             2030 wiz_defined-function locations,
-            507 strings with 3828 characters,
+            515 strings with 3876 characters,
 and the built_in function-call counts, 227 in all, are:
 = -- 15
 > -- 7
@@ -48,4 +52,4 @@ warning$ -- 0
 while$ -- 2
 width$ -- 2
 write$ -- 11
-(There were 4 warnings)
+(There were 8 warnings)
