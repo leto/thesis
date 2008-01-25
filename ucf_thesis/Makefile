@@ -1,8 +1,8 @@
 thesis:
-	latex thesis.tex
+	pdftex thesis.tex
 	bibtex references
 	bibtex references
-	latex thesis.tex
+	pdftex thesis.tex
 	 
 
 clean: 

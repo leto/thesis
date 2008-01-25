@@ -1,0 +1,113 @@
+This is TeX, Version 3.14159 (Web2C 7.2) (format=tex 2007.5.3)  8 JAN 2008 22:21
+**pdftexcmds.dtx
+(pdftexcmds.dtx (/usr/local/share/texmf/tex/latex/docstrip.tex
+\blockLevel=\count26
+\emptyLines=\count27
+\processedLines=\count28
+\commentsRemoved=\count29
+\commentsPassed=\count30
+\codeLinesPassed=\count31
+\TotalprocessedLines=\count32
+\TotalcommentsRemoved=\count33
+\TotalcommentsPassed=\count34
+\TotalcodeLinesPassed=\count35
+\NumberOfFiles=\count36
+\inFile=\read0
+\inputcheck=\read1
+\@tempcnta=\count37
+\off@0=\count38
+\off@1=\count39
+\off@2=\count40
+\off@3=\count41
+\off@4=\count42
+\off@5=\count43
+\off@6=\count44
+\off@7=\count45
+\off@8=\count46
+\off@9=\count47
+\off@10=\count48
+\off@11=\count49
+\off@12=\count50
+\off@13=\count51
+\off@14=\count52
+\off@15=\count53
+\@temptokena=\toks12
+\@maxfiles=\count54
+\@maxoutfiles=\count55
+
+Utility: `docstrip' 2.5c <2003/09/18>
+English documentation    <1999/03/31>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+)
+************************************************************************
+* Installation
+* Package: pdftexcmds 2007/12/12 v0.3 LuaTeX support for pdfTeX utility functio
+ns (HO)
+************************************************************************
+
+Generating file(s) pdftexcmds.ins pdftexcmds.drv pdftexcmds.sty 
+\openout0 = `pdftexcmds.ins'.
+
+\openout1 = `pdftexcmds.drv'.
+
+\openout2 = `pdftexcmds.sty'.
+
+
+Processing file pdftexcmds.dtx (install) -> pdftexcmds.ins
+                               (driver) -> pdftexcmds.drv
+                               (package) -> pdftexcmds.sty
+File pdftexcmds.dtx ended by \endinput.
+Lines  processed: 1353
+Comments removed: 616
+Comments  passed: 0
+Codelines passed: 723
+
+
+Generating file(s) oberdiek.pdftexcmds.lua pdftexcmds.lua 
+\openout0 = `oberdiek.pdftexcmds.lua'.
+
+\openout1 = `pdftexcmds.lua'.
+
+
+Processing file pdftexcmds.dtx (lua) -> oberdiek.pdftexcmds.lua
+                               (lua) -> pdftexcmds.lua
+File pdftexcmds.dtx ended by \endinput.
+Lines  processed: 1353
+Comments removed: 616
+Comments  passed: 0
+Codelines passed: 723
+
+************************************************************************
+*
+* To finish the installation you have to move the following
+* file into a directory searched by TeX:
+*
+*     pdftexcmds.sty
+*
+* And install the following script files:
+*
+*     oberdiek.pdftexcmds.lua, pdftexcmds.lua
+*
+* To produce the documentation run the file `pdftexcmds.drv'
+* through LaTeX.
+*
+* Happy TeXing!
+*
+************************************************************************
+Overall statistics:
+Files  processed: 2
+Lines  processed: 2706
+Comments removed: 1232
+Comments  passed: 0
+Codelines passed: 1446
+ )
+No pages of output.
