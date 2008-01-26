@@ -1,8 +1,60 @@
 \chapter{CHAPTER TWO: LITERATURE REVIEW} \label{chapter_2}
 
-Chapter Two, the Literature Review, usually presents an overview of all literature researched during the course of the thesis or dissertation. Of all chapters in the document, the Literature Review uses sources most frequently, so proper documentation is essential.
-Check with your adviser if you aren’t sure about what style your college uses. Some common reference systems include: APA, MLA, IEEE, Chicago and Turabian. For formatting purposes, UCF requires only that you use a reference style properly and consistently, and that you format reference pages according to ETD standards. When in question, UCF formatting requirements supersede all department and reference style requirements.
+
+Solitary waves of \eqref{eq:GPC1} and \eqref{eq:GPC2} of the form 
+$v(x,t) = \phi\left(x - c t\right) = \phi\left(z\right)$
+ satisfy the fourth-order travelling wave ODE
+\begin{equation} \label{eq:ode} \phi_{zzzz} - q \phi_{zz} + p \phi = \mathcal{N}_{1,2}[\phi]
+\end{equation}
+
+where 
+\begin{subequations}
+\begin{eqnarray}
+\mathcal{N}_1\left[\phi\right] &=& - \frac{1}{c^2}\left[  3 a_3 \left( 2 \phi \phi_z^2 + \phi^2 \phi_{zz} \right) + 2 a_2\left( \phi_{zz} \phi_z + \phi_z^2\right) \right] \\
+\mathcal{N}_2\left[\phi\right] &=& - \frac{1}{c^2}\left[ 3 a_3 \left( 2 \phi \phi_z^2 + \phi^2 \phi_{zz}\right) + 5 a_5 \left( 4 \phi^3 \phi_z^2 + \phi^4 \phi_{zz} \right) \right]
+\end{eqnarray}
+\end{subequations}
+
+\begin{subequations}
+\begin{eqnarray}
+z &\equiv& x - c t\\
+p &\equiv& 0\label{eq:pdef} \\
+q &\equiv & 1 - \frac{a_1}{c^2} \label{eq:qdef} \\
+\end{eqnarray}
+\end{subequations}
+
+Equation \eqref{eq:ode} is invariant under the transformation $ z \mapsto -z $ and is thus a reversible system. In this section we shall
+use the theory of reversible systems to characterize the homoclinic orbits to the fixed point of \eqref{eq:ode}, which correspond to pulses
+or solitary waves of the Micro-Structure PDE in various regions of the $(p,q)$ plane.
+
+The linearized system corresponding to \eqref{eq:ode}
+\begin{equation}
+ \label{eq:linode} \phi_{zzzz} - q \phi_{zz} + p \phi = 0
+\end{equation}
+has a fixed point \begin{equation}\label{eq:fp} \phi = \phi_z = \phi_{zz} = \phi_{zzz} = 0 \end{equation}
+
+Solutions $\phi = k e^{\lambda x}$ satisfy the characteristic equation
+$\lambda^4 - q \lambda^2 + p = 0 $ from which one may deduce that the structure
+of the eigenvalues is distinct in two regions of $\left(p,q\right)$-space.
+Since $p=0$ we have only two possible regions of eigenvalues.  We denote $C_0$
+as the positive $q$ axis and $C_1$ the negative $q$-axis. First we shall 
+consider the bounding curves $C_0$ and $C_1$ and their neighborhoods, then we shall discusss the possible
+occurence and multiplicities of homoclinic orbits to \eqref{eq:fp}, corresponding
+to pulse solitary waves of \eqref{eq:GPC1} and \eqref{eq:GPC2}, in each region:
+
+\begin{description}
+\item[Near $C_0$] 
+The eigenvalues have the structure $\lambda_{1-4} = 0,0,\pm \lambda$, ($\lambda \in \mathbb{R}$) and the fixed point
+\eqref{eq:fp} is a saddle-focus.
+\item[Near $C_1$] 
+Here the eigenvalues have the structure $\lambda_{1-4} = 0,0,\pm i \omega $, ($\omega \in \mathbb{R} $) . We will show by analysis of a
+four-dimensional normal form in Section 4 that there exists a $sech^2$ homoclinic orbit near $C_1$.
+\end{description}
+
+Having outlined the possible families of orbits homoclinic to the fixed point \eqref{eq:fp} of \eqref{eq:linode},
+corresponding to pulse solitary waves of \eqref{eq:GPC1} and \eqref{eq:GPC2}, we now derive normal forms near the transition curves $C_0$ and $C_1$
+to confirm the existence of regular or delocalized solitary waves in the corresponding regions of $\left(p,q\right)$ parameter space.
+
 
 \section{First-level Subheading}
 
-All subheadings receive the same formatting chapter to chapter. First-level subheadings in Chapter Two should look identical to the ones in Chapter One.

@@ -1,5 +1,6 @@
 thesis:
-	rubber --pdf thesis.tex	
+	rubber -s -f --pdf thesis.tex	
+	evince thesis.pdf
 
 
 clean: 
