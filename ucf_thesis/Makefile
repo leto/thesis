@@ -1,5 +1,5 @@
 thesis:
-	rubber -s -f --pdf thesis.tex	
+	rubber -v -f --pdf thesis.tex	
 	evince thesis.pdf
 
 
