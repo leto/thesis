@@ -1,4 +1,4 @@
-This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  1 FEB 2008 22:16
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 2007.5.3)  6 FEB 2008 20:47
 **MS.tex
 (MS.tex
 LaTeX2e <2003/12/01>
@@ -238,6 +238,6 @@ Here is how much of TeX's memory you used:
  5124 multiletter control sequences out of 10000+0
  11655 words of font info for 48 fonts, out of 200000 for 1000
  175 hyphenation exceptions out of 1000
- 34i,10n,43p,304b,269s stack positions out of 300i,100n,500p,30000b,4000s
+ 34i,10n,43p,304b,394s stack positions out of 300i,100n,500p,30000b,4000s
 
-Output written on MS.dvi (7 pages, 31444 bytes).
+Output written on MS.dvi (7 pages, 31324 bytes).
