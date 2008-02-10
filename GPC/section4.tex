@@ -20,8 +20,8 @@ Y = A \zeta_0 + B \zeta_0 + C \zeta_+ + \bar{C} \zeta_- + \Psi(\epsilon,A,B,C,\b
 with  a corresponding four-dimensional normal form
 \begin{subequations}\label{eq:c1nf}
 \begin{eqnarray}
-\frac{dA}{dz} &=& B \\ \label{eq:aq}
-\frac{dB}{dz} &=& \bar{\nu} A + b_* A^2 + c_* \left|C\right|^2 \\ \label{eq:bq}
+\frac{dA}{dz} &=& B  \label{eq:aq} \\
+\frac{dB}{dz} &=& \bar{\nu} A + b_* A^2 + c_* \left|C\right|^2  \label{eq:bq} \\
 \frac{dC}{dz} &=& i d_0 C + i \bar{\nu} d_1 C + i d_2 A C \label{eq:cq}
 \end{eqnarray}
 \end{subequations}
@@ -31,7 +31,7 @@ complex eigenvectors co-spanning the Center Manifold are
 \zeta_\pm	 = \left< 1, \lambda_\pm, 2 q / 3, \frac{\lambda_\pm}{3} q\right>^T 
 \end{equation}
 
-Using \eqref{eq:bq} and \eqref{eq:c0nf}
+Using \eqref{eq:c1nf} and \eqref{eq:c0nf} implies
 \begin{equation}
 \bar{\nu} = b \epsilon = -\frac{\epsilon}{q} 
 \end{equation}
@@ -53,7 +53,12 @@ d_0 = \sqrt{-q}
 \end{equation}
 
 
-If we do a dominant balance argument after the change of variable $\epsilon = \sqrt{-3 \alpha}$ on the characteristic equation as $\lambda \rightarrow 0 $ then we find $d_1 = \frac{ \sqrt{-3 \alpha} }{18 \alpha^2 } $. Using $\alpha=q/3$ we find $d_1 = \frac{\sqrt{-q}}{2 q^2} $ .
+With a  dominant balance argument after the change of variable $\epsilon = \sqrt{-3 \alpha}$ on the characteristic equation as $\lambda \rightarrow 0 $ 
+we find $ d_1 = \frac{ \sqrt{-3 \alpha} }{18 \alpha^2 } $. 
+Using $\alpha=q/3$ this implies 
+\begin{equation}
+d_1 = \frac{\sqrt{-q}}{2 q^2} 
+\end{equation}
 
 The remaining undetermined coefficients  in the normal form are the 
 coefficients $b_*,c_*$ and $d_2$ 
@@ -88,8 +93,12 @@ separate expressions for $dY/dz$ yields the following two systems of equations:
 \end{eqnarray}
 \end{subequations}
 where we have used the fact that $G_1$ and $G_2$ are symmetric bilinear forms. Equation \eqref{eq:cstar} is decoupled and yields 
-$ c_* = \frac{8}{c^2}\left( 2 a_3 - a_2 \right)$ for \eqref{eq:GPC1} and 
-$ c_* = \frac{1}{c^2}\left( 16 a_3 + \frac{140}{3} a_5 \right)$ for \eqref{eq:GPC2}. The only coefficient left to determine is $d_2$ which we shall compute now. 
+$ c_* = \frac{8}{c^2}\left( 2 a_3 - a_2 \right)$
+and 
+$ c_* = \frac{1}{c^2}\left( 16 a_3 + \frac{140}{3} a_5 \right) $
+for \eqref{eq:GPC2}.
+
+The only coefficient left to determine is $d_2$ which we shall compute now. 
 
 Using $\Psi_{1010}^0 = \left<x_1,x_2,x_3,x_4\right>^T$ in \eqref{eq:AC} implies 
 \begin{subequations}
@@ -111,7 +120,7 @@ i d_2 + i d_0 x_1 &=& x_2 \label{eq:gpc2one} \\
 \end{subequations}
 for \eqref{eq:GPC2}
 
-Using \eqref{eq:gpc1one} in \eqref{eq:gpc1two} , \eqref{eq:gpc1two} in \eqref{eq:gpc1four} and using these in \eqref{eq:gpc1three} yields 
+Using \eqref{eq:gpc1one} in \eqref{eq:gpc1two}, \eqref{eq:gpc1two} in \eqref{eq:gpc1four} and using these in \eqref{eq:gpc1three} yields 
 $ d_2 = \frac{1}{c^2}\left( \frac{7}{2 \sqrt{-q} } a_3 - \frac{i}{3} a_2 \right)$ for \eqref{eq:GPC1}.
 Similarly using \eqref{eq:gpc2one} in \eqref{eq:gpc2two} , \eqref{eq:gpc2two} in \eqref{eq:gpc2four} and using these in \eqref{eq:gpc2three}  yields
 $ d_2 = \frac{1}{\sqrt{-q} c^2}\left( \frac{7}{2 } a_3 + \frac{32}{3} a_5 \right)$  for \eqref{eq:GPC2}. 
@@ -120,7 +129,7 @@ Therefore the normal form near $C_1$ is
 \begin{subequations}\label{eq:GPC1normal}
 \begin{eqnarray} \label{eq:GPC1normalA}
 \frac{dA}{dz} &=& B \\ 
-\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - b_* A^2 + \frac{1}{c^2}\left( \frac{7}{2 \sqrt{-q} } a_3 - \frac{i}{3} a_2 \right)  \left|C\right|^2 \\ \label{eq:GPC1normalB}
+\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - b_* A^2 + \frac{1}{c^2}\left( \frac{7}{2 \sqrt{-q} } a_3 - \frac{i}{3} a_2 \right)  \left|C\right|^2  \label{eq:GPC1normalB} \\
 \frac{dC}{dz} &=& i \sqrt{-q} C - i \frac{\sqrt{-q} }{q^3} C\epsilon + i \frac{1}{c^2}\left( \frac{7}{2 \sqrt{-q} } a_3 - \frac{i}{3} a_2 \right)A C \label{eq:GPC1normalC}
 \end{eqnarray}
 \end{subequations}
@@ -128,7 +137,7 @@ for \eqref{eq:GPC1} and
 \begin{subequations}\label{eq:GPC2normal}
 \begin{eqnarray} \label{eq:GPC2normalA}
 \frac{dA}{dz} &=& B \\ 
-\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - b_* A^2 + \frac{1}{c^2}\left( 16 a_3 + \frac{140}{3} a_5 \right)  \left|C\right|^2 \\ \label{eq:GPC2normalB}
+\frac{dB}{dz} &=& -\frac{\epsilon}{q} A - b_* A^2 + \frac{1}{c^2}\left( 16 a_3 + \frac{140}{3} a_5 \right)  \left|C\right|^2  \label{eq:GPC2normalB} \\
 \frac{dC}{dz} &=& i \sqrt{-q} C - i \frac{\sqrt{-q} }{q^3} C\epsilon + i \frac{1}{\sqrt{-q} c^2}\left( \frac{7}{2 } a_3 + \frac{32}{3} a_5 \right)A C \label{eq:GPC2normalC}
 \end{eqnarray}
 \end{subequations}
