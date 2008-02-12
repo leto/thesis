@@ -16,10 +16,10 @@ MS-compile:
 	ps2pdf MS.ps
 
 zip: MS-compile
-	zip MS_latex.zip Makefile MS.bib *.tex unsrt.bst
+	zip MS_source.zip Makefile MS.bib *.tex unsrt.bst homoclinic*
 
 backup: MS-compile
-	tar -f MS_latex.tar Makefile MS.bib *.tex  unsrt.bst
+	tar -f MS_latex.tar Makefile MS.bib *.tex  unsrt.bst homoclinic*
 	gzip MS_latex.tar
 
 clean: 

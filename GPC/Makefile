@@ -16,7 +16,7 @@ GPC-compile:
 	ps2pdf GPC.ps
 
 zip: GPC-compile
-	zip GPC_latex.zip Makefile GPC.bib *.tex unsrt.bst
+	zip GPC_source.zip Makefile GPC.bib *.tex unsrt.bst homoclinic*
 
 clean: 
 	rm GPC_latex.zip ||  rm *.bbl *.blg *.aux *.log *.dvi || true
