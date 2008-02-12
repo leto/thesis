@@ -16,10 +16,10 @@ MS-compile:
 	ps2pdf MS.ps
 
 zip: MS-compile
-	zip MS_latex.zip Makefile MS.bib *.tex psfrag.pro siam.bst
+	zip MS_latex.zip Makefile MS.bib *.tex unsrt.bst
 
 backup: MS-compile
-	tar -f MS_latex.tar Makefile MS.bib *.tex psfrag.pro siam.bst
+	tar -f MS_latex.tar Makefile MS.bib *.tex  unsrt.bst
 	gzip MS_latex.tar
 
 clean: 
