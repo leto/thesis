@@ -11,7 +11,7 @@ a_1 > c^2
 In order to investigate the possibility of a $ sech^2 $  homoclinic orbit in the neighborhood of $C_1$ and delocalized solitary
 waves, we next compute the normal form near $C_1$ following the procedure in \cite{IA}.
 
-Near $C_1$ the dynamics reduce to a 4-D Center Manifold \cite{IA}
+Near $C_1$ the dynamics reduce to a four-dimensional Center Manifold \cite{IA}.
 Since all the eigenvalues are non-hyperbolic, the Center Manifold has the form (a nonlinear coordinate change \cite{IA})
 \begin{equation} \label{eq:c1cm}
 Y = A \zeta_0 + B \zeta_0 + C \zeta_+ + \bar{C} \zeta_- + \Psi(\epsilon,A,B,C,\bar{C})
@@ -20,9 +20,9 @@ Y = A \zeta_0 + B \zeta_0 + C \zeta_+ + \bar{C} \zeta_- + \Psi(\epsilon,A,B,C,\b
 with  a corresponding four-dimensional normal form
 \begin{subequations}\label{eq:c1nf}
 \begin{eqnarray}
-\frac{dA}{dz} &=& B  \label{eq:aq} \\
-\frac{dB}{dz} &=& \bar{\nu} A + b_* A^2 + c_* \left|C\right|^2  \label{eq:bq} \\
-\frac{dC}{dz} &=& i d_0 C + i \bar{\nu} d_1 C + i d_2 A C \label{eq:cq}
+\frac{dA}{dz} &=& B  \label{eq:c1nfa} \\
+\frac{dB}{dz} &=& \bar{\nu} A + b_* A^2 + c_* \left|C\right|^2  \label{eq:c1nfb} \\
+\frac{dC}{dz} &=& i d_0 C + i \bar{\nu} d_1 C + i d_2 A C \label{eq:c1nfc}
 \end{eqnarray}
 \end{subequations}
 Here $C$ is complex, $\bar{C}$ is the complex conjugate of $C$, $\epsilon, \zeta_0, \zeta_1$ are given previously and the two new
@@ -31,7 +31,7 @@ complex eigenvectors co-spanning the Center Manifold are
 \zeta_\pm	 = \left< 1, \lambda_\pm, 2 q / 3, \frac{\lambda_\pm}{3} q\right>^T 
 \end{equation}
 
-Using \eqref{eq:c1nf} and \eqref{eq:c0nf} implies
+Using \eqref{eq:c1nfb} and \eqref{eq:c0nfb} implies
 \begin{equation}
 \bar{\nu} = b \epsilon = -\frac{\epsilon}{q} 
 \end{equation}
@@ -47,42 +47,38 @@ Hence
 \lambda = \pm i \sqrt{-q}, q < 0
 \end{equation}
 
-Matching this to the linear part of \eqref{eq:cq} ( which corresponds to the imaginary eigenvalues), $\lambda = i d_0 = i \sqrt{-q}$ or 
+Matching this to the linear part of \eqref{eq:c1nfc} ( which corresponds to the imaginary eigenvalues), $\lambda = i d_0 = i \sqrt{-q}$ or 
 \begin{equation}
 d_0 = \sqrt{-q}
 \end{equation}
 
 
-With a  dominant balance argument after the change of variable $\epsilon = \sqrt{-3 \alpha}$ on the characteristic equation as $\lambda \rightarrow 0 $ 
+With a  dominant balance argument after the change of variable $\epsilon = \sqrt{-3 \alpha}$ on the characteristic equation 
+\eqref{eq:charlinear} as $\lambda \rightarrow 0 $ 
 we find $ d_1 = \frac{ \sqrt{-3 \alpha} }{18 \alpha^2 } $. 
-Using $\alpha=q/3$ this implies 
+Using $\alpha=q/3$ implies 
 \begin{equation}
 d_1 = \frac{\sqrt{-q}}{2 q^2} 
 \end{equation}
 
-The remaining undetermined coefficients  in the normal form are the 
-coefficients $b_*,c_*$ and $d_2$ 
-which correspond to the $A^2, |C|^2$ and $AC$ terms respectively. In 
-order to determine them, we follow the same procedure as 
-in Section 3 and compute $dY/dz$ is two distinct ways. We expand the
-function $\Psi$ as
+The remaining undetermined coefficients  in the normal form are the
+coefficients $b_*,c_*$ and $d_2$ which correspond to the $A^2, |C|^2$ and $AC$
+terms respectively. In order to determine them, we follow the same procedure as
+in Section 3 and compute $dY/dz$ is two distinct ways. We expand the function
+$\Psi$ as
 \begin{equation}\label{eq:psiexp2}
 \Psi(\epsilon,A,B,C,\bar{C}) = \epsilon A \Psi_{1000}^1 + \epsilon B \Psi_{0100}^1 + A^2 \Psi_{2000}^0 + A B \Psi_{1100}^0 + A C \Psi_{1010}^0 + \epsilon C \Psi_{0010}^1 + \cdots 
 \end{equation}
 with subscripts denoting powers of $A$, $B$, $C$ and $\bar{C}$, respectively,
-and the superscript is the power of $\epsilon$. In the first way,
-$dY/dz$ is computed by taking the $z$ derivative of \eqref{eq:c1cm} ( 
-using \eqref{eq:c1nf} and \eqref{eq:psiexp2}) and read off the coefficients
-of $A^2, \|C\|^2, C \epsilon$ and $AC$ terms.
-
-In the second way, $dY/dz$ is computed using 
-\eqref{eq:c1cm} and \eqref{eq:psiexp2} in \eqref{eq:bilinear} 
-(with $p=0$ on $C_1$ as given in \eqref{eq:c1})
-and the coefficients of  $A$, $B$, $C$ and $\bar{C}$ are once
-again read off.
-
-Equating the coefficients of the corresponding terms in the two
-separate expressions for $dY/dz$ yields the following two systems of equations:
+and the superscript is the power of $\epsilon$. In the first way, $dY/dz$ is
+computed by taking the $z$ derivative of \eqref{eq:c1cm} (using \eqref{eq:c1nf}
+and \eqref{eq:psiexp2}) and read off the coefficients of $A^2, \|C\|^2, C
+\epsilon$ and $AC$ terms.  In the second way, $dY/dz$ is computed using
+\eqref{eq:c1cm} and \eqref{eq:psiexp2} in \eqref{eq:bilinear} (with $p=0$ on
+$C_1$ as given in \eqref{eq:c1}) and the coefficients of  $A$, $B$, $C$ and
+$\bar{C}$ are once again read off.  Equating the coefficients of the
+corresponding terms in the two separate expressions for $dY/dz$ yields the
+following two systems of equations:
 
 \begin{subequations}
 \begin{eqnarray}
@@ -122,7 +118,7 @@ for \eqref{eq:GPC2}
 
 Using \eqref{eq:gpc1one} in \eqref{eq:gpc1two}, \eqref{eq:gpc1two} in \eqref{eq:gpc1four} and using these in \eqref{eq:gpc1three} yields 
 $ d_2 = \frac{1}{c^2}\left( \frac{7}{2 \sqrt{-q} } a_3 - \frac{i}{3} a_2 \right)$ for \eqref{eq:GPC1}.
-Similarly using \eqref{eq:gpc2one} in \eqref{eq:gpc2two} , \eqref{eq:gpc2two} in \eqref{eq:gpc2four} and using these in \eqref{eq:gpc2three}  yields
+Similarly using \eqref{eq:gpc2one} in \eqref{eq:gpc2two}, \eqref{eq:gpc2two} in \eqref{eq:gpc2four} and using these in \eqref{eq:gpc2three}  yields
 $ d_2 = \frac{1}{\sqrt{-q} c^2}\left( \frac{7}{2 } a_3 + \frac{32}{3} a_5 \right)$  for \eqref{eq:GPC2}. 
 
 Therefore the normal form near $C_1$ is 
@@ -143,7 +139,7 @@ for \eqref{eq:GPC1} and
 \end{subequations}
 for \eqref{eq:GPC2}.
 
-The dynamics inherent in \eqref{eq:GPC1normal}, \eqref{eq:GPC2normal} may be elucidated following the discussions of \cite{IA} ,\cite{IK}, \cite{Lombardi1} and\cite{Lombardi2}.
+The dynamics inherent in \eqref{eq:GPC1normal}, \eqref{eq:GPC2normal} may be elucidated following the discussions of \cite{IA}, \cite{IK}, \cite{Lombardi1} and \cite{Lombardi2}.
 The two first integrals of \eqref{eq:c1nf}  are
 \begin{equation}
 K = \left| C \right|^2
@@ -172,7 +168,7 @@ A_{\mp} = \frac{3}{4 b_*} \left[ \bar{\nu} \pm \sqrt{ \bar{\nu}^2 + \frac{16 b_*
 Note that $A_+ > 0, A_- < 0 $ for $b_* c_* > 0 $ and $b_* < 0$ as relevant for us. A general homoclinic orbit, homoclinic to $A_+$, is sketched
 in Figure 1 where the flow direction is deduced from \eqref{eq:GPC1normalA} and \eqref{eq:GPC2normalA} for \eqref{eq:GPC1} and \eqref{eq:GPC2}, respectively.
 For $K=\left|C\right|^2 = 0 $, the orbit is homoclinic to $A_+=0$. For small non-zero $\left|K\right|$, $ A_+ \sim - 2 c_* K / \bar{\nu}$, meaning that
-oscillations at infinity are then very small in this case. For $K=0$ this corresponds to an orbit homoclinic to 0 for the normal form. This is indeed valid for
+oscillations at infinity are then very small in this case. For $K=0$ this corresponds to an \emph{orbit homoclinic to} 0 for the normal form. This is indeed valid for
 the normal form taken at any order. However this solution does not exist mathematically for the full original system, even though
 one may compute its expansion in powers of the bifurcation parameter up to any order (see \cite{Lombardi1} and \cite{Lombardi2}). This is an example
 of the famous challenging problem of asymptotics beyond any orders. Other solutions found on the normal form mainly persist under the perturbation from

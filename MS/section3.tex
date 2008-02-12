@@ -48,15 +48,15 @@ Next we calculate the normal form of \eqref{eq:bilinear2} near $C_0$. The proced
 closely modeled on \cite{IA} and many intermediate steps may be found there. 
 
 \subsection{ Near $C_0$ }
-Near $C_0$ the dynamics reduce to a 2-D Center Manifold
+Near $C_0$ the dynamics reduce to a two-dimensional Center Manifold
 \begin{equation}\label{eq:c0cm}
  Y = A \zeta_0 + B \zeta_1 + \Psi(\epsilon,A,B)
 \end{equation}
 and the corresponding normal form is
 \begin{subequations}\label{eq:c0nf}
 \begin{eqnarray}
-\frac{dA}{dz} &=& B \\
-\frac{dB}{dz} &=& b \epsilon A + \tilde{c} A^2
+\frac{dA}{dz} &=& B \label{eq:c0nfa} \\
+\frac{dB}{dz} &=& b \epsilon A + \tilde{c} A^2 \label{eq:c0nfb}
 \end{eqnarray}
 \end{subequations}
 Here,
@@ -81,7 +81,7 @@ The characteristic equation of the linear part of
 \begin{equation}\label{eq:charlinear}
 \lambda^4 - q \lambda^2 - \epsilon =  0 
 \end{equation}
-Hence, the eigenvalues near zero ( the Center Manifold ) satisfy $\lambda^4 \ll \lambda^2$ and hence 
+Hence, the eigenvalues near zero (the Center Manifold) satisfy $\lambda^4 \ll \lambda^2$ and hence 
 \begin{equation}\label{eq:lindominant}
 \lambda^2 \sim -\frac{\epsilon}{q}
 \end{equation}
@@ -91,11 +91,11 @@ b = - \frac{1}{q}
 \end{equation}
 and only the nonlinear coefficient $\tilde{c}$ remains to be determined in the normal form \eqref{eq:c0nf}.
 
-In order to determine $\tilde{c}$ (the coefficient of $A^2$) in \eqref{eq:c0nf} we calculate $\frac{dY}{dz}$ in two ways and match the 
-$\mathcal{O}(A^2)$ terms. 
-
-To this end, using the standard 'suspension' trick of treating the perturbation parameter $\epsilon$ as a variable, we expand the function
-$\Psi$ in \eqref{eq:c0cm} as 
+In order to determine $\tilde{c}$ (the coefficient of $A^2$ in \eqref{eq:c0nf})
+we calculate $\frac{dY}{dz}$ in two ways and match the $\mathcal{O}(A^2)$
+terms.  To this end, using the standard 'suspension' trick of treating the
+perturbation parameter $\epsilon$ as a variable, we expand the function $\Psi$
+in \eqref{eq:c0cm} as 
 
 \begin{equation}\label{eq:psiexp}
 \Psi(\epsilon,A,B) = \epsilon A \Psi_{10}^1 + \epsilon B \Psi_{01}^1 + A^2 \Psi_{20}^0 + A B \Psi_{11}^0 + B^2 \Psi_{02}^0 + \cdots
@@ -103,8 +103,8 @@ $\Psi$ in \eqref{eq:c0cm} as
 where the subscripts denote powers of $A$ and $B$, respectively, and the superscript denotes the power of $\epsilon$. 
 
 In the first way of computing $dY/dz$, we take
-the $z$ derivative of \eqref{eq:c0cm} ( using \eqref{eq:c0nf} and \eqref{eq:psiexp} ). 
-The coefficient of $A^2$ in the resulting expression is $\tilde{c} \zeta_1 $. In the second way of computing $dY/dz$, use \eqref{eq:c0cm} and \eqref{eq:psiexp} in \eqref{eq:bilinear}. The coefficient of $A^2$ in the resulting expression is 
+the $z$ derivative of \eqref{eq:c0cm} (using \eqref{eq:c0nf} and \eqref{eq:psiexp}). 
+The coefficient of $A^2$ in the resulting expression is $\tilde{c} \zeta_1 $. In the second way of computing $dY/dz$, we use \eqref{eq:c0cm} and \eqref{eq:psiexp} in \eqref{eq:bilinear}. The coefficient of $A^2$ in the resulting expression is 
 $ L_{0,q} \Psi_{20}^0 - F_2\left(\zeta_0,\zeta_0\right)$.  Hence
 \begin{equation}\label{eq:A2coef}
  \tilde{c} \zeta_1 = L_{0q} \Psi_{20}^0 - F_2(\zeta_0,\zeta_0) \end{equation}
