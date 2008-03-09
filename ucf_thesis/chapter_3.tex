@@ -100,7 +100,7 @@ Denoting $\phi$ by $y_1$, equation \eqref{eq:ode2} may be written as the system
 We wish to rewrite this as a first order reversible system in order to invoke the relevant theory \cite{IA}. 
 To that end, defining  $Y=\left<y_1,y_2,y_3,y_4\right>^T$, equation \eqref{eq:system2} may be written 
 
-\begin{equation}\label{eq:bilinear2}
+\begin{equation}\label{eq:bilinearms}
 \frac{ dY }{ dz } = L_{pq} Y - F_2(Y,Y)
 \end{equation}
 
@@ -114,7 +114,7 @@ q/3&0&1&0\\
 q^2 - p &0&q/3&0 \end{array} \right) \end{equation}
 
 Since $p=0$ for \eqref{eq:MS}, we have 
-\begin{equation} \label{eq:bilinear2}
+\begin{equation} \label{eq:bilinearms2}
  \frac{ dY }{ dz } = L_{0q} Y - F_2(Y,Y) 
 \end{equation}
 where 
@@ -122,7 +122,7 @@ where
 F_2(Y,Y) = \left<0,0,0,\Delta_1 y_2^2 + b \Delta_1 y_1 y_3 \right>^T
 \end{equation}
 
-Next we calculate the normal form of \eqref{eq:bilinear2} near $C_0$. The procedure is
+Next we calculate the normal form of \eqref{eq:bilinearms2} near $C_0$. The procedure is
 closely modeled on \cite{IA} and many intermediate steps may be found there. 
 
 \subsection{ Near $C_0$ }
@@ -142,7 +142,6 @@ Here,
 \epsilon = \left( \frac{q^2}{9} - p\right) - \left(\frac{q}{3}\right)^2 = - p 
 \end{equation}
 measures the perturbation around $C_0$, and
-
 \begin{subequations}\label{eq:lineareigs2}
 \begin{eqnarray}
 \zeta_0 &=& \left<1,0,-q/3,0\right>^T\\
@@ -155,7 +154,7 @@ The linear eigenvalue of \eqref{eq:c0nf2} satisfies
 \lambda^2 = b \epsilon 
 \end{equation}
 The characteristic equation of the linear part of 
-\eqref{eq:bilinear2} is 
+\eqref{eq:bilinearms2} is 
 \begin{equation}\label{eq:charlinear2}
 \lambda^4 - q \lambda^2 - \epsilon =  0 
 \end{equation}
@@ -174,14 +173,14 @@ we calculate $\frac{dY}{dz}$ in two ways and match the $\mathcal{O}(A^2)$
 terms.  To this end, using the standard 'suspension' trick of treating the
 perturbation parameter $\epsilon$ as a variable, we expand the function $\Psi$
 in \eqref{eq:c0cm2} as 
-\begin{equation}\label{eq:psiexp2}
+\begin{equation}\label{eq:psiexpms}
 \Psi(\epsilon,A,B) = \epsilon A \Psi_{10}^1 + \epsilon B \Psi_{01}^1 + A^2 \Psi_{20}^0 + A B \Psi_{11}^0 + B^2 \Psi_{02}^0 + \cdots
 \end{equation}
 where the subscripts denote powers of $A$ and $B$, respectively, and the superscript denotes the power of $\epsilon$. 
 
 In the first way of computing $dY/dz$, we take
-the $z$ derivative of \eqref{eq:c0cm2} (using \eqref{eq:c0nf2} and \eqref{eq:psiexp2}). 
-The coefficient of $A^2$ in the resulting expression is $\tilde{c} \zeta_1 $. In the second way of computing $dY/dz$, we use \eqref{eq:c0cm2} and \eqref{eq:psiexp2} in \eqref{eq:bilinear2}. The coefficient of $A^2$ in the resulting expression is 
+the $z$ derivative of \eqref{eq:c0cm2} (using \eqref{eq:c0nf2} and \eqref{eq:psiexpms}). 
+The coefficient of $A^2$ in the resulting expression is $\tilde{c} \zeta_1 $. In the second way of computing $dY/dz$, we use \eqref{eq:c0cm2} and \eqref{eq:psiexpms} in \eqref{eq:bilinearms2}. The coefficient of $A^2$ in the resulting expression is 
 $ L_{0,q} \Psi_{20}^0 - F_2\left(\zeta_0,\zeta_0\right)$,
 which leads to 
 \begin{equation}\label{eq:A2coef2}
@@ -309,16 +308,16 @@ which correspond to the $A^2, |C|^2$ and $AC$ terms respectively. In
 order to determine them, we follow the same procedure as 
 in Section 3 and compute $dY/dz$ is two distinct ways. We expand the
 function $\Psi$ as
-\begin{equation}\label{eq:psiexp2}
+\begin{equation}\label{eq:psiexpms}
 \Psi(\epsilon,A,B,C,\bar{C}) = \epsilon A \Psi_{1000}^1 + \epsilon B \Psi_{0100}^1 + A^2 \Psi_{2000}^0 + A B \Psi_{1100}^0 + A C \Psi_{1010}^0 + \epsilon C \Psi_{0010}^1 + \cdots 
 \end{equation}
 
 with subscripts denoting powers of $A$, $B$, $C$ and $\bar{C}$, respectively,
 and the superscript is the power of $\epsilon$. In the first way, $dY/dz$ is
 computed by taking the $z$ derivative of \eqref{eq:c1cm2} (using \eqref{eq:c1nf2}
-and \eqref{eq:psiexp2}) and read off the coefficients of $A^2, \|C\|^2, C
+and \eqref{eq:psiexpms}) and read off the coefficients of $A^2, \|C\|^2, C
 \epsilon$ and $AC$ terms.  In the second way, $dY/dz$ is computed using
-\eqref{eq:c1cm2} and \eqref{eq:psiexp2} in \eqref{eq:bilinear2} (with $p=0$ on
+\eqref{eq:c1cm2} and \eqref{eq:psiexpms} in \eqref{eq:bilinearms2} (with $p=0$ on
 $C_1$ as given in \eqref{eq:ms_c1}) and the coefficients of  $A$, $B$, $C$ and
 $\bar{C}$ are once again read off.  Equating the coefficients of the
 corresponding terms in the two separate expressions for $dY/dz$ yields the
