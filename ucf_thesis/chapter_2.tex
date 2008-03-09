@@ -4,7 +4,7 @@
 
 The propagation of longitudinal deformation waves in elastic rods is governed
 (\cite{LCZ}, \cite{Runz}, \cite{WM}) by 
-\eqref{eq:GPC1} and \eqref{eq:GPC2}
+\eqref{eq:GPC1} and \eqref{eq:GPC2},
 corresponding to different constitutive relations.
 
 References \cite{LCZ}, \cite{Runz}, \cite{WM} also discuss the primary
@@ -37,7 +37,7 @@ where
 \begin{eqnarray}
 z &\equiv& x - c t\\
 p &\equiv& 0\label{eq:pdef} \\
-q &\equiv & 1 - \frac{a_1}{c^2} \label{eq:qdef} \\
+q &\equiv & 1 - \frac{a_1}{c^2} \label{eq:qdef} 
 \end{eqnarray}
 \end{subequations}
 
@@ -66,7 +66,7 @@ The eigenvalues have the structure $\lambda_{1-4} = 0,0,\pm \lambda$, ($\lambda 
 \eqref{eq:fp} is a saddle-focus.
 \item[Near $C_1$] 
 Here the eigenvalues have the structure $\lambda_{1-4} = 0,0,\pm i \omega $, ($\omega \in \mathbb{R}$) . We will show by analysis of a
-four-dimensional normal form in Section 4 that there exists a $\mathrm{sech}^2$ homoclinic orbit near $C_1$.
+four-dimensional normal form in Section 2.4 that there exists a $\mathrm{sech}^2$ homoclinic orbit near $C_1$.
 \end{description}
 
 Having outlined the possible families of orbits homoclinic to the fixed point \eqref{eq:fp} of \eqref{eq:linode},
@@ -106,7 +106,6 @@ where
 
 We wish to rewrite this as a first order reversible system in order to invoke the relevant theory \cite{IA}. 
 To that end, defining  $Y=\left<y_1,y_2,y_3,y_4\right>^T$ equation \eqref{eq:system} may be written 
-
 \begin{equation}\label{eq:bilinear}
 \frac{ dY }{ dz } = L_{pq} Y - G_{1,2}(Y,Y)
 \end{equation}
@@ -152,7 +151,6 @@ Here,
 \epsilon = \left( \frac{q^2}{9} - p\right) - \left(\frac{q}{3}\right)^2 = - p 
 \end{equation}
 measures the perturbation around $C_0$, and
-
 \begin{subequations}\label{eq:lineareigs}
 \begin{eqnarray}
 \zeta_0 &=& \left<1,0,-q/3,0\right>^T\\
@@ -184,7 +182,6 @@ we calculate $\frac{dY}{dz}$ in two ways and match the $\mathcal{O}(A^2)$
 terms.  To this end, using the standard 'suspension' trick of treating the
 perturbation parameter $\epsilon$ as a variable, we expand the function $\Psi$
 in \eqref{eq:c0cm} as 
-
 \begin{equation}\label{eq:psiexp}
 \Psi(\epsilon,A,B) = \epsilon A \Psi_{10}^1 + \epsilon B \Psi_{01}^1 + A^2 \Psi_{20}^0 + A B \Psi_{11}^0 + B^2 \Psi_{02}^0 + \cdots
 \end{equation}
@@ -196,13 +193,11 @@ is $\tilde{c} \zeta_1 $. In the second way of computing $dY/dz$, we use
 \eqref{eq:c0cm} and \eqref{eq:psiexp} in \eqref{eq:bilinear}. The coefficient
 of $A^2$ in the resulting expression is $ L_{0,q} \Psi_{20}^0 -
 G_{1,2}\left(\zeta_0,\zeta_0\right)$.  Hence
-
 \begin{equation}\label{eq:A2coef}
  \tilde{c} \zeta_1 = L_{0q} \Psi_{20}^0 - F_2(\zeta_0,\zeta_0) \end{equation}
 
 Using \eqref{eq:lineareigs} and \eqref{eq:nonlinear} and denoting 
 $\Psi_{20}^0 = \left<x_1,x_2,x_3,x_4\right>$ in \eqref{eq:A2coef} yields the equations
-
 \begin{subequations}
 \begin{eqnarray}
 0 &=& x_2 \\
@@ -230,7 +225,6 @@ Therefore, the normal form near $C_0$ is
 \end{subequations}
 
 for \eqref{eq:GPC1} and
-
 \begin{subequations}\label{eq:c0nfgpc2}
 \begin{eqnarray}
 \frac{dA}{dz} &=& B \\
@@ -269,7 +263,6 @@ k &=& \sqrt{\frac{-\epsilon}{4q}} \label{eq:keq} \\
 
 Hence, since $\epsilon = - p $, and the curve $C_0$ corresponds to $p=0,q>0$, solitary waves of the 
 form \eqref{eq:soliton1} exist in the vicinity of $C_0$ for 
-
 \begin{equation}
 p > 0, q > 0 
 \end{equation}
@@ -279,7 +272,6 @@ demonstrated the existence of solitary waves of \eqref{eq:GPC2} for $p=0^+, q>0$
 
 Similarly, the curve $C_1$ corresponds to $p=0,q<0$, solitary waves of the form \eqref{eq:soliton1} exist
 in the vicinity of $C_1$ for 
-
 \begin{equation}
 p < 0, q < 0 
 \end{equation}
@@ -337,7 +329,7 @@ Also from the characteristic equation \eqref{eq:charlinear}, the two non-zero
 
 Hence
 \begin{equation}
-\lambda = \pm i \sqrt{-q}, q < 0
+\lambda_{1,2} = \pm i \sqrt{-q}, q < 0
 \end{equation}
 
 Matching this to the linear part of \eqref{eq:c1nfc} ( which corresponds to the imaginary eigenvalues), $\lambda = i d_0 = i \sqrt{-q}$ or 
@@ -346,10 +338,12 @@ d_0 = \sqrt{-q}
 \end{equation}
 
 
-With a  dominant balance argument after the change of variable $\epsilon = \sqrt{-3 \alpha}$ on the characteristic equation 
-\eqref{eq:charlinear} as $\lambda \rightarrow 0 $ 
-we find $ d_1 = \frac{ \sqrt{-3 \alpha} }{18 \alpha^2 } $. 
-Using $\alpha=q/3$ implies 
+With a  dominant balance argument 
+%after the change of variable $\epsilon = \sqrt{-3 \alpha}$ 
+on the characteristic equation 
+\eqref{eq:charlinear} as $\lambda \rightarrow \lambda_{1,2} $ 
+and comparing to the linear eigenvalue of \eqref{eq:c1nf} 
+we find
 \begin{equation}
 d_1 = \frac{\sqrt{-q}}{2 q^2} 
 \end{equation}
@@ -357,7 +351,7 @@ d_1 = \frac{\sqrt{-q}}{2 q^2}
 The remaining undetermined coefficients  in the normal form are the
 coefficients $b_*,c_*$ and $d_2$ which correspond to the $A^2, |C|^2$ and $AC$
 terms respectively. In order to determine them, we follow the same procedure as
-in Section 3 and compute $dY/dz$ is two distinct ways. We expand the function
+in Section 2.3 and compute $dY/dz$ is two distinct ways. We expand the function
 $\Psi$ as
 \begin{equation}\label{eq:psiexp2}
 \Psi(\epsilon,A,B,C,\bar{C}) = \epsilon A \Psi_{1000}^1 + \epsilon B \Psi_{0100}^1 + A^2 \Psi_{2000}^0 + A B \Psi_{1100}^0 + A C \Psi_{1010}^0 + \epsilon C \Psi_{0010}^1 + \cdots 
@@ -372,7 +366,6 @@ $C_1$ as given in \eqref{eq:c1}) and the coefficients of  $A$, $B$, $C$ and
 $\bar{C}$ are once again read off.  Equating the coefficients of the
 corresponding terms in the two separate expressions for $dY/dz$ yields the
 following two systems of equations:
-
 \begin{subequations}
 \begin{eqnarray}
 \mathcal{O}(A^2): &		b_* \zeta_1 &= L_{0q} \Psi_{2000}^0 - G_{1,2}(\zeta_0,\zeta_0) \\
@@ -466,7 +459,7 @@ the normal form mainly persist under the perturbation from higher order terms
 provided by the original system \cite{IK}. These solutions are delocalized
 waves and their existence in Region 2 is guaranteed by the general theory for
 reversible systems in \cite{Lombardi1} and \cite{Lombardi2}. Also, as mentioned
-in Section 2, genuine solitary waves are found on isolated curves in Region 2
+in Section 2.2, genuine solitary waves are found on isolated curves in Region 2
 of Figure 1 on which the oscillation amplitudes vanish. Since these are
 embedded in the sea of delocalized solitary waves and in the continuous
 spectrum, they are referred to as embedded solitons \cite{CMYK}. These will
@@ -475,7 +468,7 @@ asymptotics and numerical shooting.
 
 \begin{figure}[hh]
 \begin{center}
-%\epsfig{file=homoclinic, scale=1.0}
+\includegraphics[width=1.0\textwidth]{figures/homoclinic}  
 \label{fig:homoclinic}
 \caption{Level curves of \eqref{eq:H} corresponding to various values of H.}
 \end{center}
