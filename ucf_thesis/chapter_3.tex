@@ -30,12 +30,10 @@ $v(x,t) = \phi\left(x - c t\right) = \phi\left(z\right)$
 \end{equation}
 
 where 
-% the notation $\mathcal{N[\phi]}$ means that the operator $\mathcal{N}$ operates on $\phi$ and all of it's derivatives, and 
 \begin{equation}
 \mathcal{N}\left[\phi\right] = -\Delta_1 \phi_z^2 - b \Delta_1 \phi \phi_{zz}
 \end{equation}
-
-%where 
+and
 \begin{subequations}
 \begin{eqnarray}
 z &\equiv& x - c t\\
@@ -73,7 +71,7 @@ Here the eigenvalues have the structure $\lambda_{1-4} = 0,0,\pm i \omega $, ($\
 four-dimensional normal form in Section 4 that there exists a $\mathrm{sech}^2$ homoclinic orbit near $C_1$.
 \end{description}
 
-Having outlined the possible families of orbits homoclinic to the fixed point \eqref{eq:fp} of \eqref{eq:linode2},
+Having outlined the possible families of orbits homoclinic to the fixed point \eqref{eq:fp2} of \eqref{eq:linode2},
 corresponding to pulse solitary waves of \eqref{eq:MS}, we now derive normal forms near the transition curves $C_0$ and $C_1$
 to confirm the existence of regular or delocalized solitary waves in the corresponding regions of $\left(p,q\right)$ parameter space.
 
@@ -176,7 +174,6 @@ we calculate $\frac{dY}{dz}$ in two ways and match the $\mathcal{O}(A^2)$
 terms.  To this end, using the standard 'suspension' trick of treating the
 perturbation parameter $\epsilon$ as a variable, we expand the function $\Psi$
 in \eqref{eq:c0cm2} as 
-
 \begin{equation}\label{eq:psiexp2}
 \Psi(\epsilon,A,B) = \epsilon A \Psi_{10}^1 + \epsilon B \Psi_{01}^1 + A^2 \Psi_{20}^0 + A B \Psi_{11}^0 + B^2 \Psi_{02}^0 + \cdots
 \end{equation}
@@ -185,12 +182,12 @@ where the subscripts denote powers of $A$ and $B$, respectively, and the supersc
 In the first way of computing $dY/dz$, we take
 the $z$ derivative of \eqref{eq:c0cm2} (using \eqref{eq:c0nf2} and \eqref{eq:psiexp2}). 
 The coefficient of $A^2$ in the resulting expression is $\tilde{c} \zeta_1 $. In the second way of computing $dY/dz$, we use \eqref{eq:c0cm2} and \eqref{eq:psiexp2} in \eqref{eq:bilinear2}. The coefficient of $A^2$ in the resulting expression is 
-$ L_{0,q} \Psi_{20}^0 - F_2\left(\zeta_0,\zeta_0\right)$.  Hence
+$ L_{0,q} \Psi_{20}^0 - F_2\left(\zeta_0,\zeta_0\right)$,
+which leads to 
 \begin{equation}\label{eq:A2coef2}
  \tilde{c} \zeta_1 = L_{0q} \Psi_{20}^0 - F_2(\zeta_0,\zeta_0) \end{equation}
 
 Using \eqref{eq:lineareigs2} and \eqref{eq:nonlinear2} and denoting $\Psi_{20}^0 = \left<x_1,x_2,x_3,x_4\right>$ in \eqref{eq:A2coef2} yields the equations
-
 \begin{subequations}
 \begin{eqnarray}
 0 &=& x_2 \\
@@ -263,7 +260,7 @@ Y = A \zeta_0 + B \zeta_0 + C \zeta_+ + \bar{C} \zeta_- + \Psi(\epsilon,A,B,C,\b
 \end{equation}
 
 with  a corresponding four-dimensional normal form
-\begin{subequations}\label{eq:c1nf}
+\begin{subequations}\label{eq:c1nf2}
 \begin{eqnarray}
 \frac{dA}{dz} &=& B \label{eq:aq2} \\
 \frac{dB}{dz} &=& \bar{\nu} A + b_* A^2 + c_* \left|C\right|^2  \label{eq:bq2} \\
@@ -293,20 +290,18 @@ Hence
 \lambda = \pm i \sqrt{-q}, q < 0
 \end{equation}
 
-Matching this to the linear part of \eqref{eq:cq2} ( which corresponds to the
+Matching this to the linear part of \eqref{eq:cq2} 
+(which corresponds to the
 imaginary eigenvalues), $\lambda = i d_0 = i \sqrt{-q}$ or 
 \begin{equation}
 d_0 = \sqrt{-q}
 \end{equation}
 
-
-With a dominant balance argument after the change of variable $\epsilon =
-\sqrt{-3 \alpha}$ on the characteristic equation \eqref{eq:charlinear2} as $\lambda \rightarrow 0 $ we
-find $d_1 = \frac{ \sqrt{-3 \alpha} }{18 \alpha^2 } $. Using $\alpha=q/3$
-implies 
+With a dominant balance argument on the characteristic equation \eqref{eq:charlinear2} as  $\lambda \rightarrow \pm i \sqrt{-q}$ we find
 \begin{equation}
-d_1 = \frac{\sqrt{-q}}{2 q^2}
+d_1 = \frac{\sqrt{-q}}{2 q^2} 
 \end{equation}
+
 
 The remaining undetermined coefficients  in the normal form are the 
 coefficients $b_*,c_*$ and $d_2$ 
@@ -328,7 +323,6 @@ $C_1$ as given in \eqref{eq:ms_c1}) and the coefficients of  $A$, $B$, $C$ and
 $\bar{C}$ are once again read off.  Equating the coefficients of the
 corresponding terms in the two separate expressions for $dY/dz$ yields the
 following equations:
-
 \begin{subequations}
 \begin{eqnarray}
 \mathcal{O}(A^2): &		b_* \zeta_1 &= L_{0q} \Psi_{2000}^0 - F_2(\zeta_0,\zeta_0) \\
@@ -337,11 +331,10 @@ following equations:
 \mathcal{O}(A C): 	&i d_2 \zeta_+ + i d_0 \Psi_{1010}^0 &= L_{0q} \Psi_{1010}^0 - 2 F_2(\zeta_0,\zeta_+) \label{eq:AC2}
 \end{eqnarray}
 \end{subequations}
-where we have used the fact that $F_2$ is a symmetric bilinear form. Equation \eqref{eq:cstar} is decoupled and yields 
+where we have used the fact that $F_2$ is a symmetric bilinear form. Equation \eqref{eq:cstar2} is decoupled and yields 
 $ c_* = 2 \Delta_1 \left( \frac{2 b}{3}  - 1\right)$. The only coefficient left to determine is $d_2$ which we shall compute now. 
 
 Using $\Psi_{1010}^0 = \left<x_1,x_2,x_3,x_4\right>^T$ in \eqref{eq:AC2} implies 
-
 \begin{subequations}
 \begin{eqnarray}
 i d_2 + i d_0 x_1 &=& x_2 \label{eq:one2} \\
