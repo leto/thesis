@@ -87,7 +87,7 @@ a_1 < c^2
 \end{equation}
 
 Denoting $\phi$ by $y_1$, \eqref{eq:ode} may be written as the two systems
-\begin{subequations}\label{eq:system}
+\begin{subequations}\label{eq:nonbilinearsystem}
 \begin{eqnarray}
 \frac{d y_1 }{d z} &=& y_2 \\
 \frac{d y_2 }{d z} &=& y_3 \\
@@ -104,8 +104,76 @@ where
 \end{eqnarray}
 \end{subequations}
 
-We wish to rewrite this as a first order reversible system in order to invoke the relevant theory \cite{IA}. 
-To that end, defining  $Y=\left<y_1,y_2,y_3,y_4\right>^T$ equation \eqref{eq:system} may be written 
+We wish to rewrite \eqref{eq:nonbilinearsystem} as a first order reversible system in order to invoke the relevant theory \cite{IA}. 
+
+
+To that end, defining  $Y=\left<y_1,y_2,y_3,y_4\right>^T$ equation 
+\eqref{eq:nonbilinearsystem} can be written
+\begin{equation}\label{eq:matrixeq1}
+ \frac{ dY }{ dz } = A Y - G_{1,2}(Y,Y)
+\end{equation}
+where 
+\begin{equation}\label{eq:nonlinear}
+A = \left(\begin{array}{cccc}0&1&0&0\\0&0&1&0\\0&0&0&1\\-p&0&q&0\end{array}\right) 
+\end{equation}
+\begin{equation}\label{eq:nonlinear}
+G_{1,2}(Y,Y) = \left<0,0,0,-\mathcal{N}_{1,2}\left(Y\right)\right>^T
+\end{equation}
+
+The matrix $A$ may be split into $A = L_0 + L_1 $, where 
+\begin{subequations}
+\begin{eqnarray}
+L_0 &=& \left(\begin{array}{cccc}0&1&0&0\\0&0&1&0\\0&0&0&1\\0&0&0&0\end{array}\right) \\
+L_1 &=& \left(\begin{array}{cccc}0&0&0&0\\0&0&0&0\\0&0&0&0\\-p&0&q&0\end{array}\right) 
+\end{eqnarray}
+\end{subequations}
+We now derive a linear operator $L_{pq}$ which is equivalent to $A=L_0+L_1$ and in reversible form.
+
+Let $L_{pq} = L_0 + M $ where $N$ must satifisfy the following properties:
+
+\begin{itemize}
+\item $ M L_0^* = L_0^* M $ : $M$ commutes with $L_0^*$
+\item $ S M  = -M S $ or $ [S,M] = 0 $ : $S$ and $M$ are antisymmetric with repect to each other
+\end{itemize}
+where $S = \left(\begin{array}{cccc}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{array}\right) $
+
+
+Since $L_0^*$ commutes with the identity and powers of itself, we assume the form of $M$ as
+\begin{equation}
+M = \alpha_1 I + \alpha_2 L_0^* + \alpha_3 L_0^{^2} + \alpha_4 L_0^{*3}
+\end{equation}
+
+Because we want $M$ to be antisymmetric, we must have $\alpha_1=\alpha_3=0$ since $I$ and $L_0^{*2}$ are symmetric.
+Therefore we have $ M = \alpha_2 L_0^* + \alpha_4 L_0^{*3} $. We now impose the condition that the eigenvalues of $L_{pq}$
+must be identical, therefore we must have that the coefficients of the characteristic polynomials of $L_0 + L_1$ and $L_0 + M $
+are identical.
+The characteristic polynomial of $L_0+L_1$ is 
+\begin{equation}
+\rho_1(\lambda) = det\left( L_0 + L_1 - \lambda I \right) = \lambda^4 - q \lambda^2 + p
+\end{equation}
+
+
+The characteristic polynomial of $L_0+M$ is 
+\begin{equation}
+\rho_2(\lambda) = det\left( L_0 + M - \lambda I \right) = det \left(L_0 + \alpha_2 L_0^* + \alpha_4 L_0^{*3} - \lambda I \right)
+\end{equation}
+After some algebra one finds that 
+\begin{equation}
+\rho_2(\lambda) = \lambda^4 - 3\left(\alpha_2+\alpha_4\right) \lambda^2 + \left(\alpha_2+\alpha_4\right)^2
+\end{equation}
+This immediately gives us
+\begin{subequations}
+\begin{eqnarray}
+p &=& \left(\alpha_2+\alpha_4\right)^2\\
+q &=& 3 \left(\alpha_2 + \alpha_4\right)
+\end{eqnarray}
+\end{subequations}
+
+
+Noting that $\frac{q^2}{9} = p $, we choose $\alpha_4 = \frac{q^2}{9}$ which implies $\alpha_2 = \frac{q}{3} $. We 
+now have that $p=\alpha_2^2$ and $q=3\alpha_2$.
+
+Now \eqref{eq:nonbilinearsystem} may be written 
 \begin{equation}\label{eq:bilinear}
 \frac{ dY }{ dz } = L_{pq} Y - G_{1,2}(Y,Y)
 \end{equation}
@@ -123,10 +191,6 @@ q^2 - p &0&q/3&0 \end{array} \right)
 Since $p=0$ for \eqref{eq:GPC1} and \eqref{eq:GPC2}, we have 
 \begin{equation} \label{eq:bilinear2}
  \frac{ dY }{ dz } = L_{0q} Y - G_{1,2}(Y,Y) 
-\end{equation}
-where 
-\begin{equation}\label{eq:nonlinear}
-G_{1,2}(Y,Y) = \left<0,0,0,-\mathcal{N}_{1,2}\left(Y\right)\right>^T
 \end{equation}
 
 Next we calculate the normal form of \eqref{eq:bilinear2} near $C_0$. The procedure is
