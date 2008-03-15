@@ -129,7 +129,7 @@ L_1 &=& \left(\begin{array}{cccc}0&0&0&0\\0&0&0&0\\0&0&0&0\\-p&0&q&0\end{array}\
 \end{subequations}
 We now derive a linear operator $L_{pq}$ which is equivalent to $A=L_0+L_1$ and in reversible form.
 
-Let $L_{pq} = L_0 + M $ where $N$ must satifisfy the following properties:
+Let $L_{pq} = L_0 + M $ where $M$ must satifisfy the following properties:
 
 \begin{itemize}
 \item $ M L_0^* = L_0^* M $ : $M$ commutes with $L_0^*$
@@ -251,12 +251,33 @@ in \eqref{eq:c0cm} as
 \end{equation}
 where the subscripts denote powers of $A$ and $B$, respectively, and the
 superscript denotes the power of $\epsilon$.  In the first way of computing
-$dY/dz$, we take the $z$ derivative of \eqref{eq:c0cm} (using \eqref{eq:c0nf}
-and \eqref{eq:psiexp}).  The coefficient of $A^2$ in the resulting expression
+$dY/dz$, we take the $z$ derivative of \eqref{eq:c0cm}
+
+
+
+\begin{equation}
+\frac{dY}{dz} = \frac{dA}{dz} \zeta_0 + \frac{dB}{dz} \zeta_1 + \frac{d\Psi}{dz}
+\end{equation}
+
+Now, using \eqref{eq:c0nf} we have
+\begin{equation}
+\frac{dY}{dz} = B \zeta_0 + \left(b \epsilon A + \tilde{c} A^2\right)\zeta_1 + \frac{d\Psi}{dz}
+\end{equation}
+And finally using \eqref{eq:psiexp} and \eqref{eq:c0nf} again we arrive at
+
+\begin{equation}\label{eq:longeqn1}
+\frac{dY}{dz} = B \zeta_0 + \left(b \epsilon A + \tilde{c} A^2\right)\zeta_1 \\
+                + \left( b \epsilon^2 A + \epsilon \tilde{c} A^2\right) \\
+                + 2 A B\Psi_{20}^0 + \left( B^2 + b\epsilon A^2 + \tilde{c} A^3\right)\Psi_{11}^0  \\
+                + 2 B \left( b \epsilon A + \tilde{c} A^2 \right)\Psi_{02}^0 + \cdots 
+\end{equation}
+
+The coefficient of $A^2$ in \eqref{eq:longeqn1} 
 is $\tilde{c} \zeta_1 $. In the second way of computing $dY/dz$, we use
 \eqref{eq:c0cm} and \eqref{eq:psiexp} in \eqref{eq:bilinear}. The coefficient
 of $A^2$ in the resulting expression is $ L_{0,q} \Psi_{20}^0 -
 G_{1,2}\left(\zeta_0,\zeta_0\right)$.  Hence
+
 \begin{equation}\label{eq:A2coef}
  \tilde{c} \zeta_1 = L_{0q} \Psi_{20}^0 - F_2(\zeta_0,\zeta_0) \end{equation}
 
