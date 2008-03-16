@@ -132,8 +132,8 @@ We now derive a linear operator $L_{pq}$ which is equivalent to $A=L_0+L_1$ and 
 Let $L_{pq} = L_0 + M $ where $M$ must satifisfy the following properties:
 
 \begin{itemize}
-\item $ M L_0^* = L_0^* M $ : $M$ commutes with $L_0^*$
-\item $ S M  = -M S $ or $ [S,M] = 0 $ : $S$ and $M$ are antisymmetric with repect to each other
+\item $ M L_0^* = L_0^* M $ or $ \left[M, L_0^*\right]=0$: $M$ commutes with $L_0^*$
+\item $ S M  = -M S $ : $S$ and $M$ are antisymmetric with repect to each other
 \end{itemize}
 where $S = \left(\begin{array}{cccc}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{array}\right) $
 
@@ -286,7 +286,7 @@ where we expect a $\mathcal{O}(A^2)$ term due to the expansion \eqref{eq:psiexp}
 \begin{equation}
 L_{0q}\left(\Psi\right) = \epsilon A L_{0q} \Psi_{10}^1 + \epsilon B L_{0q} \Psi_{01}^1 + A^2 L_{0q}\Psi_{20}^0 + A B L_{0q} \Psi_{11}^0 + B^2 L_{0q}\Psi_{02}^0 + \cdots 
 \end{equation}
-and we find another that $L_{0q}\Psi_{20}^0$ is another $\mathcal{O}(A^2)$. Lastly, we expand $G_{1,2}\left( \Psi, \Psi\right)$ to find
+and we find that $L_{0q}\Psi_{20}^0$ is another $\mathcal{O}(A^2)$ term. Lastly, we expand $G_{1,2}\left( \Psi, \Psi\right)$ to find
 
 \begin{equation}
 G_{1,2}\left(\Psi,\Psi\right) = 
@@ -429,17 +429,35 @@ k &=& \sqrt{\frac{-\epsilon}{4q}}  \\
 \end{eqnarray}
 \end{subequations}
 
-
 Similarly, the normal form \eqref{eq:c0nfgpc2} admits a homoclinic solution (near $C_0$) of the form 
 \begin{equation}\label{eq:solitongpc2}
 A\left(z\right) = \ell \space \mathrm{sech}^2\left(k z\right)
 \end{equation}
 
-with 
+which implies
+\begin{equation}\label{eq:hyperparty1}
+\ell \left( -2 k^2 \mathrm{sech}^4 + 4 k^2 \mathrm{sech}^2\left(kz\right) \mathrm{tanh}^2\left(kz\right) \right) = - \frac{\epsilon}{q} \mathrm{sech}^2(kz) - \frac{1}{c^2}\left(3a_3 + 5a_5\right) \ell^2 \mathrm{sech}^4(kz) 
+\end{equation}
+
+Using the same hyperbolic identities as before we reduce this to
+\begin{equation}\label{eq:hyperparty2}
+-6 k^2 \mathrm{sech}^4\left(k z\right) + 4 k^2 \mathrm{sech}^2\left(k z\right)=
+-\frac{\epsilon}{q} \mathrm{sech}^2\left(k z\right) - \frac{\ell}{3c^2}\left(3a_3 + 5a_5\right) 
+\end{equation}
+
+Matching the $\mathcal{O}\left(\mathrm{sech}^2\left(z\right)\right)$  and   $\mathcal{O}\left(\mathrm{sech}^4\left(z\right)\right)$ terms in \eqref{eq:hyperparty2} implies
+
 \begin{subequations} 
 \begin{eqnarray}
 k &=& \sqrt{\frac{-\epsilon}{4q}} \label{eq:keq} \\
-\ell &=& \frac{ - 3 \epsilon c^2 }{2 q \left(3 a_3 + 5 a_5\right) } 
+\ell &=& \frac{ 18 k^2 \epsilon c^2 }{ \left(3 a_3 + 5 a_5\right) } 
+\end{eqnarray}
+\end{subequations}
+or simplifying
+\begin{subequations} 
+\begin{eqnarray}
+k &=& \sqrt{\frac{-\epsilon}{4q}} \label{eq:keq} \\
+\ell &=& \frac{ - 9 \epsilon c^2 }{2 q \left(3 a_3 + 5 a_5\right) } 
 \end{eqnarray}
 \end{subequations}
 
@@ -536,23 +554,76 @@ $\Psi$ as
 with subscripts denoting powers of $A$, $B$, $C$ and $\bar{C}$, respectively,
 and the superscript is the power of $\epsilon$. In the first way, $dY/dz$ is
 computed by taking the $z$ derivative of \eqref{eq:c1cm} (using \eqref{eq:c1nf}
-and \eqref{eq:psiexp2}) and read off the coefficients of $A^2, \|C\|^2, C
-\epsilon$ and $AC$ terms.  In the second way, $dY/dz$ is computed using
+and \eqref{eq:psiexp2})
+
+%nb:pg49
+\begin{subequations}
+\begin{eqnarray}
+\frac{dY}{dz} &=&  \frac{dA}{dz}\zeta_0 + \frac{dB}{dz}\zeta_1 +  \frac{dC}{dz} \zeta_+ + \frac{d\bar{C}}{dz} \zeta_- + \frac{d\Psi}{dz}\\
+ &=& B \zeta_0 + \left(\bar{\nu} A + b_* A^2 + c_* \|C\|^2\right) \zeta_1 + \left( i d_0 + i d_1 C \bar{\nu} + i d_2 A C \right)\zeta_+ + \\
+& &  \left( -i \bar{C} d_9 - i \bar{C} d_1 \bar{\nu} - i A \bar{C} d_2 \right) \zeta_- + \frac{d\Psi}{dz} \notag
+\end{eqnarray}
+\end{subequations}
+
+Now, using \eqref{eq:c1nf} and \eqref{eq:psiexp2} we expand $ \frac{d\Psi}{dz} $ in the previous equation to find
+\begin{subequations}
+\begin{eqnarray}
+\frac{dY}{dz} &=&  \frac{dA}{dz}\zeta_0 + \frac{dB}{dz}\zeta_1 +  \frac{dC}{dz} \zeta_+ + \frac{d\bar{C}}{dz} \zeta_- + \frac{d\Psi}{dz} \\
+ &=& B \zeta_0 + \left(\bar{\nu} A + b_* A^2 + c_* \|C\|^2\right) \zeta_1 + \left( i d_0 + i d_1 C \bar{\nu} + i d_2 A C \right)\zeta_+ + \\
+& &  \left( -i \bar{C} d_9 - i \bar{C} d_1 \bar{\nu} - i A \bar{C} d_2 \right) \zeta_- \notag + \\
+& & \epsilon B \Psi_{1000}^1 + \epsilon\left( \bar{\nu} A + b_* A^2 + c_* \|C\|^2 \right) \Psi_{0100}^1 + \\
+& & \epsilon \left( i d_0 C + i d_1 \bar{\nu} C + i d_2 A C \right) \Psi_{0010}^1 + \epsilon \left( -i \bar{C} d_9 - i \bar{C} d_1 \bar{\nu} - i A \bar{C} d_2 \right) \Psi_{0010}^1 + \\
+& & \left( B^2 + \left(\bar{\nu} A + b_* A^2 + c_* \|C\|^2\right) A\right) \Psi_{1100}^0 + \\ 
+& & \left( BC +  A \left( i d_0 C + i d_1 C \bar{\nu} + i d_2 A C \right) \right)\Psi_{1010}^0 +  \\
+& & \left( B\bar{C} +  A \left( -i d_0 C - i d_1 \bar{C} \bar{\nu} - i d_2 A \bar{C} \right) \right)\Psi_{1010}^0 + \\
+& & 2 A B \Psi_{2000}^0 + 2 B \left(\bar{\nu} A + b_* A^2 + c_* \|C\|^2\right) + \\
+& & 2 C \left( i d_0 C + i d_1 \bar{\nu} C + i d_2 A C \right)\Psi_{0020}^0 + \\ 
+& & 2 \bar{C} \left( -i d_0 \bar{C} - i d_1 \bar{\nu} \bar{C} - i d_2 A \bar{C} \right)\Psi_{0002}^0 + \\ 
+& & \left( \left(\bar{\nu} A + b_* A^2 + c_* \|C\|^2\right)C + \left( i d_0 C + i d_1 \bar{\nu} C + i d_2 A C \right)B \right) \Psi_{0110}^0 + \\
+& & \left( \left(\bar{\nu} A + b_* A^2 + c_* \|C\|^2\right)\bar{C} + \left( -i d_0 C - i d_1 \bar{\nu} \bar{C} - i d_2 A \bar{C} \right)B \right) \Psi_{0110}^0 + \cdots \\
+\end{eqnarray}
+\end{subequations}
+
+We will need the coefficients of $A^2, \|C\|^2, \epsilon C$ and $AC$ terms in the previous equation, but first we compute $\frac{dY}{dz}$ in
+another way, so that we can match to coefficients of like terms.
+
+In the second way, we compute $dY/dz$ by using
 \eqref{eq:c1cm} and \eqref{eq:psiexp2} in \eqref{eq:bilinear} (with $p=0$ on
-$C_1$ as given in \eqref{eq:c1}) and the coefficients of  $A$, $B$, $C$ and
-$\bar{C}$ are once again read off.  Equating the coefficients of the
-corresponding terms in the two separate expressions for $dY/dz$ yields the
+$C_1$ as given in \eqref{eq:c1}) which implies
+\begin{subequations}
+\begin{eqnarray*}
+\frac{dY}{dz} &=& L_{0q}\left( A \zeta_0 + B \zeta_0 + C \zeta_+ \bar{C} \zeta_- + \Psi\right) - G_{1,2}\left(Y,Y\right) \\
+ &=& L_{0q} \zeta_0 A + L_{0q} \zeta_0 B + L_{0q} \zeta_0 B + L_{0q}\zeta_+ C + L_{0q}\zeta_-\bar{C} + L_{0q}\Psi - \notag  \\
+ & & G_{1,2}\left( A \zeta_0 + B \zeta_0 + C \zeta_+ \bar{C} \zeta_- + \Psi, A \zeta_0 + B \zeta_0 + C \zeta_+ \bar{C} \zeta_- + \Psi \right) \notag \\
+ &=& L_{0q} \zeta_0 A + L_{0q} \zeta_0 B + L_{0q} \zeta_0 B + L_{0q}\zeta_+ C + L_{0q}\zeta_-\bar{C} + \notag \\
+ & & L_{0q}\Psi_{1010}^1\epsilon A + L_{0q}\Psi_{0100}^1\epsilon B + L_{0q} \Psi_{2000}^0 A^2 + L_{0q} \Psi_{1010}^0 AC + L_{0q} \Psi_{0010}^1 \epsilon C  - \notag \\
+ & & G_{1,2}\left( A \zeta_0 + B \zeta_0 + C \zeta_+ \bar{C} \zeta_- + \Psi, A \zeta_0 + B \zeta_0 + C \zeta_+ \bar{C} \zeta_- + \Psi \right) +\cdots \notag \\
+ &=& L_{0q} \zeta_0 A + L_{0q} \zeta_0 B + L_{0q} \zeta_0 B + L_{0q}\zeta_+ C + L_{0q}\zeta_-\bar{C} + \notag \\
+ & & L_{0q}\Psi_{1010}^1\epsilon A + L_{0q}\Psi_{0100}^1\epsilon B + L_{0q} \Psi_{2000}^0 A^2 + L_{0q} \Psi_{1010}^0 AC + L_{0q} \Psi_{0010}^1 \epsilon C  - \notag \\
+ & & G_{1,2}\left( \zeta_0, \zeta_0\right) A^2 + G_{1,2}\left( \zeta_0, \zeta_0\right) B^2 +  G_{1,2}\left( \zeta_0, \zeta_+\right)C^2 +  G_{1,2}\left( \zeta_-, \zeta_-\right) \bar{C}^2 \notag \\
+ & & + 2 G_{1,2}\left(\zeta_0  ,\zeta_0 \right)AB +  G_{1,2}\left(\zeta_0  ,\zeta_+ \right)BC + G_{1,2}\left(\zeta_0  ,\zeta_+ \right)AC + G_{1,2}\left(\zeta_0  ,\zeta_- \right)A\bar{C}  + \notag  \\
+ & &  G_{1,2}\left(\zeta_0  ,\zeta_- \right)B\bar{C}  + G_{1,2}\left(\zeta_-  ,\zeta_+ \right)\|C\|^2 + G_{1,2}\left(\bar{C} \zeta_-  ,\Psi \right) + G_{1,2}\left(A \zeta_0  ,\Psi \right) + G_{1,2}\left(B\zeta_0  ,\Psi \right)  + \notag \\
+ & &  G_{1,2}\left(C \zeta_+  ,\Psi \right) + G_{1,2}\left(\Psi,\Psi \right) + \cdots \notag
+\end{eqnarray*}
+\end{subequations}
+
+We note that any term of the form $G_{1,2}\left( . , \Psi\right)$ is of order $\ge 3$ because $\Psi$ has no terms of order
+less than 2. What we mean by order is the sum of the indices in $\Psi_{ABC\bar{C}}^\epsilon$. For example, $ \epsilon C \Psi_{0010}^1$ is of order 2. In particular, $G(\Psi, \Psi)$ has terms of order 4 and higher. Since we are only in search of
+terms of order 2 ($A^2$, $\epsilon C$ $\|C\|^2$ and $AC$ ), we need not look inside any of terms of the form $G_{1,2}\left( . , \Psi\right)$  and hence we can now compare the two expansions of $\frac{dY}{dz}$.
+
+Matching the coefficients of  $A^2$, $\epsilon C$ $\|C\|^2$ and
+$AC$ in the two separate expressions for $dY/dz$ yields the
 following two systems of equations:
 \begin{subequations}
 \begin{eqnarray}
 \mathcal{O}(A^2): &		b_* \zeta_1 &= L_{0q} \Psi_{2000}^0 - G_{1,2}(\zeta_0,\zeta_0) \\
 \mathcal{O}(\left|C\right|^2):&	c_* \zeta_1 &= L_{0q} \Psi_{0011}^0 -2 G_{1,2}(\zeta_+,\zeta_-) \label{eq:cstar} \\
-\mathcal{O}(\epsilon C): &-\frac{i}{q} \left(d_1 \zeta_+ +  d_0 \Psi_{0010}^1\right) &= L_{0q} \Psi_{0010}^1 - G_{1,2}(\Psi_{0010}^1,\Psi_{0010}^1) \\
+\mathcal{O}(\epsilon C): &-\frac{i}{q} \left(d_1 \zeta_+ +  d_0 \Psi_{0010}^1\right) &= L_{0q} \Psi_{0010}^1 \\
 \mathcal{O}(A C): 	&i d_2 \zeta_+ + i d_0 \Psi_{1010}^0 &= L_{0q} \Psi_{1010}^0 - 2 G_{1,2}(\zeta_0,\zeta_+)  \label{eq:AC}
 \end{eqnarray}
 \end{subequations}
-where we have used the fact that $G_1$ and $G_2$ are symmetric bilinear forms. Equation \eqref{eq:cstar} is decoupled and yields 
-$ c_* = \frac{8}{c^2}\left( 2 a_3 - a_2 \right)$
+where we have repeatedly used the fact that $G_1(Y,Y)$ and $G_2(Y,Y)$ are symmetric bilinear forms. Equation \eqref{eq:cstar} is decoupled and yields 
+$ c_* = \frac{8}{c^2}\left( 2 a_3 - a_2 \right)$ for \eqref{eq:GPC1}
 and 
 $ c_* = \frac{1}{c^2}\left( 16 a_3 + \frac{140}{3} a_5 \right) $
 for \eqref{eq:GPC2}.  The only coefficient left to determine is $d_2$ which we shall compute now. 

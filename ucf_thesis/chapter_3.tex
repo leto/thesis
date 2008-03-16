@@ -179,7 +179,19 @@ in \eqref{eq:c0cm2} as
 where the subscripts denote powers of $A$ and $B$, respectively, and the superscript denotes the power of $\epsilon$. 
 
 In the first way of computing $dY/dz$, we take
-the $z$ derivative of \eqref{eq:c0cm2} (using \eqref{eq:c0nf2} and \eqref{eq:psiexpms}). 
+the $z$ derivative of \eqref{eq:c0cm}
+\begin{equation}
+\frac{dY}{dz} = B \zeta_0 + \left(b \epsilon A + \tilde{c} A^2\right)\zeta_1 + \frac{d\Psi}{dz}
+\end{equation}
+And finally using \eqref{eq:psiexpms} and \eqref{eq:c0nf2} again we arrive at
+\begin{align}
+\frac{dY}{dz} = B \zeta_0 + \left(b \epsilon A + \tilde{c} A^2\right)\zeta_1 + \left( b \epsilon^2 A + \epsilon \tilde{c} A^2\right) \label{eq:longeqn1}\\
+                + 2 A B\Psi_{20}^0 + \left( B^2 + b\epsilon A^2 + \tilde{c} A^3\right)\Psi_{11}^0 \notag \\ 
+                + 2 B \left( b \epsilon A + \tilde{c} A^2 \right)\Psi_{02}^0 + \cdots \notag
+\end{align}
+
+
+
 The coefficient of $A^2$ in the resulting expression is $\tilde{c} \zeta_1 $. In the second way of computing $dY/dz$, we use \eqref{eq:c0cm2} and \eqref{eq:psiexpms} in \eqref{eq:bilinearms2}. The coefficient of $A^2$ in the resulting expression is 
 $ L_{0,q} \Psi_{20}^0 - F_2\left(\zeta_0,\zeta_0\right)$,
 which leads to 
@@ -308,16 +320,16 @@ which correspond to the $A^2, |C|^2$ and $AC$ terms respectively. In
 order to determine them, we follow the same procedure as 
 in Section 3 and compute $dY/dz$ is two distinct ways. We expand the
 function $\Psi$ as
-\begin{equation}\label{eq:psiexpms}
+\begin{equation}\label{eq:psiexpms2}
 \Psi(\epsilon,A,B,C,\bar{C}) = \epsilon A \Psi_{1000}^1 + \epsilon B \Psi_{0100}^1 + A^2 \Psi_{2000}^0 + A B \Psi_{1100}^0 + A C \Psi_{1010}^0 + \epsilon C \Psi_{0010}^1 + \cdots 
 \end{equation}
 
 with subscripts denoting powers of $A$, $B$, $C$ and $\bar{C}$, respectively,
 and the superscript is the power of $\epsilon$. In the first way, $dY/dz$ is
 computed by taking the $z$ derivative of \eqref{eq:c1cm2} (using \eqref{eq:c1nf2}
-and \eqref{eq:psiexpms}) and read off the coefficients of $A^2, \|C\|^2, C
+and \eqref{eq:psiexpms2}) and read off the coefficients of $A^2, \|C\|^2, C
 \epsilon$ and $AC$ terms.  In the second way, $dY/dz$ is computed using
-\eqref{eq:c1cm2} and \eqref{eq:psiexpms} in \eqref{eq:bilinearms2} (with $p=0$ on
+\eqref{eq:c1cm2} and \eqref{eq:psiexpms2} in \eqref{eq:bilinearms2} (with $p=0$ on
 $C_1$ as given in \eqref{eq:ms_c1}) and the coefficients of  $A$, $B$, $C$ and
 $\bar{C}$ are once again read off.  Equating the coefficients of the
 corresponding terms in the two separate expressions for $dY/dz$ yields the
@@ -326,7 +338,7 @@ following equations:
 \begin{eqnarray}
 \mathcal{O}(A^2): &		b_* \zeta_1 &= L_{0q} \Psi_{2000}^0 - F_2(\zeta_0,\zeta_0) \\
 \mathcal{O}(\left|C\right|^2):&	c_* \zeta_1 &= L_{0q} \Psi_{0011}^0 -2 F_2(\zeta_+,\zeta_-) \label{eq:cstar2} \\
-\mathcal{O}(\epsilon C): &-\frac{i}{q} \left(d_1 \zeta_+ +  d_0 \Psi_{0010}^1\right) &= L_{0q} \Psi_{0010}^1 - F_2(\Psi_{0010}^1,\Psi_{0010}^1) \\
+\mathcal{O}(\epsilon C): &-\frac{i}{q} \left(d_1 \zeta_+ +  d_0 \Psi_{0010}^1\right) &= L_{0q} \Psi_{0010}^1 \\
 \mathcal{O}(A C): 	&i d_2 \zeta_+ + i d_0 \Psi_{1010}^0 &= L_{0q} \Psi_{1010}^0 - 2 F_2(\zeta_0,\zeta_+) \label{eq:AC2}
 \end{eqnarray}
 \end{subequations}
@@ -347,7 +359,6 @@ Using \eqref{eq:one2} in \eqref{eq:two2} , \eqref{eq:two2} in \eqref{eq:four2} a
 using these in \eqref{eq:three2} yields $ d_2 = \frac{ b \Delta_1 }{ 3 \sqrt{-q} }$.
 
 Therefore the normal form for \eqref{eq:MS} near $C_1$ is 
-
 \begin{subequations}\label{eq:NORMAL2}
 \begin{eqnarray} 
 \frac{dA}{dz} &=& B  \label{eq:normalA2} \\
@@ -404,5 +415,3 @@ asymptotics and numerical shooting.
 \caption{Level curves of \eqref{eq:H2} corresponding to various values of H.}
 \end{center}
 \end{figure}
-
-
