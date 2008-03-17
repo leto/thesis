@@ -622,10 +622,115 @@ following two systems of equations:
 \mathcal{O}(A C): 	&i d_2 \zeta_+ + i d_0 \Psi_{1010}^0 &= L_{0q} \Psi_{1010}^0 - 2 G_{1,2}(\zeta_0,\zeta_+)  \label{eq:AC}
 \end{eqnarray}
 \end{subequations}
-where we have repeatedly used the fact that $G_1(Y,Y)$ and $G_2(Y,Y)$ are symmetric bilinear forms. Equation \eqref{eq:cstar} is decoupled and yields 
-$ c_* = \frac{8}{c^2}\left( 2 a_3 - a_2 \right)$ for \eqref{eq:GPC1}
-and 
-$ c_* = \frac{1}{c^2}\left( 16 a_3 + \frac{140}{3} a_5 \right) $
+where we have repeatedly used the fact that $G_1(Y,Y)$ and $G_2(Y,Y)$ are symmetric bilinear forms. 
+We now detail how one calculates $G_1(X,Y)$. For example, if $B(X,X)$ is a bilinear form and 
+\begin{equation*}
+B(X,X)= \left<0,0,0, x_2^2 + x_1 x_3 \right>^T
+\end{equation*}
+then to having $B(X,Y)$ symmetric and linear with respect to each $X$ and $Y$ is 
+satisfied by
+\begin{equation*}
+B(X,Y)= \left<0,0,0, x_2 y_2 + \frac{1}{2}\left(x_1 y_3 + y_1 x_3 \right)\right>^T
+\end{equation*}
+In general, if there is a term of the form $f(Y,Y)=y_1^m y_2^n$ then $f(X,Y)=\frac{1}{2}\left(x_1^m y_2^n + y_1^m x_2^n\right)$
+for $n,m\ge 1$. If $f(Y,Y) = y_n^m$ then $f(X,Y) = \frac{1}{2}\left( x_n^{m-1} y_n + y_n^{m-1} x_n \right) $ where $m\ge1$.
+
+Using these properties, we can now evaluate the terms $G_{1,2}(\zeta_0,\zeta_0)$, $G_{1,2}(\zeta_+,\zeta_-) $ and $
+G_{1,2}(\zeta_0,\zeta_+)$ in the above equations.
+We have
+\begin{subequations}
+\begin{eqnarray}
+G_1\left( Y, Y \right) &=& \left< 0 , 0, 0, - \mathcal{N}\left(Y,Y\right) \right>^T \\
+ &=& \left< 0, 0, 0, \frac{1}{c^2} \left( 2 a_2 y_2 y_3 + 2 a_2 y_2^2 + 6 a_3 y_1 y_2^2 + 3 a_3 y_1^2 y_3 \right) \right>^T
+\end{eqnarray}
+\end{subequations}
+so using the above properties to calculate $G_1(X,Y)$ we find
+\begin{subequations}
+\begin{eqnarray*}
+G_1\left( X, Y \right) &=& \left< 0 , 0, 0, - \mathcal{N}\left(X,Y\right) \right>^T \\
+ &=& \left< 0, 0, 0, \frac{1}{c^2} \left( a_2 \left(x_2 y_3 + y_2 x_3 + 2 x_2 y_2\right) + 3 a_3 \left(x_1 y_2^2 +y_1 x_2^2\right) 
+ + \frac{3 a_3}{2} \left(  x_1^2 y_3  + y_1^2 x_3 \right) \right) \right>^T \notag
+\end{eqnarray*}
+\end{subequations}
+
+We now evaluate the above equation for $X=\zeta_+, Y=\zeta_-$ where
+\begin{equation}
+\zeta_\pm = \left< 1, \lambda_\pm, 2 \frac{q}{3} , \lambda_\pm \frac{q}{3} \right>^T
+\end{equation}
+which implies
+\begin{subequations}
+\begin{eqnarray*}
+G_1\left( \zeta_+, \zeta_- \right) &=& \left< 0 , 0, 0, - \mathcal{N}\left(X,Y\right) \right>^T \\
+ &=& \left< 0, 0, 0, \frac{1}{c^2} \left( 2 a_2 \left( \frac{ q }{3} \left( \lambda_- + \lambda_+\right) + 2 \lambda_- \lambda_+\right)
+ + 3 a_3 \left( \lambda_-^2 + \lambda_+^2 + \frac{2q}{3} \right) \right) \right>^T
+\end{eqnarray*}
+\end{subequations}
+Using the facts that $\lambda_-^2 = q, \lambda_+^2 = q, \lambda_+ \lambda_- = -q $ and $\lambda_- + \lambda_+=0$ we 
+finally reach the simplified form
+\begin{equation}
+G_1\left(\zeta_+, \zeta_-\right) = \left<0,0,0, \frac{q}{c^2} \left( 8 a_3 - 4 a_2 \right) \right>^T
+\end{equation}
+Using this in \eqref{eq:cstar} we get the following system of equations which determine $c_*$:
+
+\begin{subequations}
+\begin{eqnarray}
+0 &=& x_2 \\
+c_* &=& \frac{q}{3} x_1 + x_3 \label{eq:cstargpc1b}\\
+0 &=& \frac{q}{3} x_2 + x_4 \\
+-2 \frac{q}{3} c_* &=& \frac{q}{3}\left( \frac{q}{3} x_1 + x_3 \right) - 2 \frac{q}{c^2}\left( 8 a_3 - 4 a_2 \right) \label{eq:cstargpc1d}
+\end{eqnarray}
+\end{subequations}
+Using \eqref{eq:cstargpc1b} in \eqref{eq:cstargpc1d}  we find
+\begin{equation} c_* = \frac{8}{c^2}\left( 2 a_3 - a_2 \right)
+\end{equation}
+for \eqref{eq:GPC1}. 
+
+
+In the same way we for \eqref{eq:GPC2} we calculate the components of $G_2(Y,Y)$
+\begin{align}
+G_2(Y,Y) &=& \left<0,0,0, \mathcal{N}_2\left(Y,Y\right) \right>^T \\
+    &=& \left< 0,0,0, \frac{1}{c^2}\left( 3 a_3 \left( 2 y_1 y_2^2 + y_1^2 y_3 \right) + 5 a_5 \left( 4 y_1^3 y_2^2 + y_1^4 y_3 \right) \right) \right>^T
+\end{align}
+
+We now calculate $G_2(\zeta_+, \zeta_-)$ where $ \zeta_\pm = \left<1, \lambda_\pm, 2 \frac{q}{3}, \lambda_\pm \frac{q}{3} \right>^T $
+\begin{subequations}
+\begin{eqnarray*}
+G_2\left(\zeta_+, \zeta_-\right) &=& \left<0,0,0, \frac{1}{c^2}\left( 3 a_3\left( \lambda_-^2 + \lambda_+^2 + \frac{2q}{3} \right) + 
+5 a_5 \left( 2 \lambda_-^2 + 2 \lambda_+^2 + \frac{2q}{3} \right) \right) \right>^T \\
+&=& \left<0,0,0, \frac{1}{c^2}\left( 3 a_3 \left( 2 q + \frac{2q}{3} \right) + 5 a_5 \left( 4 q + \frac{2q}{3} \right) \right) \right>^T \\
+&=& \left<0,0,0 \frac{q}{c^2} \left( 8 a_3 + \frac{70}{3} a_5 \right) \right>^T
+\end{eqnarray*}
+\end{subequations}
+
+%We now calculate $G_2(X,Y)$
+%\begin{align}
+% &=& \left<0,0,0, \frac{1}{c^2}
+%%%%    \left( 3 a_3
+%        \left(x_2 y_2^2 + y_1 x_2^2 + \frac{1}{2}
+%            \left(x_1^2 y_3 + y_1^2 x_3 \right)
+%        \right) + \\
+% & & 5 a_5 \left( 2
+%    \left( x_1^3 y_2^2 + y_1^3 x_2^2 \right) + 
+% \frac{1}{2}
+%        \left(x_1^4 y_3 + y_1^4 x_3 \right) 
+%        \right) 
+%        \right
+%    \right>^T
+%\end{align}
+
+Using this value of $G_2(\zeta_+, \zeta_-)$ in \eqref{eq:cstar} we find
+\begin{subequations}
+\begin{eqnarray}
+0 &=& x_2 \\
+c_* &=& \frac{q}{3} x_1 + x_3 \label{eq:cstargpc2b}\\
+0 &=& \frac{q}{3} x_2 + x_4 \\
+-2 \frac{q}{3} c_* &=& \frac{q}{3}\left( \frac{q}{3} x_1 + x_3 \right) - 2 \frac{q}{c^2}\left( 8 a_3 + \frac{70}{3} a_5 \right) \label{eq:cstargpc2d}
+\end{eqnarray}
+\end{subequations}
+Using \eqref{eq:cstargpc2b} in \eqref{eq:cstargpc2d}  we find
+\begin{equation}
+c_* = \frac{1}{c^2}\left( 16 a_3 + \frac{140}{3} a_5 \right)
+\end{equation}
 for \eqref{eq:GPC2}.  The only coefficient left to determine is $d_2$ which we shall compute now. 
 
 Using $\Psi_{1010}^0 = \left<x_1,x_2,x_3,x_4\right>^T$ in \eqref{eq:AC} implies 
