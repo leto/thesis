@@ -218,26 +218,34 @@ Hence we obtain
 \end{equation}
  
 Therefore, the normal form for \eqref{eq:MS} near $C_0$ is
-\begin{subequations}
+\begin{subequations}\label{eq:msnf}
 \begin{eqnarray}
-\frac{dA}{dz} &=& B \\
+\frac{dA}{dz} &=& B \label{eq:msnfa} \\
 \frac{dB}{dz} &=& -\frac{\epsilon}{q} A - \frac{ b \Delta_1}{3}  A^2
 \end{eqnarray}
 \end{subequations}
 
-The normal form \eqref{eq:c0nf2} admits a homoclinic solution (near $C_0$) of the form 
+The normal form \eqref{eq:msnf} admits a homoclinic solution (near $C_0$) of the form 
 \begin{equation} \label{eq:ms_soliton1}
 A\left(z\right) = \ell \space \mathrm{sech}^2\left(k z\right)
 \end{equation}
 
-with 
-\begin{subequations} 
-\begin{eqnarray}
-k &=& \sqrt{\frac{-\epsilon}{4q}} \label{eq:keq2} \\
-\ell &=& \frac{ 6 k^2 }{ b \Delta_1 } 
-\end{eqnarray}
+To determine $k$ and $\ell$ we put \eqref{eq:ms_soliton1} into the equivalent second order equation for \eqref{eq:msnf},
+$ \frac{dA^2}{dz^2} = -\frac{\epsilon}{q} A - \frac{b \Delta_1}{3} A^2 $. which implies
+\begin{subequations}
+\begin{eqnarray*}
+\ell \left( - 2 k^2 \mathrm{sech}^4(kz) + 4 k^2 \mathrm{sech}^2(kz) \mathrm{tanh}^2(kz) \right) &=& -\frac{\epsilon}{q} \ell \mathrm{sech}^2(kz) - \frac{b \Delta_1}{3} \ell^2 \mathrm{sech}^4(kz) \\
+4 k^2 \mathrm{sech}^2(kz) - 6 k^2 \mathrm{sech}^4(kz) &=& -\frac{\epsilon}{q} \mathrm{sech^2}(kz) - \frac{b \Delta_1}{3} \ell \mathrm{sech}^4(kz)
+ \end{eqnarray*}
 \end{subequations}
-
+where we have used the same hyperboic identities as in Chapter 2.  
+Matching the $\mathcal{O}(\mathrm{sech}^2(kz)$ and $\mathcal{O}(\mathrm{sech}^2(kz)$ terms on each side of the preceding equation implies
+\begin{subequations}
+\begin{eqnarray}
+4k^2 = \frac{-\epsilon}{4q} &\implies& k = \sqrt{\frac{-\epsilon}{4q}}  \\
+6 k^2 =  \frac{b \Delta_1}{3} \ell &\implies& \ell = \frac{18 k^2}{ b \Delta_1 }
+ \end{eqnarray}
+\end{subequations}
 
 Hence, since $\epsilon = - p $, and the curve $C_0$ corresponds to $p=0,q>0$, solitary waves of the 
 form \eqref{eq:ms_soliton1} exist in the vicinity of $C_0$ for 
@@ -342,8 +350,44 @@ following equations:
 \mathcal{O}(A C): 	&i d_2 \zeta_+ + i d_0 \Psi_{1010}^0 &= L_{0q} \Psi_{1010}^0 - 2 F_2(\zeta_0,\zeta_+) \label{eq:AC2}
 \end{eqnarray}
 \end{subequations}
-where we have used the fact that $F_2$ is a symmetric bilinear form. Equation \eqref{eq:cstar2} is decoupled and yields 
-$ c_* = 2 \Delta_1 \left( \frac{2 b}{3}  - 1\right)$. The only coefficient left to determine is $d_2$ which we shall compute now. 
+where we have used the fact that $F_2(Y,Y)$ is a symmetric bilinear form. We would like to evaluate $F_2\left(\zeta_+, \zeta_-\right)$, so we first exhibit the form of $F_2(X,Y)$,
+(which is linear and symmetric with respect to both arguments)
+\begin{equation}
+F_2\left(X,Y\right) = \left<0,0,0, \Delta_1 x_2 y_2 + \frac{b}{2}\Delta_1 \left( x_1 y_2 + y_1 x_3 \right) \right>^T
+\end{equation}
+We now use this to evaluate $F_2\left(X,Y\right)$
+\begin{subequations}
+\begin{eqnarray}
+F_2\left(\zeta_+,\zeta_-\right) &=& \left<0,0,0, \Delta_1 \left(-q\right) + \frac{b}{2}\Delta_1\left( \frac{2q}{3} + \frac{2q}{3}\right)\right>^T \\
+ &=& \left<0,0,0, q \Delta_1\left( \frac{2b}{3} - 1 \right) \right>^T
+\end{eqnarray}
+\end{subequations}
+
+Using this in \eqref{eq:cstar2} implies
+\begin{subequations}
+\begin{eqnarray}
+0 &=& x_2 \\
+c_* &=& \frac{q}{3}x_1 + x_3 \\
+0 &=& \frac{q}{3}x_2 + x_4 \\
+-\frac{2q}{3} c_* &=& \frac{q}{3} \left(\frac{q}{3}x_1 + x_3 \right) - 2 q\Delta_1\left(\frac{2b}{3} - 1\right)
+\end{eqnarray}
+\end{subequations}
+Using the second equation in the fourth implies
+\begin{equation}
+c_* = 2 \Delta_1 \left( \frac{2 b}{3}  - 1\right)
+\end{equation}
+
+
+The only coefficient left to determine is $d_2$ which we shall compute now. First, we will 
+need to compute $F_2\left(\zeta_0, \zeta_+\right)$ from $F_2(X,Y)$ which gives
+\begin{subequations}
+\begin{eqnarray*}
+F_2\left(\zeta_0,\zeta_+\right) &=& \left<0,0,0, 0 + \frac{b}{2}\Delta_1 \left( \frac{2q}{3} - \frac{q}{3}\right) \right>^T \\
+ &=& \left<0,0,0, \frac{b}{6} q \Delta_1 \right>^T
+\end{eqnarray*}
+\end{subequations}
+
+
 
 Using $\Psi_{1010}^0 = \left<x_1,x_2,x_3,x_4\right>^T$ in \eqref{eq:AC2} implies 
 \begin{subequations}
@@ -351,19 +395,45 @@ Using $\Psi_{1010}^0 = \left<x_1,x_2,x_3,x_4\right>^T$ in \eqref{eq:AC2} implies
 i d_2 + i d_0 x_1 &=& x_2 \label{eq:one2} \\
 - d_0 d_2 + i d_0 x_2 &=& \frac{q}{3} x_1 + x_3 \label{eq:two2} \\
 \frac{2 i q}{3} d_2 + i d_0 x_3 &=& \frac{q}{3} x_2 + x_4  \label{eq:three2} \\
-- \frac{q}{3} d_0 d_2 + i d_0 x_4 &=& \frac{q}{3}\left(\frac{q}{3} x_1 + x_3 \right) - \frac{ 2 b q \Delta_1} {3} \label{eq:four2}
+- \frac{q}{3} d_0 d_2 + i d_0 x_4 &=& \frac{q}{3}\left(\frac{q}{3} x_1 + x_3 \right) - \frac{  b q \Delta_1} {3} \label{eq:four2}
 \end{eqnarray}
 \end{subequations}
 
-Using \eqref{eq:one2} in \eqref{eq:two2} , \eqref{eq:two2} in \eqref{eq:four2} and
-using these in \eqref{eq:three2} yields $ d_2 = \frac{ b \Delta_1 }{ 3 \sqrt{-q} }$.
+Using \eqref{eq:one2} in \eqref{eq:two2} we find
+\begin{subequations}
+\begin{eqnarray}
+-d_0 d_2 + i d_0\left( i d_2 + i d_0 x_1\right) &=& \frac{q}{3} x_1 + x_3 \\
+- 2 d_0 d_2 + q x_1 &=& \frac{q}{3} x_1 + x_3 \\
+\implies x_3 &=& \frac{2 q}{3} x_1 - 2 d_0 d_2 
+\end{eqnarray}
+\end{subequations}
+
+Similarly, using
+\eqref{eq:two2} in \eqref{eq:four2} we find
+\begin{equation}
+x_4 = \frac{q}{3} x_2 + i b \Delta_1 \frac{q}{3 d_0} 
+\end{equation}
+
+Using the preceding two equations and \eqref{eq:one2} in  \eqref{eq:three2} implies
+\begin{subequations}
+\begin{eqnarray}
+\frac{2 i q } d_2 + i d_0\left( \frac{2 q}{3} x_1 - 2 d_0 d_2 \right) &=& \frac{q}{3}\left(i d_2 + i d_0 x_1\right) + \frac{q}{3} \left(i d_2 + i d_0 x_1 \right) + i b \Delta_1 \frac{q}{3 d_0} \\
+\frac{2 i q}{3} d_2 - 2 i d_0^2 d_2 &=& i \frac{q}{3}d_2 + i \frac{q}{3} d_2 + i b \Delta_1 \frac{q}{3 d_0} \\
+-2  d_0^2 d_2 &=&  \frac{b \Delta_1 q}{3 d_0} \\
+2  q d_2 &=&  \frac{ b \Delta_1q}{3 d_0} \\
+ d_2 &=&   \frac{b \Delta_1 }{6 \sqrt{-q}} 
+\end{eqnarray}
+\end{subequations}
+since $d_0^2 = -q$.
+
+%yields $ d_2 = \frac{ b \Delta_1 }{ 3 \sqrt{-q} }$.
 
 Therefore the normal form for \eqref{eq:MS} near $C_1$ is 
 \begin{subequations}\label{eq:NORMAL2}
 \begin{eqnarray} 
 \frac{dA}{dz} &=& B  \label{eq:normalA2} \\
 \frac{dB}{dz} &=& -\frac{\epsilon}{q} A - \frac{b \Delta_1 }{3} A^2 + 2 \Delta_1 \left(\frac{2 b }{3} - 1\right) \left|C\right|^2  \label{eq:normalB2} \\
-\frac{dC}{dz} &=& i \sqrt{-q} C - i \frac{\sqrt{-q} }{q^3} C\epsilon + i \frac{b \Delta_1}{3 \sqrt{-q}} A C \label{eq:normalC2}
+\frac{dC}{dz} &=& i \sqrt{-q} C - i \frac{\sqrt{-q} }{q^3} C\epsilon + i \frac{b \Delta_1}{6 \sqrt{-q}} A C \label{eq:normalC2}
 \end{eqnarray}
 \end{subequations}
 
