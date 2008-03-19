@@ -407,20 +407,18 @@ Noting the hyperbolic identities
 \end{eqnarray*}
 \end{subequations}
 gives 
-\begin{equation}
+\begin{equation}\label{eq:hyper1}
 -6 k^2 \mathrm{sech}^4 + 4 k^2 \mathrm{sech}^2\left(kz\right)  = - \frac{\epsilon}{q} \mathrm{sech}^2(kz) - \frac{a_3}{c^2} \ell \mathrm{sech}^4(kz) 
 \end{equation}
 
-Matching the $\mathcal{O}\left(\mathrm{sech}^2\left(z\right)\right)$  and   $\mathcal{O}\left(\mathrm{sech}^4\left(z\right)\right)$ terms in \eqref{eq:hyperparty1} implies
-
-
-which gives
+Matching the $\mathcal{O}\left(\mathrm{sech}^2\left(z\right)\right)$  and   $\mathcal{O}\left(\mathrm{sech}^4\left(z\right)\right)$ terms in \eqref{eq:hyper1} implies
 \begin{subequations} 
 \begin{eqnarray}
 k &=& \sqrt{\frac{-\epsilon}{4q}}  \\
 \ell &=& \frac{ 6 k^2 c^2 }{ a_3 } 
 \end{eqnarray}
 \end{subequations}
+
 or simplifying
 \begin{subequations} 
 \begin{eqnarray}
@@ -435,17 +433,17 @@ A\left(z\right) = \ell \space \mathrm{sech}^2\left(k z\right)
 \end{equation}
 
 which implies
-\begin{equation}\label{eq:hyperparty1}
+\begin{equation}\label{eq:hyperparty2}
 \ell \left( -2 k^2 \mathrm{sech}^4 + 4 k^2 \mathrm{sech}^2\left(kz\right) \mathrm{tanh}^2\left(kz\right) \right) = - \frac{\epsilon}{q} \mathrm{sech}^2(kz) - \frac{1}{c^2}\left(3a_3 + 5a_5\right) \ell^2 \mathrm{sech}^4(kz) 
 \end{equation}
 
 Using the same hyperbolic identities as before we reduce this to
-\begin{equation}\label{eq:hyperparty2}
+\begin{equation}\label{eq:hyperparty3}
 -6 k^2 \mathrm{sech}^4\left(k z\right) + 4 k^2 \mathrm{sech}^2\left(k z\right)=
 -\frac{\epsilon}{q} \mathrm{sech}^2\left(k z\right) - \frac{\ell}{3c^2}\left(3a_3 + 5a_5\right) 
 \end{equation}
 
-Matching the $\mathcal{O}\left(\mathrm{sech}^2\left(z\right)\right)$  and   $\mathcal{O}\left(\mathrm{sech}^4\left(z\right)\right)$ terms in \eqref{eq:hyperparty2} implies
+Matching the $\mathcal{O}\left(\mathrm{sech}^2\left(z\right)\right)$  and   $\mathcal{O}\left(\mathrm{sech}^4\left(z\right)\right)$ terms in \eqref{eq:hyperparty3} implies
 
 \begin{subequations} 
 \begin{eqnarray}
@@ -601,8 +599,8 @@ $C_1$ as given in \eqref{eq:c1}) which implies
  &=& L_{0q} \zeta_0 A + L_{0q} \zeta_0 B + L_{0q} \zeta_0 B + L_{0q}\zeta_+ C + L_{0q}\zeta_-\bar{C} + \notag \\
  & & L_{0q}\Psi_{1010}^1\epsilon A + L_{0q}\Psi_{0100}^1\epsilon B + L_{0q} \Psi_{2000}^0 A^2 + L_{0q} \Psi_{1010}^0 AC + L_{0q} \Psi_{0010}^1 \epsilon C  - \notag \\
  & & G_{1,2}\left( \zeta_0, \zeta_0\right) A^2 + G_{1,2}\left( \zeta_0, \zeta_0\right) B^2 +  G_{1,2}\left( \zeta_0, \zeta_+\right)C^2 +  G_{1,2}\left( \zeta_-, \zeta_-\right) \bar{C}^2 \notag \\
- & & + 2 G_{1,2}\left(\zeta_0  ,\zeta_0 \right)AB +  G_{1,2}\left(\zeta_0  ,\zeta_+ \right)BC + G_{1,2}\left(\zeta_0  ,\zeta_+ \right)AC + G_{1,2}\left(\zeta_0  ,\zeta_- \right)A\bar{C}  + \notag  \\
- & &  G_{1,2}\left(\zeta_0  ,\zeta_- \right)B\bar{C}  + G_{1,2}\left(\zeta_-  ,\zeta_+ \right)\|C\|^2 + G_{1,2}\left(\bar{C} \zeta_-  ,\Psi \right) + G_{1,2}\left(A \zeta_0  ,\Psi \right) + G_{1,2}\left(B\zeta_0  ,\Psi \right)  + \notag \\
+ & & + 2 G_{1,2}\left(\zeta_0  ,\zeta_0 \right)AB +  2 G_{1,2}\left(\zeta_0  ,\zeta_+ \right)BC + 2 G_{1,2}\left(\zeta_0  ,\zeta_+ \right)AC + 2 G_{1,2}\left(\zeta_0  ,\zeta_- \right)A\bar{C}  + \notag  \\
+ & &  2 G_{1,2}\left(\zeta_0  ,\zeta_- \right)B\bar{C}  + 2 G_{1,2}\left(\zeta_-  ,\zeta_+ \right)\|C\|^2 + G_{1,2}\left(\bar{C} \zeta_-  ,\Psi \right) + G_{1,2}\left(A \zeta_0  ,\Psi \right) + G_{1,2}\left(B\zeta_0  ,\Psi \right)  + \notag \\
  & &  G_{1,2}\left(C \zeta_+  ,\Psi \right) + G_{1,2}\left(\Psi,\Psi \right) + \cdots \notag
 \end{eqnarray*}
 \end{subequations}
