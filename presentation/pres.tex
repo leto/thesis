@@ -33,7 +33,7 @@
     \[F\left(0;0\right)=0\]. 
     If there exits a {\bf unitary map} \[S: \mathbb{R}^n \mapsto \mathbb{R}^n, S \neq I\] such
     that
-    \[ F\left(S z; \mu \right) = - S F \left( z;\mu \right)  \forall z, \mu \]
+    \[ F\left(S z; \mu \right) = - S F \left( z;\mu \right) \] for all $z$ and $\mu$
 then \eqref{reversible} is a reversible system.
 }
 
@@ -71,16 +71,63 @@ then \eqref{reversible} is a reversible system.
 
 }
 
-\section{The Models}
-\subsection{GPC}
+\section{GPC}
 \frame
 {
   \frametitle{The Generalized Pochammer-Chree Equations}
+\begin{itemize}
+\item GPC1
+\begin{equation}\label{eq:GPC1}
+\left( u - u_{xx} \right)_{tt} - \left( a_1 u + a_2 u^2 + a_3 u^3 \right)_{xx} =0  
+\end{equation}
+\item GPC2
+\begin{equation}  \label{eq:GPC2} 
+\left( u - u_{xx} \right)_{tt} - \left( a_1 u + a_3 u^3 + a_5 u^5 \right)_{xx} =0
+\end{equation}
+\end{itemize}
 }
-\subsection{MS}
+\subsection{Travelling Wave}
+\frame{
+    \frametitle{Travelling Wave ODE}
+
+Let $ z = x - c t $ and $u(x,t)=\phi(z)$ to reduce \eqref{eq:GPC1} and \eqref{eq:GPC2} to the Travelling Wave ODE
+
+\begin{equation} \label{eq:gpc-ode}
+\phi_{zzzz} - q \phi_{zz} + p \phi = \mathcal{N}_{1,2}[\phi]
+\end{equation}
+where 
+\begin{subequations}
+\begin{eqnarray*}
+\mathcal{N}_1\left[\phi\right] &=& - \frac{1}{c^2}\left[  3 a_3 \left( 2 \phi \phi_z^2 + \phi^2 \phi_{zz} \right) + 2 a_2\left( \phi_{zz} \phi_z + \phi_z^2\right) \right] \\
+\mathcal{N}_2\left[\phi\right] &=& - \frac{1}{c^2}\left[ 3 a_3 \left( 2 \phi \phi_z^2 + \phi^2 \phi_{zz}\right) + 5 a_5 \left( 4 \phi^3 \phi_z^2 + \phi^4 \phi_{zz} \right) \right]
+\end{eqnarray*}
+\end{subequations}
+
+}
+\section{MS}
 \frame
 {
-  \frametitle{ A Generalized Microstructure PDE}
+  \frametitle{A Generalized Microstructure PDE}
+
+\begin{equation}\label{eq:MS}
+v_{tt} - b v_{xx} - \frac{\mu}{2} \left( v^2 \right)_{xx} - \delta \left( \beta v_{tt} - \gamma v_{xx}\right)_{xx} = 0 
+\end{equation}
+
+}
+\subsection{Travelling Wave}
+\frame{
+    \frametitle{Travelling Wave ODE}
+
+Let $ z = x - c t $ and $u(x,t)=\phi(z)$ to reduce \label{eq:MS} to the Travelling Wave ODE
+
+\begin{equation} \label{eq:ms-ode}
+\phi_{zzzz} - q \phi_{zz} + p \phi = \mathcal{N}[\phi]
+\end{equation}
+where 
+\begin{equation}
+\mathcal{N}\left[\phi\right] = -\Delta_1 \phi_z^2 - b \Delta_1 \phi \phi_{zz}
+\end{equation}
+
 }
 \section{Results}
 \subsection{GPC}
