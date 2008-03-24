@@ -41,8 +41,11 @@ then \eqref{reversible} is a reversible system.
 \frame{
     \frametitle{Families of Solitary Waves}
 
-    Here we will use the term solitary wave or "solitons" in the broadest 
-    sense, as a solution to a nonlinear equation which ETC
+    Here we will use the term solitary wave or "soliton" to mean a pulse-like solution
+    to an evolution equation. For example, a two parameter family of solitary waves is
+    \begin{equation} A(z) = \ell \mathrm{sech}^2{k z} \end{equation}
+
+    where $k$ and $\ell$ are the parameters which determine the speed and the height of the wave.
 }
 
 %		\begin{center}
@@ -56,20 +59,43 @@ then \eqref{reversible} is a reversible system.
 \frame
 {
     \frametitle{Normal Form Theory}
+    After a nonlinear change of variables \cite{IA} one may put the Center Manifold into Normal Form.
+
+   \begin{itemize}
+   \item Two-Dimenional Center Manifold 
+        \begin{itemize}
+        \item $\lambda_{1-4} = 0, 0 , \pm \lambda, \lambda \in \mathbb{R} $
+        \item $ Y = A \zeta_0 + B \zeta_1 + \Psi(\epsilon, A,B) $
+        \end{itemize}
+   \item Four-Dimenional Center Manifold 
+        \begin{itemize}
+        \item $\lambda_{1-4} = 0, 0 , \pm i \omega, \omega \in \mathbb{R} $
+        \item $ Y = A \zeta_0 + B \zeta_1 + C \zeta_+ + \bar{C} \zeta_- + \Psi(\epsilon, A,B,C,\bar{C}) $
+        \end{itemize}
+    \end{itemize}
+
+    where $\zeta_0, \zeta_1, \zeta_+, \zeta_-$ are eigenvectors of the linearized operator.
 }
 
 \subsection{Bilinear Functions}
 \frame {
     \frametitle{Properties of Bilinear Functions} 
+    A function \[ B : \mathbb{C} x \mathbb{C} \mapsto \mathbb{C} \] satisfying the following axioms
+\begin{subequations}
+\begin{eqnarray}
+B(x + y,z) &=& B(x,z) + B(y,z) \\
+B( \lambda x, y ) &=& \lambda B(x,y) \\
+B(x, y+z) &=& B(x,y) + B(x,z) \\
+B(x, \lambda y ) &=& \lambda B(x,y) 
+\end{eqnarray}
+\end{subequations}
+where $\lambda \in \mathbb{C}$,
+is called \bf{bilinear}.
+
 
 }
 \section{Literature Review}
 
-\frame
-{
-  \frametitle{Selected Literature Review}
-
-}
 
 \section{GPC}
 \frame
@@ -134,6 +160,10 @@ where
 \frame
 {
   \frametitle{Results:The Generalized Pochammer-Chree Equations}
+
+\begin{equation}
+\end{equation}
+
 }
 \subsection{MS}
 \frame
@@ -141,4 +171,7 @@ where
   \frametitle{Results: A Generalized Microstructure PDE}
 }
 
+\frame{
+    \frametitle{STUFF}
+}
 \end{document}
