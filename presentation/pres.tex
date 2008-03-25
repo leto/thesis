@@ -31,7 +31,7 @@
     \frac{dz}{dt} = F\left(z;\mu\right), z \in \mathbb{R}^n, \mu \in \mathbb{R}
     \end{equation} where
     \[F\left(0;0\right)=0\]. 
-    If there exits a {\bf unitary map} \[S: \mathbb{R}^n \mapsto \mathbb{R}^n, S \neq I\] such
+    If there exists a {\bf unitary map} \[S: \mathbb{R}^n \mapsto \mathbb{R}^n, S \neq I\] such
     that
     \[ F\left(S z; \mu \right) = - S F \left( z;\mu \right) \] for all $z$ and $\mu$
 then \eqref{reversible} is a reversible system.
@@ -42,10 +42,11 @@ then \eqref{reversible} is a reversible system.
     \frametitle{Families of Solitary Waves}
 
     Here we will use the term solitary wave or "soliton" to mean a pulse-like solution
-    to an evolution equation. For example, a two parameter family of solitary waves is
+    to an evolution equation. For example,
     \begin{equation} A(z) = \ell \mathrm{sech}^2{k z} \end{equation}
+    is a two-parameter family of solitary waves.
 
-    where $k$ and $\ell$ are the parameters which determine the speed and the height of the wave.
+    where $k$ and $\ell$ are parameters which determine the speed and the height of the wave.
 }
 
 %		\begin{center}
@@ -59,7 +60,7 @@ then \eqref{reversible} is a reversible system.
 \frame
 {
     \frametitle{Normal Form Theory}
-    After a nonlinear change of variables \cite{IA} one may put the Center Manifold into Normal Form.
+    After a nonlinear change of variables (Iooss \& Adelmeyer) one may put the Center Manifold into Normal Form.
 
    \begin{itemize}
    \item Two-Dimenional Center Manifold 
@@ -89,11 +90,13 @@ B(x, y+z) &=& B(x,y) + B(x,z) \\
 B(x, \lambda y ) &=& \lambda B(x,y) 
 \end{eqnarray}
 \end{subequations}
-where $\lambda \in \mathbb{C}$,
-is called \bf{bilinear}.
+is called { \bf{bilinear} }.
 
-
+If $B(x,y)$ is bilinear, then $f(y) \equiv  B(y,y)$ 
+is invariant under the transformation $y \mapsto -y$
+and thus is { \bf{reversible} }.
 }
+
 \section{Literature Review}
 
 
@@ -101,6 +104,8 @@ is called \bf{bilinear}.
 \frame
 {
   \frametitle{The Generalized Pochammer-Chree Equations}
+The Generalized Pochammer-Chree Equations govern the propagation of longitudinal waves in elastic rods.
+
 \begin{itemize}
 \item GPC1
 \begin{equation}\label{eq:GPC1}
@@ -112,7 +117,6 @@ is called \bf{bilinear}.
 \end{equation}
 \end{itemize}
 }
-\subsection{Travelling Wave}
 \frame{
     \frametitle{Travelling Wave ODE}
 
@@ -124,16 +128,81 @@ Let $ z = x - c t $ and $u(x,t)=\phi(z)$ to reduce \eqref{eq:GPC1} and \eqref{eq
 where 
 \begin{subequations}
 \begin{eqnarray*}
+p &\equiv& 0\\
+q &\equiv& 1 - \frac{a_1}{c^2} 
+\end{eqnarray*}
+\end{subequations}
+
+\begin{subequations}
+\begin{equation}
+L_{pq} = \left( 
+\begin{array}{cccc}
+0&1&0&0\\
+q/3&0&1&0\\
+0&q/3&0&1\\
+q^2 - p &0&q/3&0 \end{array} \right)
+ \end{equation}
+\begin{eqnarray*}
 \mathcal{N}_1\left[\phi\right] &=& - \frac{1}{c^2}\left[  3 a_3 \left( 2 \phi \phi_z^2 + \phi^2 \phi_{zz} \right) + 2 a_2\left( \phi_{zz} \phi_z + \phi_z^2\right) \right] \\
 \mathcal{N}_2\left[\phi\right] &=& - \frac{1}{c^2}\left[ 3 a_3 \left( 2 \phi \phi_z^2 + \phi^2 \phi_{zz}\right) + 5 a_5 \left( 4 \phi^3 \phi_z^2 + \phi^4 \phi_{zz} \right) \right]
 \end{eqnarray*}
 \end{subequations}
 
 }
+\frame{
+\frametitle{Reversible Form}
+
+Denoting 
+$Y=\left<y1,y2,y3,y4\right>^T=
+\left<\phi,\phi_z,\phi_{zz}, \phi_{zzz}\right>^T$
+equation \eqref{eq:gpc-ode} can be written 
+\begin{equation}
+\frac{dY}{dz}= L_{pq} Y - G_{1,2}(Y,Y)
+\end{equation}
+where
+\[ L_{pq} = \left( 
+\begin{array}{cccc}
+0&1&0&0\\
+q/3&0&1&0\\
+0&q/3&0&1\\
+q^2 - p &0&q/3&0 \end{array} \right)
+\]
+\[
+G_{1,2}(Y,Y) = \left<0,0,0,-\mathcal{N}_{1,2}\left(Y,Y\right)\right>^T
+\]
+}
+\frame{
+\frametitle{Near $C_0$ }
+The eigenvalues are $\lambda_{1,4}=0,0,\pm \lambda$, $\lambda \in \mathbb{R}$, We write the Center Manifold 
+\begin{equation}
+Y = A \zeta_0 + B \zeta_1 + \Psi(\epsilon,A,B)
+\end{equation}
+with corresponding normal form
+\begin{subequations}\label{eq:c0nf}
+\begin{eqnarray}
+\frac{dA}{dz} &=& B \label{eq:c0nfa} \\
+\frac{dB}{dz} &=& b \epsilon A + \tilde{c} A^2 \label{eq:c0nfb}
+\end{eqnarray}
+\end{subequations}
+where $\epsilon$ measures the perturbation about $C_0$ and 
+
+\begin{subequations}
+\begin{eqnarray}
+\zeta_0 &=& \left<1,0,-q/3,0\right>^T \\
+\zeta_1 &=& \left<0,1,0,-2q/3\right>^T
+ \end{eqnarray}
+\end{subequations}
+
+
+How do we determine the coefficients $b$ and $c_*$ ?
+
+}
 \section{MS}
 \frame
 {
   \frametitle{A Generalized Microstructure PDE}
+
+One dimensional wave propagation in microstructured solids has recently been modeled \cite{STE} by an equation
 
 \begin{equation}\label{eq:MS}
 v_{tt} - b v_{xx} - \frac{\mu}{2} \left( v^2 \right)_{xx} - \delta \left( \beta v_{tt} - \gamma v_{xx}\right)_{xx} = 0 
@@ -153,6 +222,7 @@ where
 \begin{equation}
 \mathcal{N}\left[\phi\right] = -\Delta_1 \phi_z^2 - b \Delta_1 \phi \phi_{zz}
 \end{equation}
+\[ \Delta_1 = \frac{\mu}{ \delta\left(\beta c^2 - \gamma\right)} \]
 
 }
 \section{Results}
@@ -171,7 +241,4 @@ where
   \frametitle{Results: A Generalized Microstructure PDE}
 }
 
-\frame{
-    \frametitle{STUFF}
-}
 \end{document}
