@@ -17,8 +17,8 @@
     \begin{itemize}
     \item Definitions
     \item Background
-    \item Literature Review
-    \item Method of Solution
+%    \item Literature Review
+%    \item Method of Solution
     \item The Generalized Pochammer-Chree Equations
     \item A Generalized Microstructure Equation
     \end{itemize}
@@ -61,18 +61,19 @@ then \eqref{reversible} is a reversible system.
 {
     \frametitle{Normal Form Theory}
     After a nonlinear change of variables (Iooss \& Adelmeyer) one may put the Center Manifold into Normal Form. \\
-
-  {\bf{ Two-Dimenional Center Manifold }}
+\bigskip
+  {\bf{ Two-Dimensional Center Manifold }}
         \begin{itemize}
         \item $\lambda_{1-4} = 0, 0 , \pm \lambda, \lambda \in \mathbb{R} $
         \item $ Y = A \zeta_0 + B \zeta_1 + \Psi(\epsilon, A,B) $
         \end{itemize}
-{\bf{   Four-Dimenional Center Manifold }}
+\bigskip
+{\bf{   Four-Dimensional Center Manifold }}
         \begin{itemize}
         \item $\lambda_{1-4} = 0, 0 , \pm i \omega, \omega \in \mathbb{R} $
         \item $ Y = A \zeta_0 + B \zeta_1 + C \zeta_+ + \bar{C} \zeta_- + \Psi(\epsilon, A,B,C,\bar{C}) $
         \end{itemize}
-
+\bigskip
     where $\zeta_0, \zeta_1, \zeta_+, \zeta_-$ are eigenvectors of the linearized operator.
 }
 
@@ -81,12 +82,12 @@ then \eqref{reversible} is a reversible system.
     \frametitle{Properties of Bilinear Functions} 
     A function \[ B : \mathbb{C} x \mathbb{C} \mapsto \mathbb{C} \] satisfying the following axioms
 \begin{subequations}
-\begin{eqnarray}
+\begin{eqnarray*}
 B(x + y,z) &=& B(x,z) + B(y,z) \\
 B( \lambda x, y ) &=& \lambda B(x,y) \\
 B(x, y+z) &=& B(x,y) + B(x,z) \\
 B(x, \lambda y ) &=& \lambda B(x,y) 
-\end{eqnarray}
+\end{eqnarray*}
 \end{subequations}
 is called { \bf{bilinear} }.
 
@@ -94,8 +95,6 @@ If $B(x,y)$ is bilinear, then $f(y) \equiv  B(y,y)$
 is invariant under the transformation $y \mapsto -y$
 and thus is { \bf{reversible} }.
 }
-
-\section{Literature Review}
 
 
 \section{GPC}
@@ -195,6 +194,7 @@ How do we determine the coefficients $b$ and $\tilde{c}$ ?
 
 \frame{
     \frametitle{ Finding Coefficients Of The Normal Form }
+    \framesubtitle{
     \begin{small}
     \begin{verse}
     When you follow two separate chains of thought, Watson,
@@ -202,6 +202,7 @@ How do we determine the coefficients $b$ and $\tilde{c}$ ?
     the truth.  - \textsf{Sir Arthur Conan Doyle}
     \end{verse} 
     \end{small}
+    }
 
 By computing $\frac{dY}{dz}$ in two ways and comparing the coefficients of each
 term in the normal form, we find systems of equations which determine each coefficient.
@@ -217,7 +218,7 @@ For example, to find $\tilde{c}$, we compare $\mathcal{O}(A^2)$ terms.
     \begin{small} 
     Use the Center Manifold \[Y = A \zeta_0 + B \zeta_1 + \Psi(\epsilon,A,B) \] in the
     reversible system
-    \[ \frac{dY}{dz} = L_{pq} Y - G_{1,2}(Y,Y) \] and repetedly use the bilinear
+    \[ \frac{dY}{dz} = L_{pq} Y - G_{1,2}(Y,Y) \] and repeatedly use the bilinear
     properties of $G_{1,2}$ to simplify.
     \end{small}
     \end{column}
@@ -327,12 +328,14 @@ These equations admit homoclinic solutions near $C_0$ of the form
     use our expression for $A(z)$ and note the hyperbolic identity 
     $ \mathrm{sech}^2(z) - \mathrm{sech}^4(z) = \mathrm{sech}^2(z) \mathrm{tanh}^2(z) $
 which implies
+
+\bigskip
+
 \begin{columns}[t]
     \begin{column}{5cm}
+    \bigskip
     {\bf{GPC 1}}
     \begin{small}
-%\[-6 k^2 \mathrm{sech}^4 + 4 k^2 \mathrm{sech}^2\left(kz\right)  = - \frac{\epsilon}{q} \mathrm{sech}^2(kz) - \frac{a_3}{c^2} \ell \mathrm{sech}^4(kz) \]
-%$\implies$
 \begin{subequations} 
 \begin{eqnarray*}
 k &=& \sqrt{\frac{-\epsilon}{4q}}  \\
@@ -342,6 +345,7 @@ k &=& \sqrt{\frac{-\epsilon}{4q}}  \\
 \end{small}
     \end{column}
     \begin{column}{5cm}
+    \bigskip
     {\bf{GPC 2}}
     \begin{small}
 \begin{subequations} 
